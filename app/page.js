@@ -1,6 +1,14 @@
 import Navbar from "@/components/shared/Navbar";
+import ForEducation from "@/components/start/ForEducation";
+import ForIndividuals from "@/components/start/ForIndividuals";
+import GridItems from "@/components/start/GridItems";
 import Hero from "@/components/start/Hero";
+import JobGrind from "@/components/start/JobGrind";
+import OurStory from "@/components/start/OurStory";
 import Partners from "@/components/start/Partners";
+import Vision from "@/components/start/Vision";
+import VisionAndGrindContainer from "@/components/start/VisionAndGrindContainer";
+import WhoWeServe from "@/components/start/WhoWeServe";
 
 export default function Home() {
   return (
@@ -10,6 +18,12 @@ export default function Home() {
         <Hero />
       </section>
       <Partners />
+      <VisionAndGrindContainer />
+      <GridItems />
+      <WhoWeServe />
+      <ForEducation />
+      <ForIndividuals />
+      <OurStory />
     </section>
   );
 }

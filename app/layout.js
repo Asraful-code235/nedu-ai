@@ -1,6 +1,4 @@
-import { Inter } from "next/font/google";
-import "./globals.css";
-import Navbar from "@/components/shared/Navbar";
+import "./globals.scss";
 import Head from "next/head";
 
 export const metadata = {
@@ -17,7 +15,7 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
         />
       </Head>
-      <body className="bg-[#010101]">
+      <body className="bg-[#010101] scrollbar-hidden">
         <main>{children}</main>
       </body>
     </html>
