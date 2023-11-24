@@ -1,22 +1,22 @@
 export default function Vision() {
   return (
-    <section className="py-52 px-32 flex flex-col gap-32">
-      <div className="flex flex-col items-center justify-center text-center">
+    <section className="pt-10 pb-6 px-6 md:pb-24 md:pt-6 md:px-6 flex flex-col gap-5 md:gap-12 xl:gap-32">
+      <div className="flex flex-col gap-5 items-center justify-center text-center">
         <div className="relative">
-          <h1 className="text-6xl font-normal leading-normal tracking-[3.2px] text-white text-opacity-80">
+          <h1 className=" text-xl md:text-5xl xl:text-6xl font-normal leading-normal lg:leading-normal tracking-[1px] md:tracking-[2.4px] xl:tracking-[3.2px] text-white text-opacity-80">
             A{" "}
             <span className="text-darkYellow relative font-semibold text-opacity-100">
               Vision
             </span>{" "}
             for NeduAI&apos;s future
           </h1>
-          <svg
+          {/* <svg
             xmlns="http://www.w3.org/2000/svg"
             width="60"
             height="60"
             viewBox="0 0 60 60"
             fill="none"
-            className="absolute -top-10 left-52"
+            className="absolute w-6=8 h-8 lg:w-16 lg:h-16 -top-10 lg:-top-10 left-16 lg:left-52"
           >
             <path
               d="M40.7579 39.5459C40.3184 40.8807 38.4317 40.8807 37.9922 39.5459L35.0415 30.574C34.9702 30.3575 34.8491 30.1607 34.6879 29.9995C34.5267 29.8383 34.3299 29.7172 34.1133 29.6459L25.1415 26.6951C23.8067 26.2557 23.8067 24.3689 25.1415 23.9295L34.1133 20.9787C34.33 20.9077 34.5269 20.7866 34.6882 20.6254C34.8494 20.4642 34.9704 20.2673 35.0415 20.0506L37.9922 11.0787C38.4317 9.74395 40.3184 9.74395 40.7579 11.0787L43.7086 20.0506C43.8528 20.49 44.1973 20.8346 44.6368 20.9787L53.6086 23.9295C54.9434 24.3689 54.9434 26.2557 53.6086 26.6951L44.6368 29.6459C44.4202 29.7172 44.2234 29.8383 44.0622 29.9995C43.901 30.1607 43.7799 30.3575 43.7086 30.574L40.7579 39.5459Z"
@@ -42,15 +42,15 @@ export default function Vision() {
               stroke-linecap="round"
               stroke-linejoin="round"
             />
-          </svg>
+          </svg> */}
         </div>
-        <p className="visionParagraph text-white text-opacity-80 font-medium leading-10 tracking-[0.48px] text-2xl">
-          NeduAI envisions a future where education meets innovation,
-          <br /> shaping careers through cutting-edge technology.
+        <p className="visionParagraph text-start md:text-center text-white text-opacity-80 font-medium  leading-5 md:leading-10 tracking-[0.48px] text-xs md:text-xl xl:text-2xl">
+          NeduAI envisions a future where education meets innovation, shaping
+          careers through cutting-edge technology.
         </p>
       </div>
-      <div className="border-4 flex flex-col items-start justify-center text-white border-[#C87200] rounded-[64px] w-full h-[1024px]">
-        <div className="min-h-[30vh]">
+      <div className="border-4 flex flex-col items-start justify-center text-white border-[#C87200] rounded-2xl md:rounded-[64px] w-full h-full overflow-hidden">
+        <div className="">
           <video
             width="100%"
             height="100%"

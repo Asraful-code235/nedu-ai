@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import Navbar from "@/components/shared/Navbar";
 import ForEducation from "@/components/start/ForEducation";
 import ForIndividuals from "@/components/start/ForIndividuals";
@@ -9,21 +11,26 @@ import Partners from "@/components/start/Partners";
 import Vision from "@/components/start/Vision";
 import VisionAndGrindContainer from "@/components/start/VisionAndGrindContainer";
 import WhoWeServe from "@/components/start/WhoWeServe";
+import YouthEmpower from "@/components/start/YouthEmpower";
+import YouthEmpowerment from "@/components/start/YouthEmpowerment";
 
 export default function Home() {
   return (
     <section className="">
-      <section className="bgImage hero min-h-screen">
+      <section className="bgImage hero overflow-hidden">
         <Navbar />
         <Hero />
       </section>
       <Partners />
+      <YouthEmpowerment />
       <VisionAndGrindContainer />
       <GridItems />
       <WhoWeServe />
       <ForEducation />
       <ForIndividuals />
-      <OurStory />
+      <section className="relative">
+        <OurStory />
+      </section>
     </section>
   );
 }

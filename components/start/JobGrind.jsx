@@ -74,10 +74,10 @@ const withNeduAi = [
 export default function JobGrind({ isNedu, setIsNedu, ...props }) {
   return (
     <section className="grindGradient w-full relative">
-      <section className="p-32 flex flex-col gap-16 items-center justify-center">
-        <div className="flex flex-col items-center justify-center text-center">
+      <section className="p-6 md:p-10 xl:p-32 flex flex-col gap-5 lg:gap-8 xl:gap-16 items-center justify-center">
+        <div className="flex flex-col items-center justify-center text-center gap-2 lg:gap-6 xl:gap-8">
           <div className="relative">
-            <h1 className="text-6xl font-normal text-white text-opacity-80 leading-normal tracking-[3.2px]">
+            <h1 className="text-xl lg:text-2xl md:text-5xl xl:text-6xl font-normal text-white text-opacity-80 leading-normal tracking-[1px] lg:tracking-[2.4px] xl:tracking-[3.2px]">
               <span className="text-darkYellow text-opacity-100 font-bold">
                 The
               </span>{" "}
@@ -87,27 +87,20 @@ export default function JobGrind({ isNedu, setIsNedu, ...props }) {
               </span>{" "}
               is real
             </h1>
-            <Image
-              src={"/icons/machine.svg"}
-              width={40}
-              height={40}
-              alt="grind__svg"
-              className="w-16 h-16 absolute -top-10 right-44"
-            />
           </div>
-          <p className="visionParagraph text-2xl font-medium text-white leading-[45px] tracking-[0.48px] ">
+          <p className="visionParagraph text-start lg:text-center text-xs lg:text-xl xl:text-2xl font-normal lg:font-medium text-white leading-5 lg:leading-[45px] tracking-[0.4px] ">
             NeduAI gets it – chasing that dream job is like navigating a puzzle.
-            So, we&apos;re flipping the script, sparking <br />
-            an education and career revolution with our AI magic. Because your
-            journey deserves the extraordinary!
+            So, we&apos;re flipping the script, sparking an education and career
+            revolution with our AI magic. Because your journey deserves the
+            extraordinary!
           </p>
         </div>
-        <div className="w-fit transition-colors duration-500 delay-500 flex justify-center items-center gap-10 p-4 rounded-full bg-[#2E2E2E] border-2 border-[#595959]">
+        <div className="w-fit transition-colors duration-500 delay-500 flex justify-center items-center gap-6 xl:gap-10 p-1 lg:p-[10px] xl:p-4 rounded-full bg-[#2E2E2E] border-2 border-[#595959]">
           <button
             onClick={() => setIsNedu(false)}
             className={`${
               !isNedu ? "bg-[#ff980e] text-white" : "text-white"
-            } px-[52px] py-7 rounded-full text-3xl font-medium leading-normal tracking-[1.6px] `}
+            } px-[14px] py-2 lg:px-8 lg:py-4 xl:px-[52px] xl:py-7 rounded-full text-[10px] lg:text-xl xl:text-3xl font-medium leading-normal tracking-[0.5px] lg:tracking-[1px] xl:tracking-[1.6px] `}
           >
             Without NeduAI
           </button>
@@ -115,15 +108,15 @@ export default function JobGrind({ isNedu, setIsNedu, ...props }) {
             onClick={() => setIsNedu(true)}
             className={`${
               isNedu ? "bg-[#ff980e] text-white" : " text-white"
-            } px-[52px] py-7 rounded-full text-3xl font-medium leading-normal tracking-[1.6px] `}
+            } px-[14px] py-2 lg:px-8 lg:py-4 xl:px-[52px] xl:py-7 rounded-full text-[10px] lg:text-xl xl:text-3xl font-medium leading-normal tracking-[0.5px] lg:tracking-[1px] xl:tracking-[1.6px]  `}
           >
             With NeduAI
           </button>
         </div>
 
-        <section className="mt-32">
+        <section className="mt-16 xl:mt-32">
           {!isNedu ? (
-            <section className="max-w-screen-2xl mx-auto grid grid-cols-2 lg:grid-cols-4 gap-16">
+            <section className="max-w-screen-2xl mx-auto grid grid-cols-2 lg:grid-cols-4 gap-[18px] lg:gap-[57px] xl:gap-[88px]">
               {withoutNeduAi.map((item, key) => (
                 <div
                   key={key}
@@ -146,7 +139,7 @@ export default function JobGrind({ isNedu, setIsNedu, ...props }) {
               ))}
             </section>
           ) : (
-            <section className="max-w-[1050px] flex flex-wrap items-center justify-center  gap-16">
+            <section className="max-w-[1050px] flex flex-wrap items-center justify-center gap-[18px] lg:gap-[57px] xl:gap-[88px]">
               {withNeduAi.map((item, key) => (
                 <div
                   key={key}

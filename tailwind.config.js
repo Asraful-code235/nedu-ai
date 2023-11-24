@@ -15,6 +15,10 @@ module.exports = {
       colors: {
         darkYellow: "#FFAD00 ",
       },
+      backgroundSize: {
+        "50%": "50%",
+        16: "4rem",
+      },
     },
   },
   plugins: [],

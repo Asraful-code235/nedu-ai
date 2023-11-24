@@ -23,6 +23,76 @@
   font-family: "Clash Display", sans-serif;
 }
 
+.fade-in-down {
+  animation: fadeInDown 0.5s ease-in-out;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(0px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(-200px);
+  }
+}
+/* Add this to your CSS file */
+
+.overlap-wrapper {
+  // background-color: #000000;
+  overflow: hidden;
+  background: linear-gradient(
+    115deg,
+    rgba(0, 0, 0, 0.1) -1.74%,
+    rgba(63, 63, 63, 0.02) 104.4%
+  );
+
+  backdrop-filter: blur(300px);
+}
+
+.ellipse {
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(219, 215, 215, 0.5) 100%,
+    rgba(254, 253, 253, 0) 100%
+  );
+  border-radius: 126px;
+  box-shadow: 0px 0px 34.29px #ffffff80, 0px 0px 68.58px #ffffffb2,
+    0px 0px 240.03px #ffffffcc, 0px 0px 480.06px #ffffffb2,
+    0px 0px 822.96px #ffffffcc, 0px 0px 1440.18px #ffffffcc;
+  height: 252px;
+  left: 77px;
+  position: absolute;
+  top: 38%;
+  width: 252px;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(255, 255, 255, 0.5) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+
+  backdrop-filter: blur(300px);
+}
+
+// .div {
+//   background: radial-gradient(
+//     50% 50% at 50% 50%,
+//     rgba(255, 255, 255, 0.5) 0%,
+//     rgba(255, 255, 255, 0) 100%
+//   );
+//   border-radius: 191.1px;
+//   box-shadow: 0px 0px 37.8px #ffffff99, 0px 0px 75.6px #ffffff99,
+//     0px 0px 264.61px #ffffff66, 0px 0px 529.23px #ffffff99,
+//     0px 0px 907.25px #ffffffcc, 0px 0px 1587.68px #ffffff;
+//   height: 382px;
+//   left: 1646px;
+//   position: absolute;
+//   top: 2357px;
+//   transform: rotate(99.09deg);
+//   width: 382px;
+// }
+
 .bgImage {
   background: linear-gradient(0deg, #000 6.08%, rgba(0, 0, 0, 0) 90.77%),
     url("/images/Billboard Main.webp"),
@@ -88,3 +158,61 @@
 //   background-position: left;
 //   background-size: 10vw;
 // }
+
+// .DashboardBefore {
+//   background-image: url("/icons/Frame.png");
+//   background-repeat: repeat;
+//   width: 100%;
+//   height: 100%;
+
+//   // background-position: ;
+//   &::before {
+//     content: url("/icons/Realtimejobtraking.webp");
+//     position: absolute;
+//     bottom: 20%;
+//     left: -30%;
+//     transform: scale(0.25);
+//   }
+// }
+// .DashboardBefore1 {
+//   &::before {
+//     content: url("/icons/FollowUp.webp");
+//     position: absolute;
+//     bottom: -37%;
+//     right: 12%;
+//     transform: scale(0.25);
+//   }
+// }
+// .DashboardBefore2 {
+//   &::before {
+//     content: url("/icons/talentAssessment.webp");
+//     position: absolute;
+//     top: -20%;
+//     left: -32%;
+//     transform: scale(0.25);
+//   }
+// }
+// .DashboardBefore3 {
+//   position: relative;
+//   &::before {
+//     content: url("/icons/callender.webp");
+//     position: absolute;
+//     top: -8%;
+//     right: -48%;
+//     transform: scale(0.25);
+//   }
+// }
+
+// youth empowerment
+
+.youthEmpowerment {
+  position: relative;
+  overflow: hidden;
+  &::before {
+    content: url("/icons/vector.svg");
+    position: absolute;
+    right: 0%;
+    z-index: 10;
+    top: 20%;
+  }
+}
