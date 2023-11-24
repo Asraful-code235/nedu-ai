@@ -59,7 +59,7 @@ const images = [
 
 export default function Partners() {
   return (
-    <section className="p-6 md:p-12 xl:px-32 xl:py-16 md:mt-6 lg:mt-20 flex flex-col gap-6 lg:gap-32">
+    <section className="p-6 md:p-12 overflow-hidden xl:px-32 xl:py-16 md:mt-6 lg:mt-20 flex flex-col gap-6 lg:gap-32">
       <div className="flex items-center gap-3 justify-center relative">
         <h1 className="text-white flex items-center justify-center gap-2 flex-wrap text-sm lg:text-5xl text-opacity-80 leading-normal tracking-[0.7px] lg:tracking-[2.4px] text-center">
           <span className="relative flex items-center w-fit">
@@ -143,18 +143,34 @@ export default function Partners() {
           </span>
         </h1>
       </div>
-      <section className="flex flex-wrap items-center justify-center gap-4 lg:gap-16">
-        {images.map((partners, key) => (
-          <Image
-            key={key}
-            width={400}
-            height={200}
-            src={partners.img}
-            alt={partners.title}
-            className={`w-[45px] lg:w-60 h-auto aspect-auto`}
-          />
-        ))}
-      </section>
+      <div className="overflow-x-auto">
+        <div className="flex min-w-[1500px] md:min-w-[2000px] xl:min-w-full flex-col items-start xl:items-center justify-center gap-6 overflow-x-scroll">
+          <section className="flex items-center justify-center gap-4 lg:gap-16">
+            {images.slice(0, 5).map((partners, key) => (
+              <Image
+                key={key}
+                width={400}
+                height={200}
+                src={partners.img}
+                alt={partners.title}
+                className={`w-32 md:w-44 aspect-auto`}
+              />
+            ))}
+          </section>
+          <section className="flex items-center justify-center gap-4 lg:gap-16">
+            {images.slice(5, 9).map((partners, key) => (
+              <Image
+                key={key}
+                width={400}
+                height={200}
+                src={partners.img}
+                alt={partners.title}
+                className={`w-32 md:w-44 aspect-auto`}
+              />
+            ))}
+          </section>
+        </div>
+      </div>
     </section>
   );
 }

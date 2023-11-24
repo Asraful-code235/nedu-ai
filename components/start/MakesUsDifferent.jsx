@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function MakesUsDifferent() {
   return (
     <section className="dottedBackground p-6 md:p-12 xl:px-32 xl:py-16">
-      <section className="relative rounded-[60px] bg-[#FFE000] py-9 lg:py-28">
+      <section className="relative rounded-2xl lg:rounded-[60px] bg-[#FFE000] py-9 lg:py-28">
         <div className="flex flex-col items-start lg:items-center justify-start lg:justify-center gap-2 lg:gap-8">
           <div className="text-xl px-6 lg:px-0 text-start lg:text-center lg:text-5xl xl:text-6xl font-normal leading-normal text-black text-opacity-90">
             What makes us{" "}

@@ -1,6 +1,6 @@
 export default function Vision() {
   return (
-    <section className="pt-10 pb-6 px-6 md:pb-24 md:pt-6 md:px-6 flex flex-col gap-5 md:gap-12 xl:gap-32">
+    <section className="pt-10 pb-6 px-6 md:pb-24 md:pt-6 lg:px-32 flex flex-col gap-5 md:gap-12 xl:gap-32">
       <div className="flex flex-col gap-5 items-center justify-center text-center">
         <div className="relative">
           <h1 className=" text-xl md:text-5xl xl:text-6xl font-normal leading-normal lg:leading-normal tracking-[1px] md:tracking-[2.4px] xl:tracking-[3.2px] text-white text-opacity-80">

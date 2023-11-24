@@ -50,7 +50,7 @@ export default function GridItems() {
                 alt={item.title}
                 className="w-10 h-10 lg:w-24 lg:h-24 "
               />
-              <h3 className="text-darkYellow font-semibold leading-normal tracking-[0.4px] lg:tracking-[0.64px] xl:tracking-[0.8px] text-xl lg:text-[32px] xl:text-4xl">
+              <h3 className="text-darkYellow text-center font-semibold leading-normal tracking-[0.4px] lg:tracking-[0.64px] xl:tracking-[0.8px] text-xl lg:text-[32px] xl:text-4xl">
                 {item.title}
               </h3>
             </div>

@@ -73,7 +73,7 @@ const withNeduAi = [
 
 export default function JobGrind({ isNedu, setIsNedu, ...props }) {
   return (
-    <section className="grindGradient w-full relative">
+    <section className="w-full relative">
       <section className="p-6 md:p-10 xl:p-32 flex flex-col gap-5 lg:gap-8 xl:gap-16 items-center justify-center">
         <div className="flex flex-col items-center justify-center text-center gap-2 lg:gap-6 xl:gap-8">
           <div className="relative">
@@ -114,52 +114,26 @@ export default function JobGrind({ isNedu, setIsNedu, ...props }) {
           </button>
         </div>
 
-        <section className="mt-16 xl:mt-32">
+        <section className="">
           {!isNedu ? (
-            <section className="max-w-screen-2xl mx-auto grid grid-cols-2 lg:grid-cols-4 gap-[18px] lg:gap-[57px] xl:gap-[88px]">
-              {withoutNeduAi.map((item, key) => (
-                <div
-                  key={key}
-                  className="grindItemBox z-50 flex items-center justify-center flex-col gap-4 px-16 py-7 bg-white"
-                >
-                  <Image
-                    src={item.img}
-                    width={160}
-                    height={160}
-                    alt={item.title}
-                    className="w-full aspect-square"
-                  />
-                  <div className="visionParagraph text-center flex flex-col gap-1 text-xl font-bold leading-normal">
-                    <h3 className="">{item.title}</h3>
-                    <p className="font-normal text-opacity-70 italic whitespace-nowrap">
-                      {item.desc}
-                    </p>
-                  </div>
-                </div>
-              ))}
+            <section className="max-w-screen-2xl flex items-center justify-center">
+              <Image
+                src={"/icons/withoutNedu.svg"}
+                width={160}
+                height={160}
+                alt={"withoutNedu"}
+                className="w-full object-cover object-center"
+              />
             </section>
           ) : (
-            <section className="max-w-[1050px] flex flex-wrap items-center justify-center gap-[18px] lg:gap-[57px] xl:gap-[88px]">
-              {withNeduAi.map((item, key) => (
-                <div
-                  key={key}
-                  className="grindItemBoxWithNedu w-72 z-50 flex items-center justify-center flex-col gap-4 px-16 py-7 bg-white"
-                >
-                  <Image
-                    src={item.img}
-                    width={160}
-                    height={160}
-                    alt={item.title}
-                    className="w-full aspect-square"
-                  />
-                  <div className="visionParagraph text-center flex flex-col gap-1 text-xl font-bold leading-normal">
-                    <h3 className="">{item.title}</h3>
-                    <p className="font-normal text-opacity-70 italic whitespace-nowrap">
-                      {item.desc}
-                    </p>
-                  </div>
-                </div>
-              ))}
+            <section className="max-w-screen-2xl flex items-center justify-center">
+              <Image
+                src={"/icons/With NudeAI.svg"}
+                width={160}
+                height={160}
+                alt={"withoutNedu"}
+                className="w-full object-cover object-center"
+              />
             </section>
           )}
         </section>
