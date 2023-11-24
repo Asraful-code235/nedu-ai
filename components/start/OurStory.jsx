@@ -213,7 +213,7 @@ export default function OurStory() {
             ))}
           </section>
         </article>
-        <section className="flex flex-col  xl:flex-row items-start lg:items-center xl:items-start justify-center z-50 gap-28 xl:gap-64">
+        <section className="flex pt-24 flex-col xl:flex-row items-start lg:items-center xl:items-start justify-center xl:justify-between z-50 gap-10 lg:gap-28 ">
           <section className="flex flex-col items-start lg:items-center xl:items-start justify-center gap-2 lg:gap-8 xl:gap-6">
             <div className="flex mt-[66px] w-full items-start lg:items-center justify-start lg:justify-center xl:justify-start gap-3.5">
               <Image

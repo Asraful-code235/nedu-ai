@@ -2,7 +2,7 @@ import Image from "next/image";
 export default function ForIndividuals() {
   return (
     <div className="px-4 py-3 lg:p-12 xl:px-32 xl:py-24 flex flex-col xl:flex-row gap-6 lg:gap-16 xl:gap-10">
-      <div className="w-full aspect-square relative">
+      <div className="w-full flex-1 aspect-square relative">
         <Image
           src={"/icons/Dashboard3.svg"}
           width={1600}
@@ -25,7 +25,7 @@ export default function ForIndividuals() {
           className="w-full scale-[0.7] absolute -bottom-[7%] right-[18%]"
         />
       </div>
-      <article className="visionParagraph flex flex-col items-start lg:items-center xl:items-start justify-center gap-1 lg:gap-6">
+      <article className="visionParagraph flex-[0.75] flex flex-col items-start lg:items-center xl:items-start justify-center gap-1 lg:gap-6 py-16 lg:py-0">
         <h3 className=" text-white text-opacity-60 text-xs lg:text-4xl font-normal lg:font-medium leading-4 lg:leading-[30px]">
           For Individuals
         </h3>

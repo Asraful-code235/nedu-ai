@@ -16,7 +16,7 @@ import YouthEmpowerment from "@/components/start/YouthEmpowerment";
 
 export default function Home() {
   return (
-    <section className="">
+    <section className="overflow-hidden">
       <section className="bgImage hero overflow-hidden">
         <Navbar />
         <Hero />
