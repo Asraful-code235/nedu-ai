@@ -69,7 +69,7 @@ export default function Partners() {
               height="58"
               viewBox="0 0 52 58"
               fill="none"
-              className="-mt-4 mr-2 lg:w-[52px] lg:h-[58px] w-5 h-5"
+              className="-mt-1 mr-2 lg:w-[52px] lg:h-[58px] w-5 h-5"
             >
               <path
                 d="M49.9998 23.3677H46.229"
@@ -153,7 +153,7 @@ export default function Partners() {
                 height={200}
                 src={partners.img}
                 alt={partners.title}
-                className={`w-32 md:w-44 aspect-auto`}
+                className={`w-16 sm:w-32 md:w-44 aspect-auto`}
               />
             ))}
           </section>
@@ -165,7 +165,7 @@ export default function Partners() {
                 height={200}
                 src={partners.img}
                 alt={partners.title}
-                className={`w-32 md:w-44 aspect-auto`}
+                className={`w-16 sm:w-32 md:w-44 aspect-auto`}
               />
             ))}
           </section>

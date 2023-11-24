@@ -14,11 +14,12 @@ export default function Hero() {
             </span>
           </h1>
         </div>
-        <div className="visionParagraph flex items-start lg:items-center justify-start lg:justify-center text-start lg:text-center text-sm lg:text-[28px] leading-[20px] lg:leading-[45px]">
-          <p className="text-white text-opacity-40 font-normal ">
+        <div className="visionParagraph flex items-start lg:items-center justify-start lg:justify-center text-start lg:text-center text-sm lg:text-[28px] leading-[20px] lg:leading-[45px] mt-1">
+          <p className="text-white text-opacity-40 font-normal">
             Enabling your path to{" "}
             <span className="text-white text-opacity-80 font-semibold lg:font-bold">
               learn, succeed,
+              <br />
             </span>{" "}
             and{" "}
             <span className="text-white text-opacity-80 font-semibold lg:font-bold">
@@ -58,7 +59,7 @@ export default function Hero() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <div className="hover:bg-[#89adcc] hover:bg-opacity-100 transition-all duration-500 bg-white bg-opacity-40 px-1.5 py-1.5 text-xl font-semibold leading-5 tracking-[0.8px] rounded-full">
+              <div className="hover:bg-[#89adcc] hover:bg-opacity-100 transition-all duration-500 bg-white bg-opacity-40 px-2 py-1.5 text-xl font-semibold leading-5 tracking-[0.8px] rounded-full">
                 in
               </div>
             </a>
