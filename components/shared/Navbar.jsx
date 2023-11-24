@@ -17,15 +17,17 @@ export default function Navbar() {
       </div>
       <nav className=" items-center gap-8 hidden lg:flex">
         <span className="bg-[#2121214D] py-4 px-6 rounded-[32px]">
-          <Image
-            src={"/icons/Social Media CTA.png"}
-            width={32}
-            height={32}
-            alt="CellPhone_icon"
-            className="w-8 h-8 object-center object-cover rounded-full cursor-pointer "
-          />
+          <a
+            href="https://www.linkedin.com/company/neduai/?trk=similar-pages&originalSubdomain=fi"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className="hover:bg-[#89adcc] hover:bg-opacity-100 transition-all duration-500 bg-white bg-opacity-40 px-1.5 py-1.5 text-xl font-semibold leading-5 tracking-[0.8px] rounded-full">
+              in
+            </div>
+          </a>
         </span>
-        <Button className="flex items-center gap-3 text-lg lg:text-xl leading-5 tracking-wider">
+        <Button className="flex items-center gap-3 text-lg lg:text-xl leading-5 tracking-wider hover:bg-[#FFA937]">
           <Image
             src={"/icons/IcRoundPhone.png"}
             width={32}
@@ -33,7 +35,10 @@ export default function Navbar() {
             alt="CellPhone_icon"
             className="w-8 aspect-square"
           />
-          Contact Us
+
+          <a href="mailto:info@nedu.ai" target="_blank">
+            Contact Us
+          </a>
         </Button>
       </nav>
     </header>

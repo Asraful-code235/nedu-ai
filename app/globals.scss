@@ -59,11 +59,18 @@
 
 .bgImage {
   background: linear-gradient(0deg, #000 6.08%, rgba(0, 0, 0, 0) 90.77%),
-    url("/images/Billboard Main.webp"),
+    url("/images/BillboardMainBig.webp"),
     lightgray -2.954px -300.855px / 119.539% 136.153% no-repeat;
-
   background-position: center;
   background-size: cover;
+
+  @media screen and (max-width: 768px) {
+    background: linear-gradient(0deg, #000 6.08%, rgba(0, 0, 0, 0) 90.77%),
+      url("/images/BillboardMain.webp"),
+      lightgray -2.954px -300.855px / 119.539% 136.153% no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
 }
 
 .hero {

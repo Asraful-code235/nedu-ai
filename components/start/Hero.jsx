@@ -27,7 +27,7 @@ export default function Hero() {
             globally!
           </p>
         </div>
-        <Button className="hidden lg:flex w-fit px-[72px] py-4 items-center gap-3 mt-[32px]">
+        <Button className="hidden lg:flex w-fit px-[72px] py-4 items-center gap-3 mt-[32px] hover:bg-[#FFA937]">
           <Image
             src={"/icons/IcRoundPhone.png"}
             width={40}
@@ -35,10 +35,12 @@ export default function Hero() {
             alt="CellPhone_icon"
             className="w-10 aspect-square"
           />
-          Contact Us
+          <a href="mailto:info@nedu.ai" target="_blank">
+            Contact Us
+          </a>
         </Button>
         <div className="w-full items-center justify-start gap-3 flex lg:hidden">
-          <Button className="flex px-[16px] py-[5px] items-center gap-[10px] text-xs lg:text-xl leading-8 lg:leading-5 tracking-[0.48px] lg:tracking-wider">
+          <Button className="flex px-[16px] py-[5px] items-center gap-[10px] text-xs lg:text-xl leading-8 lg:leading-5 tracking-[0.48px] lg:tracking-wider hover:bg-[#FFA937]">
             <Image
               src={"/icons/IcRoundPhone.png"}
               width={32}
@@ -46,16 +48,20 @@ export default function Hero() {
               alt="CellPhone_icon"
               className="w-4 lg:w-8 h-4 lg:h-8 aspect-square"
             />
-            Contact Us
+            <a href="mailto:info@nedu.ai" target="_blank">
+              Contact Us
+            </a>
           </Button>
-          <span className="rounded-[32px]">
-            <Image
-              src={"/icons/Social Media CTA.png"}
-              width={32}
-              height={32}
-              alt="CellPhone_icon"
-              className="w-8 h-8 object-center object-cover rounded-full cursor-pointer "
-            />
+          <span className=" ">
+            <a
+              href="https://www.linkedin.com/company/neduai/?trk=similar-pages&originalSubdomain=fi"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="hover:bg-[#89adcc] hover:bg-opacity-100 transition-all duration-500 bg-white bg-opacity-40 px-1.5 py-1.5 text-xl font-semibold leading-5 tracking-[0.8px] rounded-full">
+                in
+              </div>
+            </a>
           </span>
         </div>
       </div>
