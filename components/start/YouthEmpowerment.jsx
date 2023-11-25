@@ -8,7 +8,7 @@ export default function YouthEmpowerment() {
         <div className="absolute top-[0px] z-10 left-0 right-0 [background:linear-gradient(180deg,_#000,_rgba(0,_0,_0,_0.6)_51.98%,_rgba(0,_0,_0,_0))] w-screen h-64" />
         <div className="absolute bottom-[0px] z-10 left-0 right-0 [background:linear-gradient(0deg,_#000,_rgba(0,_0,_0,_0.6)_51.98%,_rgba(0,_0,_0,_0))] w-screen h-64" />
         <div className="py-24 md:py-40 flex flex-col-reverse xl:flex-row items-center justify-center place-items-center w-screen">
-          <section className="p-4 xl:pl-32 w-full flex-[0.75] flex flex-col items-start md:gap-5 z-20">
+          <section className="px-4 xl:pl-32 w-full flex-[0.75] flex flex-col items-start md:gap-5 z-20">
             <Image
               src={"/images/unmilogo.svg"}
               width={750}
@@ -32,10 +32,10 @@ export default function YouthEmpowerment() {
                 Let&apos;s paint a vibrant future for Marbella&apos;s youth!
               </span>
             </p>
-            <div className="w-full mt-8 md:mt-0 flex flex-col gap-2 items-start md:items-center xl:items-start justify-center xl:justify-start">
+            <div className="w-full mt-8 md:mt-0 flex flex-col gap-1 items-start md:items-center xl:items-start justify-center xl:justify-start">
               <Button
                 variant="light"
-                className="bg-white w-fit text-[#0081B5] px-10 py-[10px] md:px-8 md:py-[8px] rounded-md md:rounded-xl text-xs md:text-2xl tracking-[0.058px] leading-[140.18%] font-semibold border-none"
+                className="bg-white w-fit text-[#0081B5] px-8 py-[8px] md:px-8 md:py-[8px] rounded-md md:rounded-xl text-xs md:text-2xl tracking-[0.058px] leading-[140.18%] font-semibold border-none"
               >
                 <a
                   href="https://happy-helpline-ai.vercel.app/"
@@ -47,11 +47,11 @@ export default function YouthEmpowerment() {
               </Button>
               <div className="flex items-center gap-2 ">
                 <img
-                  className=" w-6 h-6 overflow-hidden opacity-80"
+                  className="w-4 h-4 md:w-6 md:h-6 overflow-hidden opacity-80"
                   alt=""
                   src="/icons/majesticonslock.svg"
                 />
-                <p className="visionParagraph text-white font-medium leading-9 text-sm text-opacity-80 lg:text-xl">
+                <p className="visionParagraph text-white font-medium leading-9 text-xs md:text-sm text-opacity-80 lg:text-xl">
                   Restricted to registered users
                 </p>
               </div>
@@ -70,14 +70,14 @@ export default function YouthEmpowerment() {
               width={750}
               height={500}
               alt="conversation Panel"
-              className="w-full grow z-[5]"
+              className="w-full scale-[0.7] sm:scale-[1] sm:grow z-[5]"
             />
             <Image
               src={"/images/unmilogo.svg"}
               width={750}
               height={500}
               alt="conversation Panel"
-              className="w-full md:hidden grow z-[5] absolute bottom-[-1%] right-[-40%] scale-[0.1] opacity-50"
+              className="w-full md:hidden grow z-[5] absolute bottom-[-4%] right-[-40%] scale-[0.08] opacity-90"
             />
           </section>
         </div>

@@ -138,13 +138,15 @@ export default function OurStory() {
                 </div>
               </div>
               <section className=" xl:hidden overflow-x-scroll scrollbar-hidden">
-                <div className=" flex min-w-[800px] gap-14 items-start lg:items-center justify-start lg:justify-center">
+                <div className=" flex min-w-[800px] gap-14 py-6 items-start lg:items-center justify-start lg:justify-center">
                   {founders.map((founder, key) => (
-                    <div
+                    <a
+                      href={`mailto:${founder.mail}`}
+                      target="_blank"
                       key={key}
-                      className="flex flex-col items-center justify-center gap-3"
+                      className=" flex flex-col p-4 items-center justify-center gap-3"
                     >
-                      <div className="bg-[#27AE60] rounded-full w-44 h-44 p-4 relative overflow-hidden mb-2">
+                      <div className="border-[0.8px] border-black rounded-2xl w-[84px] h-[84px] p-4 relative overflow-hidden mb-2">
                         <Image
                           src={founder.img}
                           width={180}
@@ -157,28 +159,22 @@ export default function OurStory() {
                         <h4 className="font-bold text-xl xl:text-2xl leading-4 ">
                           {founder.name}
                         </h4>
-                        <h3 className="font-medium text-xl lg:text-2xl leading-4">
+                        <h3 className="font-medium text-xl lg:text-2xl leading-4 text-[#011B2E99]">
                           {founder.position}
                         </h3>
-                        <p className="text-xs xl:text-sm font-medium leading-4">
+                        <p className="text-xs xl:text-sm font-medium leading-4 text-[#011B2E]">
                           {founder.division}
                         </p>
-                        <div className="flex items-center gap-2 text-xs xl:text-sm font-medium leading-5">
+                        <div className="flex text-[#011B2E] items-center gap-2 text-xs xl:text-sm font-medium leading-5">
                           <img
                             src="/icons/mail.svg"
                             alt="mail"
                             className="w-5 h-5"
                           />
-                          <a
-                            href={`mailto:${founder.mail}`}
-                            target="_blank"
-                            className="underline"
-                          >
-                            {founder.mail}
-                          </a>
+                          <span className="underline">{founder.mail}</span>
                         </div>
                       </div>
-                    </div>
+                    </a>
                   ))}
                 </div>
               </section>
@@ -253,9 +249,17 @@ export default function OurStory() {
             {founders.map((founder, key) => (
               <div
                 key={key}
-                className="flex flex-col items-center justify-center gap-3"
+                className=" flex flex-col items-center justify-center gap-3"
               >
-                <div className="bg-[#27AE60] rounded-full w-44 h-44 p-4 relative overflow-hidden mb-2">
+                <div
+                  className={`${
+                    key == 0
+                      ? "bg-[#27AE60]"
+                      : key == 1
+                      ? "bg-[#30b8e1]"
+                      : "bg-[#9c27b0]"
+                  } rounded-full w-44 h-44 p-4 relative overflow-hidden mb-2`}
+                >
                   <Image
                     src={founder.img}
                     width={180}

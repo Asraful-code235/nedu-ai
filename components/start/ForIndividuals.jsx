@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 export default function ForIndividuals() {
   return (
-    <motion.div className="px-4 py-14 lg:p-12 xl:px-32 xl:py-24 flex flex-col xl:flex-row gap-6 lg:gap-16 xl:gap-10">
+    <motion.div className="px-4 py-12 lg:p-12 xl:px-32 xl:py-24 flex flex-col xl:flex-row gap-6 lg:gap-16 xl:gap-10">
       <div className="w-full flex-1 aspect-square relative">
         <Image
           src={"/icons/Dashboard3.svg"}
@@ -25,7 +25,7 @@ export default function ForIndividuals() {
             width={843}
             height={590}
             alt="dashboard2"
-            className="scale-[0.6] w-full"
+            className="scale-[0.4] sm:scale-[0.6] w-full"
           />
         </motion.div>
         <motion.div
@@ -49,10 +49,10 @@ export default function ForIndividuals() {
         <h3 className=" text-white text-opacity-60 text-xs lg:text-4xl font-normal lg:font-medium leading-4 lg:leading-[30px]">
           For Individuals
         </h3>
-        <h2 className="text-white font-bold leading-[23.8px] lg:leading-[60px] text-[17px] lg:text-[40px] tracking-[0.34px]">
+        <h2 className="text-white font-medium lg:font-bold leading-5 sm:leading-[23.8px] lg:leading-[60px] text-[17px] lg:text-[40px] tracking-[0.34px]">
           Shine Bright, Stand Out!
         </h2>
-        <p className="text-xs lg:text-xl text-start lg:text-center max-w-full lg:max-w-[704px] xl:max-w-full xl:text-start text-white font-medium leading-[17.4px] tracking-[0.12px] lg:leading-[40px] mt-4 lg:-mt-2">
+        <p className="text-xs lg:text-xl text-start lg:text-center max-w-full lg:max-w-[704px] xl:max-w-full xl:text-start text-white font-normal lg:font-medium leading-[17.4px]  tracking-[0.6px] sm:tracking-[0.12px] lg:leading-[40px] mt-4 lg:-mt-2">
           Your career&apos;s BFF! Chat your dream career into existence and
           watch NeduAI turn it into reality! It&apos;s not just planning;
           it&apos;s your GDPR-compliant magic wand. Pick, print, and power up

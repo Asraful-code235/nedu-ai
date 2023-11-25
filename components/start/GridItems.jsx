@@ -35,7 +35,7 @@ const items = [
 
 export default function GridItems() {
   return (
-    <section className="p-6 lg:p-10 xl:px-32 xl:py-40">
+    <section className="p-6 pt-20 lg:p-10 xl:px-32 xl:py-40">
       <ul className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 lg:gap-12">
         {items.map((item, key) => (
           <li
@@ -54,7 +54,7 @@ export default function GridItems() {
                 {item.title}
               </h3>
             </div>
-            <p className="visionParagraph text-xs  lg:text-xl xl:text-[22px] leading-5 lg:leading-[40px] lg:tracking-[0.4px] xl:tracking-[0.44px] font-medium text-white text-opacity-80 text-center">
+            <p className="visionParagraph text-xs lg:text-xl xl:text-[22px] leading-5 lg:leading-[40px] lg:tracking-[0.4px] xl:tracking-[0.44px] font-medium text-white text-opacity-80 text-center">
               {item.desc}
             </p>
           </li>

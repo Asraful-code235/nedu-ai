@@ -107,7 +107,7 @@ export default function JobGrind({ isNedu, setIsNedu, ...props }) {
             onClick={() => setIsNedu(false)}
             className={`${
               !isNedu ? "bg-[#ff980e] text-white" : "text-white"
-            } px-[14px] py-2 lg:px-8 lg:py-4 xl:px-[52px] xl:py-7 rounded-full text-[10px] lg:text-xl xl:text-3xl font-medium leading-normal tracking-[0.5px] lg:tracking-[1px] xl:tracking-[1.6px] `}
+            } px-[14px] py-1.5 lg:px-8 lg:py-4 xl:px-[52px] xl:py-7 rounded-full text-[10px] lg:text-xl xl:text-3xl font-medium leading-normal tracking-[0.5px] lg:tracking-[1px] xl:tracking-[1.6px] `}
           >
             Without NeduAI
           </button>
@@ -115,7 +115,7 @@ export default function JobGrind({ isNedu, setIsNedu, ...props }) {
             onClick={() => setIsNedu(true)}
             className={`${
               isNedu ? "bg-[#ff980e] text-white" : " text-white"
-            } px-[14px] py-2 lg:px-8 lg:py-4 xl:px-[52px] xl:py-7 rounded-full text-[10px] lg:text-xl xl:text-3xl font-medium leading-normal tracking-[0.5px] lg:tracking-[1px] xl:tracking-[1.6px]  `}
+            } px-[14px] py-1.5 lg:px-8 lg:py-4 xl:px-[52px] xl:py-7 rounded-full text-[10px] lg:text-xl xl:text-3xl font-medium leading-normal tracking-[0.5px] lg:tracking-[1px] xl:tracking-[1.6px]  `}
           >
             With NeduAI
           </button>
@@ -124,7 +124,7 @@ export default function JobGrind({ isNedu, setIsNedu, ...props }) {
         <section className="">
           {!isNedu ? (
             <div>
-              <section className="max-w-screen-2xl flex items-center justify-center">
+              <section className="max-w-screen-2xl hidden md:flex items-center justify-center">
                 <Image
                   src={"/icons/withoutNedu.svg"}
                   width={160}

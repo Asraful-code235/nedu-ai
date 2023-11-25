@@ -9,13 +9,13 @@ export default function Hero() {
         <div className="flex text-white items-start lg:items-center gap-3 w-full">
           <h1 className="text-white text-opacity-80  whitespace-nowrap flex flex-col items-start lg:items-center lg:flex-row justify-start lg:justify-between lg:gap-4 tracking-[1.2px]">
             The AI-powered
-            <span className="whitespace-nowrap flex items-center gap-4">
+            <span className="whitespace-nowrap flex items-center gap-1">
               future of <TextChange />
             </span>
           </h1>
         </div>
-        <div className="visionParagraph flex items-start lg:items-center justify-start lg:justify-center text-start lg:text-center text-sm lg:text-[28px] leading-[20px] lg:leading-[45px] lg:mt-1">
-          <p className="text-white text-opacity-50 lg:text-opacity-40 font-normal">
+        <div className="visionParagraph flex items-start lg:items-center justify-start lg:justify-center text-start lg:text-center text-sm lg:text-[28px] leading-[20px] tracking-[1px] lg:leading-[45px] -mt-2 lg:mt-1">
+          <p className="text-white text-opacity-70 lg:text-opacity-40 font-normal">
             Enabling your path to{" "}
             <span className="text-white text-opacity-80 font-semibold lg:font-bold">
               learn, succeed,
@@ -41,13 +41,13 @@ export default function Hero() {
           </a>
         </Button>
         <div className="w-full items-center justify-start gap-3 flex lg:hidden">
-          <Button className="flex px-[16px] py-[5px] items-center gap-[10px] text-xs lg:text-xl leading-8 lg:leading-5 tracking-[0.48px] lg:tracking-wider hover:bg-[#FFA937]">
+          <Button className="flex px-4 py-0 lg:px-[16px] lg:py-[5px] items-center gap-[10px] text-xs lg:text-xl leading-8 lg:leading-5 tracking-[0.48px] lg:tracking-wider hover:bg-[#FFA937]">
             <Image
               src={"/icons/IcRoundPhone.png"}
               width={32}
               height={32}
               alt="CellPhone_icon"
-              className="w-4 lg:w-8 h-4 lg:h-8 aspect-square"
+              className="w-[10px] lg:w-8 h-4 lg:h-8 aspect-square"
             />
             <a href="mailto:info@nedu.ai" target="_blank">
               Contact Us

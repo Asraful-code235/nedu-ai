@@ -5,58 +5,8 @@ import { useInView } from "react-intersection-observer";
 import Image from "next/image";
 
 export default function MakesUsDifferent({ isVisible }) {
-  const [ref, inView] = useInView({
-    triggerOnce: true, // Trigger the animation only once
-    threshold: 0.5, // Adjust the threshold as needed
-  });
-
-  const textAnimation = useAnimation();
-  const imageAnimations = [
-    useAnimation(),
-    useAnimation(),
-    useAnimation(),
-    useAnimation(),
-  ]; // Assuming there are four images
-
-  const [animated, setAnimated] = useState(false);
-
-  const animateText = () => {
-    if (inView && !animated) {
-      textAnimation.start({
-        opacity: 1,
-        y: 0,
-        transition: {
-          duration: 0.8,
-        },
-      });
-      setAnimated(true);
-    }
-  };
-
-  const animateImages = (index) => {
-    if (inView && !animated) {
-      imageAnimations[index].start({
-        opacity: 1,
-        x: 0,
-        transition: {
-          duration: 0.8,
-        },
-      });
-      setAnimated(true);
-    }
-  };
-
-  useEffect(() => {
-    animateText();
-    imageAnimations.forEach((animation, index) => {
-      animateImages(index);
-    });
-  }, [inView]);
   return (
-    <motion.div
-      ref={ref}
-      className="dottedBackground p-6 md:p-12 xl:px-32 xl:py-16"
-    >
+    <motion.div className="dottedBackground p-6 md:p-12 xl:px-32 xl:py-16">
       <motion.div className="relative rounded-2xl lg:rounded-[60px] bg-[#FFE000] py-9 lg:py-28">
         <div className="flex flex-col items-start lg:items-center justify-start lg:justify-center gap-2 lg:gap-8">
           <div className="text-xl px-4 lg:px-0 text-start lg:text-center lg:text-5xl xl:text-6xl font-normal leading-normal text-black text-opacity-90">
@@ -119,7 +69,7 @@ export default function MakesUsDifferent({ isVisible }) {
               </svg>
             </span>
           </div>
-          <p className="visionParagraph text-start lg:text-center px-4 lg:px-16 text-xs lg:text-xl xl:text-2xl font-medium text-black text-opacity-90 leading-[166.667%] lg:leading-[40px] lg:tracking-[0.4px] xl:tracking-[0.48px] ">
+          <p className="visionParagraph text-start lg:text-center px-4 lg:px-16 text-[11px] lg:text-xl xl:text-2xl font-medium text-black text-opacity-90 leading-[166.667%] lg:leading-[40px] lg:tracking-[0.4px] xl:tracking-[0.48px] ">
             Embark on a trailblazing journey with our AI-driven software,
             guiding you to the forefront of learning, job hunting, and
             recruiting. Explore our standout features!
@@ -145,7 +95,7 @@ export default function MakesUsDifferent({ isVisible }) {
                       scale: [0.5, 0.7, 1],
                     }}
                     // whileHover={{ scale: [null, 1.1, 1.14] }}
-                    transition={{ duration: 0.7 }}
+                    transition={{ duration: 0.4 }}
                     className="w-full absolute -bottom-[40%] -left-[24%]  object-cover ease-out object-center rounded-xl cursor-pointer"
                   >
                     <Image
@@ -157,10 +107,10 @@ export default function MakesUsDifferent({ isVisible }) {
                     />
                   </motion.div>
                   <motion.div
-                    whileInView={{
-                      x: [200, 0],
-                      scale: [0.5, 0.7, 1],
-                    }}
+                    // whileInView={{
+                    //   x: [200, 0],
+                    //   scale: [0.5, 0.7, 1],
+                    // }}
                     // whileHover={{ scale: [null, 1.1, 1.14] }}
                     transition={{ duration: 0.3 }}
                     className="w-full absolute bottom-[62%] left-[35%]  object-cover object-center rounded-xl"
@@ -170,34 +120,34 @@ export default function MakesUsDifferent({ isVisible }) {
                       width={600}
                       height={600}
                       alt="Dashboard"
-                      className="scale-[0.5] w-full"
+                      className="scale-[0.56] w-full"
                     />
                   </motion.div>
 
                   <motion.div
-                    whileInView={{
-                      x: [-200, 0],
-                      scale: [0.5, 0.7, 1],
-                    }}
+                    // whileInView={{
+                    //   x: [-100, 0],
+                    //   scale: [0.5, 1],
+                    // }}
                     // whileHover={{ scale: [null, 1.1, 1.14] }}
-                    transition={{ duration: 0.5 }}
-                    className="w-full absolute -top-[12%] right-[47%]  object-cover object-center rounded-xl"
+                    transition={{ duration: 0.4 }}
+                    className="w-full absolute -top-[16%] right-[47%]  object-cover object-center rounded-xl"
                   >
                     <Image
                       src={"/icons/FollowUp.webp"}
                       width={600}
                       height={600}
                       alt="Dashboard"
-                      className="w-full scale-[0.4]"
+                      className="w-full scale-[0.42]"
                     />
                   </motion.div>
                   <motion.div
-                    whileInView={{
-                      x: [200, 0],
-                      scale: [0.5, 0.7, 1],
-                    }}
+                    // whileInView={{
+                    //   x: [200, 0],
+                    //   scale: [0.5, 0.7, 1],
+                    // }}
                     // whileHover={{ scale: [null, 1.1, 1.14] }}
-                    transition={{ duration: 0.7 }}
+                    transition={{ duration: 0.5 }}
                     className="w-full absolute -bottom-[44%] left-[34%]  object-cover object-center rounded-xl"
                   >
                     <Image

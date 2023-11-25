@@ -11,7 +11,7 @@ export default function Navbar() {
           alt="Logo"
           className="w-7 h-7 lg:w-12 lg:h-12 object-center object-cover aspect-square"
         />
-        <p className="text-white font-semibold text-base lg:text-[28px] leading-normal tracking-[0.32px] lg:tracking-widest">
+        <p className="text-white font-medium lg:font-semibold text-base lg:text-[28px] leading-normal tracking-[0.32px] lg:tracking-widest">
           NeduAI
         </p>
       </div>

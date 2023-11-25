@@ -139,15 +139,15 @@ export default function Partners() {
             </svg>
             Joining
           </span>{" "}
-          forces for a better{" "}
+          forces for a{" "}
           <span className="font-semibold text-darkYellow text-opacity-100">
-            future
+            better future
           </span>
         </h1>
       </div>
       <div className="overflow-x-auto scrollbar-hidden">
         <div className="flex min-w-[1500px] md:min-w-[2000px] xl:min-w-full flex-col items-start xl:items-center justify-center gap-6 overflow-x-scroll scrollbar-hidden">
-          <section className="flex items-center justify-center gap-4 lg:gap-16">
+          <section className="flex items-center justify-center gap-5 lg:gap-16">
             {images.slice(0, 5).map((partners, key) => (
               <Image
                 key={key}
@@ -158,12 +158,12 @@ export default function Partners() {
                 className={`${
                   key === 4
                     ? "w-[32px] h-[17px] sm:w-[66px] sm:h-auto md:w-[113.349px] md:h-auto"
-                    : "w-[56px]"
+                    : "w-[58px]"
                 } sm:w-32 md:w-44 aspect-auto`}
               />
             ))}
           </section>
-          <section className="flex items-center justify-center gap-4 lg:gap-16">
+          <section className="flex items-center justify-center gap-6 lg:gap-16">
             {images.slice(5, 9).map((partners, key) => (
               <Image
                 key={key}

@@ -52,15 +52,15 @@ export default function WhoWeServe() {
           into an unforgettable experience!
         </p>
       </motion.div>
-      <motion.div className="mt-[64px] md:mt-[128px] lg:mt-[196px] flex flex-col-reverse xl:flex-row items-start justify-start gap-24 lg:gap-44 xl:gap-20">
-        <article className="visionParagraph  max-w-[733px] mx-auto  xl:flex-[0.75] xl:max-w-[770px] flex flex-col items-start justify-center gap-1 lg:gap-6">
+      <motion.div className=" mt-[64px] md:mt-[128px] lg:mt-[196px] flex flex-col-reverse xl:flex-row items-start justify-start gap-16 sm:gap-24 lg:gap-44 xl:gap-20">
+        <article className="visionParagraph max-w-[733px] mx-auto xl:flex-[0.75] xl:max-w-[770px] flex flex-col items-start justify-center gap-1 lg:gap-6">
           <h3 className=" text-white text-start lg:text-center w-full text-xs  xl:text-start text-opacity-60 lg:text-4xl font-medium leading-4 lg:leading-[30px]">
             For Recruitment
           </h3>
-          <h2 className="text-white w-full text-start text-[17px] lg:text-center xl:text-start font-bold lg:leading-[60px] tracking-[0.34px] lg:text-[40px]">
+          <h2 className="text-white w-full text-start text-[17px] lg:text-center xl:text-start font-medium lg:font-bold lg:leading-[60px] tracking-[1.4px] lg:text-[40px]">
             Identify the best candidates using our AI-talent hunt solution
           </h2>
-          <p className="text-xs lg:text-xl xl:max-w-full w-full text-start lg:text-center xl:text-start text-white font-medium leading-4 tracking-[0.12px] lg:leading-[40px] mt-2 lg:-mt-2">
+          <p className="text-xs lg:text-xl xl:max-w-full w-full text-start lg:text-center xl:text-start text-white font-normal lg:font-medium leading-4 tracking-[0.12px] lg:leading-[40px] mt-2 lg:-mt-2">
             Level up your recruitment game with NeduAI! Unlock innovative
             methods to attract top talents globally. Better understanding,
             better results — our 2-way translation ensures profiles speak the
@@ -76,7 +76,7 @@ export default function WhoWeServe() {
                   opacity: [0, 1],
                 }}
                 transition={{
-                  duration: 0.5,
+                  duration: 0.3,
                   ease: "easeOut",
                 }}
               >
