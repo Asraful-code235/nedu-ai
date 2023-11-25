@@ -20,7 +20,7 @@ export default function Home() {
       <section className="bgImage hero overflow-hidden">
         <Navbar />
         <Hero />
-        <div className="flex items-center justify-center pb-4">
+        <div className="flex lg:hidden items-center justify-center pb-4">
           <div className="w-[138px] h-[5px] bg-white bg-opacity-20 rounded-[5px] "></div>
         </div>
       </section>
