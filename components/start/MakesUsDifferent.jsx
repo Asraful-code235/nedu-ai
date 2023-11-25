@@ -1,9 +1,63 @@
+"use client";
+import { useEffect, useState } from "react";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import Image from "next/image";
 
-export default function MakesUsDifferent() {
+export default function MakesUsDifferent({ isVisible }) {
+  const [ref, inView] = useInView({
+    triggerOnce: true, // Trigger the animation only once
+    threshold: 0.5, // Adjust the threshold as needed
+  });
+
+  const textAnimation = useAnimation();
+  const imageAnimations = [
+    useAnimation(),
+    useAnimation(),
+    useAnimation(),
+    useAnimation(),
+  ]; // Assuming there are four images
+
+  const [animated, setAnimated] = useState(false);
+
+  const animateText = () => {
+    if (inView && !animated) {
+      textAnimation.start({
+        opacity: 1,
+        y: 0,
+        transition: {
+          duration: 0.8,
+        },
+      });
+      setAnimated(true);
+    }
+  };
+
+  const animateImages = (index) => {
+    if (inView && !animated) {
+      imageAnimations[index].start({
+        opacity: 1,
+        x: 0,
+        transition: {
+          duration: 0.8,
+        },
+      });
+      setAnimated(true);
+    }
+  };
+
+  useEffect(() => {
+    animateText();
+    imageAnimations.forEach((animation, index) => {
+      animateImages(index);
+    });
+  }, [inView]);
   return (
-    <section className="dottedBackground p-6 md:p-12 xl:px-32 xl:py-16">
-      <section className="relative rounded-2xl lg:rounded-[60px] bg-[#FFE000] py-9 lg:py-28">
+    <motion.div
+      ref={ref}
+      className="dottedBackground p-6 md:p-12 xl:px-32 xl:py-16"
+    >
+      <motion.div className="relative rounded-2xl lg:rounded-[60px] bg-[#FFE000] py-9 lg:py-28">
         <div className="flex flex-col items-start lg:items-center justify-start lg:justify-center gap-2 lg:gap-8">
           <div className="text-xl px-4 lg:px-0 text-start lg:text-center lg:text-5xl xl:text-6xl font-normal leading-normal text-black text-opacity-90">
             What makes us{" "}
@@ -84,40 +138,82 @@ export default function MakesUsDifferent() {
                     className="w-full object-cover object-center rounded-xl"
                     alt="Dashboard"
                   />
-                  <Image
-                    src={"/icons/callender.webp"}
-                    width={600}
-                    height={600}
-                    className="w-full absolute -bottom-[40%] -left-[24%] scale-[0.6] object-cover ease-out object-center rounded-xl cursor-pointer"
-                    alt="Dashboard"
-                  />
-                  <Image
-                    src={"/icons/Realtimejobtraking.webp"}
-                    width={600}
-                    height={600}
-                    className="w-full absolute bottom-[62%] left-[35%] scale-[0.5] object-cover object-center rounded-xl"
-                    alt="Dashboard"
-                  />
-                  <Image
-                    src={"/icons/FollowUp.webp"}
-                    width={600}
-                    height={600}
-                    className="w-full absolute -top-[12%] right-[47%] scale-[0.4] object-cover object-center rounded-xl"
-                    alt="Dashboard"
-                  />
-                  <Image
-                    src={"/icons/talentAssessment.webp"}
-                    width={600}
-                    height={600}
-                    className="w-full absolute -bottom-[44%] left-[34%] scale-[0.6] object-cover object-center rounded-xl"
-                    alt="Dashboard"
-                  />
+
+                  <motion.div
+                    whileInView={{
+                      x: [-200, 0],
+                      scale: [0.5, 0.7, 1],
+                    }}
+                    // whileHover={{ scale: [null, 1.1, 1.14] }}
+                    transition={{ duration: 0.7 }}
+                    className="w-full absolute -bottom-[40%] -left-[24%]  object-cover ease-out object-center rounded-xl cursor-pointer"
+                  >
+                    <Image
+                      src={"/icons/callender.webp"}
+                      width={600}
+                      height={600}
+                      className="w-full scale-[0.6]"
+                      alt="Dashboard"
+                    />
+                  </motion.div>
+                  <motion.div
+                    whileInView={{
+                      x: [200, 0],
+                      scale: [0.5, 0.7, 1],
+                    }}
+                    // whileHover={{ scale: [null, 1.1, 1.14] }}
+                    transition={{ duration: 0.3 }}
+                    className="w-full absolute bottom-[62%] left-[35%]  object-cover object-center rounded-xl"
+                  >
+                    <Image
+                      src={"/icons/Realtimejobtraking.webp"}
+                      width={600}
+                      height={600}
+                      alt="Dashboard"
+                      className="scale-[0.5] w-full"
+                    />
+                  </motion.div>
+
+                  <motion.div
+                    whileInView={{
+                      x: [-200, 0],
+                      scale: [0.5, 0.7, 1],
+                    }}
+                    // whileHover={{ scale: [null, 1.1, 1.14] }}
+                    transition={{ duration: 0.5 }}
+                    className="w-full absolute -top-[12%] right-[47%]  object-cover object-center rounded-xl"
+                  >
+                    <Image
+                      src={"/icons/FollowUp.webp"}
+                      width={600}
+                      height={600}
+                      alt="Dashboard"
+                      className="w-full scale-[0.4]"
+                    />
+                  </motion.div>
+                  <motion.div
+                    whileInView={{
+                      x: [200, 0],
+                      scale: [0.5, 0.7, 1],
+                    }}
+                    // whileHover={{ scale: [null, 1.1, 1.14] }}
+                    transition={{ duration: 0.7 }}
+                    className="w-full absolute -bottom-[44%] left-[34%]  object-cover object-center rounded-xl"
+                  >
+                    <Image
+                      src={"/icons/talentAssessment.webp"}
+                      width={600}
+                      height={600}
+                      alt="Dashboard"
+                      className="w-full scale-[0.6]"
+                    />
+                  </motion.div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-    </section>
+      </motion.div>
+    </motion.div>
   );
 }

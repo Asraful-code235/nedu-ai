@@ -2,15 +2,14 @@ import Image from "next/image";
 
 export default function ForEducation() {
   return (
-    <section className="p-4 lg:p-12 xl:px-32 xl:py-16">
+    <section className="visionParagraph p-4 lg:p-12 xl:px-32 xl:py-16">
       <div className="visionParagraph bg-[#2B44E7] rounded-xl lg:rounded-[64px] py-6 lg:py-[82px] xl:py-16 px-3 lg:px-[84px] xl:px-[150px] grid grid-cols-1 xl:grid-cols-2 place-content-center place-items-center gap-8 lg:gap-14 xl:gap-32">
         <article className="flex flex-col items-start lg:items-center xl:items-start justify-center gap-1 lg:gap-6">
           <h3 className=" text-white w-full text-start lg:text-center xl:text-start text-opacity-60 text-[10px] lg:text-[38px] xl:text-[1.8vw] font-medium leading-[30px]">
             For Education
           </h3>
           <h2 className="text-white text-start lg:text-center xl:text-start font-bold text-lg lg:text-4xl leading-7 lg:leading-10 xl:leading-normal xl:text-[2vw]">
-            Unlock brilliance in education <br />
-            with expert guidance
+            Unlock brilliance in education with expert guidance
           </h2>
           <p className="lg:text-xl text-start lg:text-center tracking-[0.24px] leading-4 lg:leading-10 xl:leading-normal text-xs xl:text-[1.3vw] xl:text-start text-white font-medium mt-3 lg:-mt-2">
             Slash dropouts, fast-track graduation, and explore data-driven

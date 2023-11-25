@@ -1,8 +1,10 @@
+"use client";
+import { motion } from "framer-motion";
 import Image from "next/image";
 export default function WhoWeServe() {
   return (
     <section className="lg:px-[70px] xl:px-32 px-4 pt-12 pb-10 xl:py-24">
-      <div className="lg:px-[70px] flex flex-col items-start lg:items-center justify-center text-center gap-3 lg:gap-[34px]">
+      <motion.div className="lg:px-[70px] flex flex-col items-start lg:items-center justify-center text-center gap-3 lg:gap-[34px]">
         <h1 className="visionParagraph text-start lg:text-center text-xl lg:text-5xl xl:text-6xl font-normal leading-normal text-white text-opacity-80">
           Who we{" "}
           <span className="text-darkYellow font-extrabold relative">
@@ -49,8 +51,8 @@ export default function WhoWeServe() {
           platform transforms learning, job searches, and talent recruitment
           into an unforgettable experience!
         </p>
-      </div>
-      <div className="mt-[64px] md:mt-[128px] lg:mt-[196px] flex flex-col-reverse xl:flex-row items-start justify-start gap-24 lg:gap-44 xl:gap-20">
+      </motion.div>
+      <motion.div className="mt-[64px] md:mt-[128px] lg:mt-[196px] flex flex-col-reverse xl:flex-row items-start justify-start gap-24 lg:gap-44 xl:gap-20">
         <article className="visionParagraph  max-w-[733px] mx-auto  xl:flex-[0.75] xl:max-w-[770px] flex flex-col items-start justify-center gap-1 lg:gap-6">
           <h3 className=" text-white text-start lg:text-center w-full text-xs  xl:text-start text-opacity-60 lg:text-4xl font-medium leading-4 lg:leading-[30px]">
             For Recruitment
@@ -69,31 +71,59 @@ export default function WhoWeServe() {
         <div className="w-full aspect-[16/10] flex-1">
           <div className="dashboard2Before relative">
             <div className="dashboard3Before relative">
-              <Image
-                src={"/images/Dashboard2.png"}
-                width={843}
-                height={590}
-                alt="dashboard2"
-                className="w-full h-full"
-              />
-              <Image
-                src={"/icons/dashboard2Before1.png"}
-                width={843}
-                height={590}
-                alt="dashboard2"
-                className="w-full scale-[0.36] absolute bottom-[64%] -right-20"
-              />
-              <Image
-                src={"/icons/dashboard2Before2.png"}
-                width={843}
-                height={590}
-                alt="dashboard2"
-                className="w-full scale-[0.4] absolute top-[75%] -left-[24%]"
-              />
+              <motion.div
+                whileInView={{
+                  opacity: [0, 1],
+                }}
+                transition={{
+                  duration: 0.5,
+                  ease: "easeOut",
+                }}
+              >
+                <Image
+                  src={"/images/Dashboard2.png"}
+                  width={843}
+                  height={590}
+                  alt="dashboard2"
+                  className="w-full h-full"
+                />
+              </motion.div>
+              <motion.div
+                whileInView={{
+                  x: [200, 0],
+                }}
+                whileHover={{ scale: [null, 1.1, 1.14] }}
+                transition={{ duration: 0.3 }}
+                className="w-full  absolute bottom-[64%] -right-20"
+              >
+                <Image
+                  src={"/icons/dashboard2Before1.png"}
+                  width={843}
+                  height={590}
+                  alt="dashboard2"
+                  className="w-full scale-[0.36]"
+                />
+              </motion.div>
+              <motion.div
+                whileInView={{
+                  x: [-200, 0],
+                }}
+                whileHover={{ scale: [null, 1.1, 1.14] }}
+                transition={{ duration: 0.3 }}
+                className="w-full  absolute top-[75%] -left-[24%]"
+              >
+                <Image
+                  src={"/icons/dashboard2Before2.png"}
+                  width={843}
+                  height={590}
+                  className="w-full scale-[0.4]"
+                  alt="dashboard2"
+                />
+              </motion.div>
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }

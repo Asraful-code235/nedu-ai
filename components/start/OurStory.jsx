@@ -22,7 +22,7 @@ const founders = [
     name: "Kari Savolainen",
     position: "COO, CMO",
     division: "Sales & Partnerships",
-    mail: "Kari@nedu.ai",
+    mail: "kari@nedu.ai",
   },
 ];
 

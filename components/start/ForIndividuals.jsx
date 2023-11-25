@@ -1,7 +1,9 @@
+"use client";
+import { motion } from "framer-motion";
 import Image from "next/image";
 export default function ForIndividuals() {
   return (
-    <div className="px-4 py-14 lg:p-12 xl:px-32 xl:py-24 flex flex-col xl:flex-row gap-6 lg:gap-16 xl:gap-10">
+    <motion.div className="px-4 py-14 lg:p-12 xl:px-32 xl:py-24 flex flex-col xl:flex-row gap-6 lg:gap-16 xl:gap-10">
       <div className="w-full flex-1 aspect-square relative">
         <Image
           src={"/icons/Dashboard3.svg"}
@@ -10,26 +12,44 @@ export default function ForIndividuals() {
           alt="dashboard2"
           className="w-full h-full"
         />
-        <Image
-          src={"/icons/compliance.png"}
-          width={843}
-          height={590}
-          alt="dashboard2"
-          className="w-full scale-[0.6] absolute bottom-[72%] -right-[26%]"
-        />
-        <Image
-          src={"/icons/talentcard.svg"}
-          width={843}
-          height={590}
-          alt="dashboard2"
-          className="w-full scale-[0.48] absolute -bottom-[5%] right-[22%]"
-        />
+        <motion.div
+          whileInView={{
+            x: [200, 0],
+          }}
+          whileHover={{ scale: [null, 1.1, 1.14] }}
+          transition={{ duration: 0.3 }}
+          className="w-full  absolute bottom-[72%] -right-[26%]"
+        >
+          <Image
+            src={"/icons/compliance.png"}
+            width={843}
+            height={590}
+            alt="dashboard2"
+            className="scale-[0.6] w-full"
+          />
+        </motion.div>
+        <motion.div
+          whileInView={{
+            x: [-200, 0],
+          }}
+          whileHover={{ scale: [null, 1.1, 1.14] }}
+          transition={{ duration: 0.3 }}
+          className="w-full  absolute -bottom-[5%] right-[22%]"
+        >
+          <Image
+            src={"/icons/talentcard.svg"}
+            width={843}
+            height={590}
+            alt="dashboard2"
+            className="w-full scale-[0.48]"
+          />
+        </motion.div>
       </div>
       <article className="visionParagraph flex-[0.75] flex flex-col items-start lg:items-center xl:items-start justify-center gap-1 lg:gap-6 py-8 lg:py-0">
         <h3 className=" text-white text-opacity-60 text-xs lg:text-4xl font-normal lg:font-medium leading-4 lg:leading-[30px]">
           For Individuals
         </h3>
-        <h2 className="text-white font-bold leading-6 lg:leading-[60px] text-base lg:text-[40px] tracking-[0.34px]">
+        <h2 className="text-white font-bold leading-[23.8px] lg:leading-[60px] text-[17px] lg:text-[40px] tracking-[0.34px]">
           Shine Bright, Stand Out!
         </h2>
         <p className="text-xs lg:text-xl text-start lg:text-center max-w-full lg:max-w-[704px] xl:max-w-full xl:text-start text-white font-medium leading-[17.4px] tracking-[0.12px] lg:leading-[40px] mt-4 lg:-mt-2">
@@ -40,6 +60,6 @@ export default function ForIndividuals() {
           ready for the future!
         </p>
       </article>
-    </div>
+    </motion.div>
   );
 }
