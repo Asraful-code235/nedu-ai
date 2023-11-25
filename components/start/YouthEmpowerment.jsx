@@ -35,7 +35,7 @@ export default function YouthEmpowerment() {
             <div className="w-full mt-8 md:mt-0 flex flex-col gap-2 items-start md:items-center xl:items-start justify-center xl:justify-start">
               <Button
                 variant="light"
-                className="bg-white w-fit text-[#0081B5] px-8 py-[10px] md:px-8 md:py-[8px] rounded-md md:rounded-xl text-xs md:text-2xl tracking-[0.058px] leading-[140.18%] font-semibold border-none"
+                className="bg-white w-fit text-[#0081B5] px-10 py-[10px] md:px-8 md:py-[8px] rounded-md md:rounded-xl text-xs md:text-2xl tracking-[0.058px] leading-[140.18%] font-semibold border-none"
               >
                 <a
                   href="https://happy-helpline-ai.vercel.app/"

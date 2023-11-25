@@ -77,14 +77,21 @@ export default function JobGrind({ isNedu, setIsNedu, ...props }) {
       <section className="p-[23px] md:p-10 xl:p-32 flex flex-col gap-5 lg:gap-8 xl:gap-16 items-center justify-center">
         <div className="flex flex-col items-center justify-center text-center gap-2 lg:gap-6 xl:gap-8">
           <div className="relative w-full text-start lg:text-center">
-            <h1 className="text-xl lg:text-2xl md:text-5xl xl:text-6xl font-normal text-white text-opacity-80 leading-normal tracking-[0.8px] lg:tracking-[2.4px] xl:tracking-[3.2px]">
+            <h1 className="text-xl lg:text-5xl xl:text-6xl font-normal text-white text-opacity-80 lg:leading-normal tracking-[1px] lg:tracking-[2.4px] xl:tracking-[3.2px]">
               <span className="text-darkYellow text-opacity-100 font-bold">
-                The
-              </span>{" "}
+                The{" "}
+              </span>
               job application{" "}
-              <span className="text-darkYellow text-opacity-100 font-bold">
-                grind
-              </span>{" "}
+              <span className="text-darkYellow relative text-opacity-100 font-bold">
+                grind{" "}
+                <Image
+                  src={"/images/gearset.svg"}
+                  width={100}
+                  height={100}
+                  alt="gearset"
+                  className="absolute w-7 lg:w-14 top-[-120%] lg:top-[-80%] right-[-20%] lg:right-[-15%] xl:right-[-10%] xl:top-[-60%]"
+                />
+              </span>
               is real
             </h1>
           </div>
@@ -117,7 +124,7 @@ export default function JobGrind({ isNedu, setIsNedu, ...props }) {
         <section className="">
           {!isNedu ? (
             <div>
-              <section className="max-w-screen-2xl hidden md:flex items-center justify-center">
+              <section className="max-w-screen-2xl flex items-center justify-center">
                 <Image
                   src={"/icons/withoutNedu.svg"}
                   width={160}

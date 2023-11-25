@@ -156,7 +156,9 @@ export default function Partners() {
                 src={partners.img}
                 alt={partners.title}
                 className={`${
-                  key === 4 ? "w-[32px] h-[17px]" : "w-[56px]"
+                  key === 4
+                    ? "w-[32px] h-[17px] sm:w-[66px] sm:h-auto md:w-[113.349px] md:h-auto"
+                    : "w-[56px]"
                 } sm:w-32 md:w-44 aspect-auto`}
               />
             ))}
