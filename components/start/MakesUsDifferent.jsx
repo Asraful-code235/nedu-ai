@@ -76,10 +76,17 @@ export default function MakesUsDifferent({ isVisible }) {
           </p>
         </div>
 
-        <div className="py-8 xl:px-60 xl:py-60 lg:p-[96px] p-6 border border-transparent rounded-lg">
+        <motion.div className="py-8 xl:px-60 xl:py-60 lg:p-[96px] p-6 border border-transparent rounded-lg">
           <div className="DashboardBefore relative flex items-center justify-center">
             <div className=" DashboardBefore1 relative">
-              <div className=" DashboardBefore2 relative">
+              <motion.div
+                whileInView={{
+                  opacity: [0, 1],
+                  scale: [0.5, 1.05, 1],
+                }}
+                transition={{ duration: 0.5, ease: "easeOut" }}
+                className=" DashboardBefore2 relative"
+              >
                 <div className="w-[60vw] DashboardBefore3 relative">
                   <Image
                     src={"/icons/Dashboard.webp"}
@@ -90,12 +97,12 @@ export default function MakesUsDifferent({ isVisible }) {
                   />
 
                   <motion.div
-                    whileInView={{
-                      x: [-200, 0],
-                      scale: [0.5, 0.7, 1],
-                    }}
+                    // whileInView={{
+                    //   x: [-200, 0],
+                    //   scale: [0.5, 0.7, 1],
+                    // }}
                     // whileHover={{ scale: [null, 1.1, 1.14] }}
-                    transition={{ duration: 0.4 }}
+                    // transition={{ duration: 0.4 }}
                     className="w-full absolute -bottom-[40%] -left-[24%]  object-cover ease-out object-center rounded-xl cursor-pointer"
                   >
                     <Image
@@ -112,7 +119,7 @@ export default function MakesUsDifferent({ isVisible }) {
                     //   scale: [0.5, 0.7, 1],
                     // }}
                     // whileHover={{ scale: [null, 1.1, 1.14] }}
-                    transition={{ duration: 0.3 }}
+                    // transition={{ duration: 0.3 }}
                     className="w-full absolute bottom-[62%] left-[35%]  object-cover object-center rounded-xl"
                   >
                     <Image
@@ -130,7 +137,7 @@ export default function MakesUsDifferent({ isVisible }) {
                     //   scale: [0.5, 1],
                     // }}
                     // whileHover={{ scale: [null, 1.1, 1.14] }}
-                    transition={{ duration: 0.4 }}
+                    // transition={{ duration: 0.4 }}
                     className="w-full absolute -top-[16%] right-[47%]  object-cover object-center rounded-xl"
                   >
                     <Image
@@ -147,7 +154,7 @@ export default function MakesUsDifferent({ isVisible }) {
                     //   scale: [0.5, 0.7, 1],
                     // }}
                     // whileHover={{ scale: [null, 1.1, 1.14] }}
-                    transition={{ duration: 0.5 }}
+                    // transition={{ duration: 0.5 }}
                     className="w-full absolute -bottom-[44%] left-[34%]  object-cover object-center rounded-xl"
                   >
                     <Image
@@ -159,10 +166,10 @@ export default function MakesUsDifferent({ isVisible }) {
                     />
                   </motion.div>
                 </div>
-              </div>
+              </motion.div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </motion.div>
     </motion.div>
   );

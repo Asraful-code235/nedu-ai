@@ -100,16 +100,9 @@ export default function Form() {
             onChange={handleCountryChange}
             className="outline-none bg-transparent text-white"
           >
-            {Object.entries(CountryAndFlags).map(([country, iconPath]) => (
-              <option key={country} value={country}>
-                <img
-                  src={iconPath}
-                  alt={`${country} flag`}
-                  className="w-4 h-4 mr-2"
-                />
-                {country}
-              </option>
-            ))}
+            {/* {Object.entries(CountryAndFlags).map(([country, iconPath]) => ( */}
+            <option value={"Spain"}>sp</option>
+            {/* ))} */}
           </select>
           <input
             type="tel"

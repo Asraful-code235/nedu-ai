@@ -123,6 +123,27 @@ html {
   box-shadow: 15px 15px 1px -3px #ff980e;
 }
 
+.neduAiGrind {
+  position: relative;
+  @media screen and (max-width: 768px) {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 252px;
+      height: 100%;
+      background: linear-gradient(
+        0deg,
+        #000 6.08%,
+        rgba(0, 0, 0, 0.6) 50.1%,
+        rgba(0, 0, 0, 0) 90.77%
+      );
+
+      transform: rotate(-90deg);
+      right: -10%;
+      z-index: 10;
+    }
+  }
+}
 // .dottedBackground {
 //   background-image: url("/icons/dottedVector.svg");
 //   background-position: center;

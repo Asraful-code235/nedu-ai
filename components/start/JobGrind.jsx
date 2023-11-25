@@ -15,7 +15,7 @@ const withoutNeduAi = [
   {
     img: "/icons/notify.svg",
     title: "Notify",
-    desc: "Inform recruiters/educators",
+    desc: "Inform recruiters/ educators",
   },
   {
     img: "/icons/impact.svg",
@@ -74,7 +74,7 @@ const withNeduAi = [
 export default function JobGrind({ isNedu, setIsNedu, ...props }) {
   return (
     <section className="w-full relative">
-      <section className="p-[23px] md:p-10 xl:p-32 flex flex-col gap-5 lg:gap-8 xl:gap-16 items-center justify-center">
+      <section className="p-[23px] md:p-10 xl:p-32 flex flex-col gap-5 lg:gap-8 xl:gap-16 items-center justify-center overflow-hidden">
         <div className="flex flex-col items-center justify-center text-center gap-2 lg:gap-6 xl:gap-8">
           <div className="relative w-full text-start lg:text-center">
             <h1 className="text-xl lg:text-5xl xl:text-6xl font-normal text-white text-opacity-80 lg:leading-normal tracking-[1px] lg:tracking-[2.4px] xl:tracking-[3.2px]">
@@ -121,9 +121,9 @@ export default function JobGrind({ isNedu, setIsNedu, ...props }) {
           </button>
         </div>
 
-        <section className="">
+        <section className=" w-full">
           {!isNedu ? (
-            <div>
+            <div className="neduAiGrind  ">
               <section className="max-w-screen-2xl hidden md:flex items-center justify-center">
                 <Image
                   src={"/icons/withoutNedu.svg"}
@@ -133,32 +133,34 @@ export default function JobGrind({ isNedu, setIsNedu, ...props }) {
                   className="w-full object-cover object-center"
                 />
               </section>
-              {/* <section className="flex min-w-[2000px] items-center justify-center p-4 md:hidden overflow-x-auto border border-red-500">
-                <div className="flex items-start justify-start gap-8 overflow-x-auto ">
+              <section className=" py-6 p-3 block md:hidden scrollbar-hidden overflow-x-scroll ">
+                <div className="flex items-start justify-start gap-8 min-w-[1200px] ">
                   {withoutNeduAi.map((item, key) => (
                     <div
                       key={key}
-                      className={`flex relative flex-shrink-0 flex-col justify-center items-end ${
-                        key % 2 !== 0 ? "mt-14" : ""
+                      className={`flex w-fit relative flex-shrink-0 flex-col justify-center items-end ${
+                        key % 2 !== 0 ? "mt-20" : ""
                       }`}
                     >
                       <div className="relative">
-                        <Image
-                          src={item.img}
-                          width={160}
-                          height={160}
-                          alt={"withoutNedu"}
-                          className="w-[60px] h-[60px]  rounded-full"
-                        />
-                        <span className="text-white absolute top-[-8%] left-[-32%] text-opacity-30 text-xl font-bold leading-normal">
+                        <div className="w-14 h-14 rounded-full bg-white overflow-hidden">
+                          <Image
+                            src={item.img}
+                            width={160}
+                            height={160}
+                            alt={"withoutNedu"}
+                            className="w-full h-full scale-[0.8] rounded-full"
+                          />
+                        </div>
+                        <span className="text-white absolute top-[-10%] left-[-48%] text-opacity-30 text-xl font-bold leading-normal">
                           0{key + 1}
                         </span>
                       </div>
-                      <div className="visionParagraph text-white text-opacity-70 flex flex-col justify-center items-end">
+                      <div className="visionParagraph text-white flex flex-col justify-center items-end">
                         <h3 className="text-xs leading-normal font-bold text-right">
                           {item.title}
                         </h3>
-                        <p className="text-right max-w-[84px] text-[10px] italic font-normal leading-normal">
+                        <p className="text-right max-w-[96px] text-opacity-70 text-[10px] italic tracking-[0.01px] font-normal leading-normal">
                           {item.desc}
                         </p>
                       </div>
@@ -171,18 +173,61 @@ export default function JobGrind({ isNedu, setIsNedu, ...props }) {
                     </div>
                   ))}
                 </div>
-              </section> */}
+              </section>
             </div>
           ) : (
-            <section className="max-w-screen-2xl flex items-center justify-center">
-              <Image
-                src={"/icons/With NudeAI.svg"}
-                width={160}
-                height={160}
-                alt={"withoutNedu"}
-                className="w-full object-cover object-center"
-              />
-            </section>
+            <div className="neduAiGrind">
+              <section className="max-w-screen-2xl hidden md:flex items-center justify-center">
+                <Image
+                  src={"/icons/With NudeAI.svg"}
+                  width={160}
+                  height={160}
+                  alt={"withoutNedu"}
+                  className="w-full object-cover object-center"
+                />
+              </section>
+              <section className="py-6 p-3 block md:hidden scrollbar-hidden overflow-x-scroll ">
+                <div className="flex items-start justify-start gap-8 min-w-[800px] ">
+                  {withNeduAi.map((item, key) => (
+                    <div
+                      key={key}
+                      className={`flex w-fit relative flex-shrink-0 flex-col justify-center items-end ${
+                        key % 2 !== 0 ? "mt-20" : ""
+                      }`}
+                    >
+                      <div className="relative">
+                        <div className="w-14 h-14 rounded-full bg-white overflow-hidden">
+                          <Image
+                            src={item.img}
+                            width={160}
+                            height={160}
+                            alt={"withoutNedu"}
+                            className="w-full h-full scale-[0.8]"
+                          />
+                        </div>
+                        <span className="text-[#FF980E] absolute top-[-10%] left-[-48%]  text-xl font-bold leading-normal">
+                          0{key + 1}
+                        </span>
+                      </div>
+                      <div className="visionParagraph text-white  flex flex-col justify-center items-end">
+                        <h3 className="text-xs leading-normal font-bold text-right">
+                          {item.title}
+                        </h3>
+                        <p className="text-right max-w-[84px] text-[10px] italic font-normal leading-normal">
+                          {item.desc}
+                        </p>
+                      </div>
+                      <Image
+                        src={"/icons/arroworangedown.svg"}
+                        width={4}
+                        height={400}
+                        className="w-1 h-full absolute -right-[20%] top-0 bottom-0"
+                      />
+                    </div>
+                  ))}
+                </div>
+              </section>
+            </div>
           )}
         </section>
       </section>

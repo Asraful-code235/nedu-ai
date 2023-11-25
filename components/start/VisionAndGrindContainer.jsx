@@ -26,6 +26,7 @@ export default function VisionAndGrindContainer() {
           </>
         )} */}
         <Vision isNedu={isNedu} />
+
         <JobGrind isNedu={isNedu} setIsNedu={setIsNedu} />
         <MakesUsDifferent />
       </div>
