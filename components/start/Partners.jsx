@@ -26,9 +26,9 @@ const images = [
     height: "67px",
   },
   {
-    img: "/images/linkedin.webp",
-    title: "linkedin",
-    width: "253px",
+    img: "/images/edx.svg",
+    title: "edx",
+    width: "113.349px",
     height: "64px",
   },
   {
@@ -37,6 +37,7 @@ const images = [
     width: "238.124px",
     height: "33.812px",
   },
+
   {
     img: "/images/udemy.webp",
     title: "udemy",
@@ -44,11 +45,12 @@ const images = [
     height: "64px",
   },
   {
-    img: "/images/edx.webp",
-    title: "edx",
-    width: "113.349px",
+    img: "/images/linkedin.webp",
+    title: "linkedin",
+    width: "253px",
     height: "64px",
   },
+
   {
     img: "/images/openai.webp",
     title: "openai",
@@ -61,7 +63,7 @@ export default function Partners() {
   return (
     <section className="p-6 md:p-12 overflow-hidden xl:px-32 xl:py-16 md:mt-6 lg:mt-20 flex flex-col gap-6 lg:gap-32">
       <div className="flex items-center gap-3 justify-center relative">
-        <h1 className="text-white flex items-center justify-center gap-2 flex-wrap text-sm lg:text-5xl text-opacity-80 leading-normal tracking-[0.7px] lg:tracking-[2.4px] text-center">
+        <h1 className="text-white flex items-center justify-center gap-1 flex-wrap text-sm lg:text-5xl text-opacity-80 leading-normal tracking-[0.7px] lg:tracking-[2.4px] text-center">
           <span className="relative flex items-center w-fit">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -69,7 +71,7 @@ export default function Partners() {
               height="58"
               viewBox="0 0 52 58"
               fill="none"
-              className="-mt-1 mr-2 lg:w-[52px] lg:h-[58px] w-5 h-5"
+              className="-mt-1 mr-1 lg:w-[52px] lg:h-[58px] w-5 h-5"
             >
               <path
                 d="M49.9998 23.3677H46.229"
@@ -153,7 +155,9 @@ export default function Partners() {
                 height={200}
                 src={partners.img}
                 alt={partners.title}
-                className={`w-16 sm:w-32 md:w-44 aspect-auto`}
+                className={`${
+                  key === 4 ? "w-[32px] h-[17px]" : "w-[56px]"
+                } sm:w-32 md:w-44 aspect-auto`}
               />
             ))}
           </section>

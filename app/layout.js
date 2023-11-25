@@ -9,12 +9,6 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <Head>
-        <link
-          href="https://api.fontshare.com/v2/css?f[]=clash-display@200,400,700,500,600,300&display=swap"
-          rel="stylesheet"
-        />
-      </Head>
       <body className="bg-[#010101] scrollbar-hidden">
         <main>{children}</main>
       </body>

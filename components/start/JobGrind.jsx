@@ -95,7 +95,7 @@ export default function JobGrind({ isNedu, setIsNedu, ...props }) {
             extraordinary!
           </p>
         </div>
-        <div className="w-fit transition-colors duration-500 delay-500 flex justify-center items-center gap-6 xl:gap-10 p-1 lg:p-[10px] xl:p-4 rounded-full bg-[#2E2E2E] border md:border-2 border-[#595959]">
+        <div className="w-fit transition-colors duration-500 delay-500 flex justify-center items-center gap-6 xl:gap-10 p-1 lg:p-[10px] xl:p-4 rounded-full bg-[#2E2E2E] border  md:border-2 border-[#595959]">
           <button
             onClick={() => setIsNedu(false)}
             className={`${
@@ -116,15 +116,56 @@ export default function JobGrind({ isNedu, setIsNedu, ...props }) {
 
         <section className="">
           {!isNedu ? (
-            <section className="max-w-screen-2xl flex items-center justify-center">
-              <Image
-                src={"/icons/withoutNedu.svg"}
-                width={160}
-                height={160}
-                alt={"withoutNedu"}
-                className="w-full object-cover object-center"
-              />
-            </section>
+            <div>
+              <section className="max-w-screen-2xl hidden md:flex items-center justify-center">
+                <Image
+                  src={"/icons/withoutNedu.svg"}
+                  width={160}
+                  height={160}
+                  alt={"withoutNedu"}
+                  className="w-full object-cover object-center"
+                />
+              </section>
+              {/* <section className="flex min-w-[2000px] items-center justify-center p-4 md:hidden overflow-x-auto border border-red-500">
+                <div className="flex items-start justify-start gap-8 overflow-x-auto ">
+                  {withoutNeduAi.map((item, key) => (
+                    <div
+                      key={key}
+                      className={`flex relative flex-shrink-0 flex-col justify-center items-end ${
+                        key % 2 !== 0 ? "mt-14" : ""
+                      }`}
+                    >
+                      <div className="relative">
+                        <Image
+                          src={item.img}
+                          width={160}
+                          height={160}
+                          alt={"withoutNedu"}
+                          className="w-[60px] h-[60px]  rounded-full"
+                        />
+                        <span className="text-white absolute top-[-8%] left-[-32%] text-opacity-30 text-xl font-bold leading-normal">
+                          0{key + 1}
+                        </span>
+                      </div>
+                      <div className="visionParagraph text-white text-opacity-70 flex flex-col justify-center items-end">
+                        <h3 className="text-xs leading-normal font-bold text-right">
+                          {item.title}
+                        </h3>
+                        <p className="text-right max-w-[84px] text-[10px] italic font-normal leading-normal">
+                          {item.desc}
+                        </p>
+                      </div>
+                      <Image
+                        src={"/images/arrowdown.svg"}
+                        width={4}
+                        height={400}
+                        className="w-1 h-full absolute -right-[20%] top-0 bottom-0"
+                      />
+                    </div>
+                  ))}
+                </div>
+              </section> */}
+            </div>
           ) : (
             <section className="max-w-screen-2xl flex items-center justify-center">
               <Image
