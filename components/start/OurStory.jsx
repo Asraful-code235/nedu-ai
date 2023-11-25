@@ -138,13 +138,13 @@ export default function OurStory() {
                 </div>
               </div>
               <section className=" xl:hidden overflow-x-scroll scrollbar-hidden">
-                <div className=" flex min-w-[800px] gap-14 py-6 items-start lg:items-center justify-start lg:justify-center">
+                <div className=" flex min-w-[800px] gap-4 lg:gap-14 py-6 items-start lg:items-center justify-start lg:justify-center">
                   {founders.map((founder, key) => (
                     <a
                       href={`mailto:${founder.mail}`}
                       target="_blank"
                       key={key}
-                      className=" flex flex-col p-4 items-center justify-center gap-3"
+                      className=" flex drop-shadow-lg shadow-md rounded-lg flex-col p-4 items-center justify-center gap-3"
                     >
                       <div className="border-[0.8px] border-black rounded-2xl w-[84px] h-[84px] p-4 relative overflow-hidden mb-2">
                         <Image
