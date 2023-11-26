@@ -164,7 +164,7 @@ export default function OurStory() {
                       key={key}
                       className=" flex drop-shadow-lg shadow-md rounded-lg flex-col p-4 items-center justify-center gap-3"
                     >
-                      <div className="border-[0.8px] border-black rounded-2xl w-[84px] h-[84px] p-4 relative overflow-hidden mb-2">
+                      <div className="border-[0.8px] border-black rounded-2xl max-[365px]:w-[64] max-[365px]:h-[64] w-[84px] h-[84px] max-[365px]:p-3 p-4 relative overflow-hidden mb-2">
                         <Image
                           src={founder.img}
                           width={180}
@@ -173,11 +173,11 @@ export default function OurStory() {
                           className="w-full aspect-square absolute inset-0"
                         />
                       </div>
-                      <div className="flex flex-col items-center justify-center gap-2">
-                        <h4 className="font-bold text-xl xl:text-2xl leading-4 flex-shrink-0 text-center">
+                      <div className="flex flex-col items-center justify-center max-[365px]:gap-1 gap-2">
+                        <h4 className="font-bold max-[365px]:text-lg text-xl xl:text-2xl leading-4 flex-shrink-0 text-center">
                           {founder.name}
                         </h4>
-                        <h3 className="font-medium text-center text-xl lg:text-2xl leading-4 text-[#011B2E99]">
+                        <h3 className="font-medium text-center max-[365px]:text-lg text-xl lg:text-2xl leading-4 text-[#011B2E99]">
                           ({founder.position})
                         </h3>
                         <p className="text-xs text-center xl:text-sm font-medium leading-4 text-[#011B2E]">
