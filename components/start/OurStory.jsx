@@ -32,7 +32,7 @@ export default function OurStory() {
   const [animateImage, setAnimateImage] = useState(false);
 
   return (
-    <section className="ourStoryBg relative !overflow-hidden">
+    <section className="ourStoryBg relative !overflow-hidden before:absolute before:content-[url('/pattent.svg')] before:left-0 before:top-[57%] before:md:top-[45%] before:scale-[2.8] before:z-[5]">
       <img
         src="/icons/worldmap.png"
         alt=""
@@ -45,20 +45,14 @@ export default function OurStory() {
         alt={"story_svg"}
         className="w-[600px] absolute right-[-25%] md:right-[0%] top-[0%] z-50"
       />
-      <Image
-        src={"/icons/outteamtop.svg"}
-        width={1600}
-        height={1600}
-        alt={"story_svg"}
-        className="w-[600px] absolute left-[-25%] md:left-[0%] top-[35%] lg:top-[44%] z-50"
-      />
-      <Image
+
+      {/* <Image
         src={"/icons/outteambot.svg"}
         width={1600}
         height={1600}
         alt={"story_svg"}
         className="w-[600px] absolute left-[-25%] md:left-[0%] bottom-[20%] md:bottom-[12%] z-50"
-      />
+      /> */}
       <Image
         src={"/icons/requestinfo.svg"}
         width={1600}
@@ -162,7 +156,7 @@ export default function OurStory() {
                       href={`mailto:${founder.mail}`}
                       target="_blank"
                       key={key}
-                      className=" flex drop-shadow-lg shadow-md rounded-lg flex-col p-4 items-center justify-center gap-3"
+                      className=" flex bg-white z-20  shadow-md rounded-lg flex-col p-4 items-center justify-center gap-3"
                     >
                       <div className="border-[0.8px] border-black rounded-2xl max-[365px]:w-[64] max-[365px]:h-[64] w-[84px] h-[84px] max-[365px]:p-3 p-4 relative overflow-hidden mb-2">
                         <Image
@@ -197,7 +191,7 @@ export default function OurStory() {
                 </div>
               </section>
               <section className="grid xl:hidden  grid-cols-1 mt-6 md:mt-0 md:grid-cols-2 col-span-2 gap-6 lg:gap-10">
-                <div className="p-10 after:absolute after:content-[url('/images/threestars.svg')] after:bottom-8 after:right-8 relative before:absolute before:content-[url('/images/stars.svg')] before:top-4 before:left-5  bg-[#E4EAF5] border-2 border-[#7D7D7D] rounded-xl flex flex-col items-start justify-start gap-16">
+                <div className="p-10 z-10 after:absolute after:content-[url('/images/threestars.svg')] after:bottom-8 after:right-8 relative before:absolute before:content-[url('/images/stars.svg')] before:top-4 before:left-5  bg-[#E4EAF5] border-2 border-[#7D7D7D] rounded-xl flex flex-col items-start justify-start gap-16">
                   <h3 className="text-xl lg:text-[28px] font-bold leading-[32px]">
                     Strategic partnership
                   </h3>
@@ -210,7 +204,7 @@ export default function OurStory() {
                     />
                   </div>
                 </div>
-                <div className="p-10  after:absolute after:content-[url('/images/threestars.svg')] after:bottom-8 after:right-8 relative before:absolute before:content-[url('/images/stars.svg')] before:top-4 before:left-5 bg-[#F5FDFF] border-2 border-[#7D7D7D] rounded-xl flex flex-col items-start justify-start gap-2 lg:gap-5">
+                <div className="p-10 z-10 after:absolute after:content-[url('/images/threestars.svg')] after:bottom-8 after:right-8 relative before:absolute before:content-[url('/images/stars.svg')] before:top-4 before:left-5 bg-[#F5FDFF] border-2 border-[#7D7D7D] rounded-xl flex flex-col items-start justify-start gap-2 lg:gap-5">
                   <h3 className="text-xl  lg:text-[28px] font-bold leading-[32px]">
                     Advisory board
                   </h3>

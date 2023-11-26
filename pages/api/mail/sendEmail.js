@@ -5,19 +5,26 @@ export default async function handler(req, res) {
     const { emailBody, fromEmail } = req.body;
 
     const transporter = nodemailer.createTransport({
-      // host: "smtp.office365.com",
-      // port: 587,
-      // secure: false,
+      host: "smtp.office365.com",
+      port: 587,
+      secure: false,
       service: "Outlook365",
       auth: {
         user: process.env.GMAIL,
         pass: process.env.PASS,
       },
+      tls: {
+        ciphers: "SSLv3",
+      },
+      requireTLS: true,
+      tls: {
+        rejectUnauthorized: false,
+      },
     });
 
     const mailOptions = {
       from: fromEmail,
-      to: "info@nedu.ai",
+      to: "no-reply@nedu.ai",
       subject: "Inquiry",
       text: emailBody,
     };
