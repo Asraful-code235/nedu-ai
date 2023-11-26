@@ -4,6 +4,7 @@ import Button from "../shared/Button";
 import { CountryAndFlags, flagIcons } from "@/constant/CountryAndFlags";
 
 export default function Form() {
+  const [success, setSuccess] = useState(false);
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -33,20 +34,31 @@ export default function Form() {
       [id]: value,
     }));
   };
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     const { firstName, lastName, email, message, company, tel, name } =
       formData;
 
-    const emailBody = `Name: ${name} ${lastName}%0D%0AEmail: ${email}%0D%0ACompany: ${company}%0D%0ATel: ${tel}%0D%0AMessage: ${message}`;
+    const emailBody = `Name: ${name} ${lastName}\nEmail: ${email}\nCompany: ${company}\nTel: ${tel}\nMessage: ${message}`;
 
-    const mailtoLink = `mailto:info@nedu.ai?subject=Inquiry&body=${emailBody}`;
+    try {
+      const response = await fetch("/api/mail/sendEmail", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ emailBody, fromEmail: email }),
+      });
 
-    const tempLink = document.createElement("a");
-    tempLink.href = mailtoLink;
-    tempLink.target = "_blank";
-    tempLink.click();
+      if (response.ok) {
+        setSuccess(true);
+      } else {
+        setSuccess(false);
+      }
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   return (
@@ -147,9 +159,14 @@ export default function Form() {
         <Button
           type="submit"
           variant="light"
+          disabled={success}
           className="px-8 py-2  md:px-[27.5px] md:py-[8.571px] w-full sm:w-fit text-sm rounded-[5.714px] font-semibold leading-[24.297px] tracking-[0.7px] bg-white border-none outline-none"
         >
-          Request Info
+          {success ? (
+            <p className="text-[#ffad00]">Thank you for requesting</p>
+          ) : (
+            " Request Info"
+          )}
         </Button>
       </div>
     </form>

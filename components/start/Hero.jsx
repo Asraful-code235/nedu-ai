@@ -4,8 +4,8 @@ import TextChange from "./TextChange";
 
 export default function Hero() {
   return (
-    <section className="p-6 -mt-[38px] sm:-mt-0 md:px-12 xl:px-32 xl:py-16 h-[80vh] flex items-end xl:items-center justify-center xl:justify-start text-start xl:text-center">
-      <div className="text-xl lg:text-2xl xl:text-5xl flex flex-col items-center justify-center xl:items-start xl:justify-start gap-3 lg:gap-1 xl:gap-4 font-semibold leading-[30px] lg:leading-[57px] tracking-[1.2px] lg:tracking-[2.4px]">
+    <section className="p-6 -mt-[38px] sm:-mt-0 md:px-12 xl:px-32 xl:py-16 h-[80vh] flex items-center lg:items-end xl:items-center justify-start lg:justify-center xl:justify-start text-start xl:text-center">
+      <div className="text-xl lg:text-2xl xl:text-5xl flex flex-col items-center lg:items-center justify-center lg:justify-center xl:items-start xl:justify-start gap-3 lg:gap-1 xl:gap-4 font-semibold leading-[30px] lg:leading-[57px] tracking-[1.2px] lg:tracking-[2.4px]">
         <div className="flex text-white items-start lg:items-center gap-3 w-full">
           <h1 className="text-white text-xl lg:text-5xl xl:text-5xl text-opacity-80  whitespace-nowrap flex flex-col items-start lg:items-center lg:flex-row justify-start lg:justify-between lg:gap-4 tracking-[1.2px]">
             The AI-powered

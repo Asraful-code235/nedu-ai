@@ -8,7 +8,7 @@ import { JobApplication } from "./JobApplication";
 export default function VisionAndGrindContainer() {
   const [isNedu, setIsNedu] = useState(false);
   return (
-    <section className="overlap-wrapper mt-6 lg:mt-0 ">
+    <section className="overlap-wrapper mt-6 lg:mt-32 ">
       <div className="relative ">
         {!isNedu ? (
           <>
