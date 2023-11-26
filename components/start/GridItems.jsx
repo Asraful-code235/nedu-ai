@@ -40,7 +40,7 @@ export default function GridItems() {
         {items.map((item, key) => (
           <li
             key={key}
-            className="flex p-8 bg-[#111010] rounded-2xl items-center justify-start flex-col gap-3 lg:gap-6"
+            className="flex hover:bg-opacity-80 transition-colors duration-300 p-8 bg-[#111010] rounded-2xl items-center justify-start flex-col gap-3 lg:gap-6"
           >
             <div className="flex flex-col gap-2 items-center justify-center">
               <Image

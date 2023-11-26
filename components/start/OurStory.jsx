@@ -295,9 +295,9 @@ export default function OurStory() {
                 width={49}
                 height={49}
                 alt="Logo"
-                className="w-12 h-12 object-center object-cover aspect-square"
+                className="w-7 h-7 lg:w-12 lg:h-12 object-center object-cover aspect-square"
               />
-              <p className="text-black font-semibold text-[28px] leading-normal tracking-widest">
+              <p className="text-black font-medium lg:font-semibold text-base lg:text-[28px] leading-normal tracking-[0.32px] lg:tracking-widest">
                 NeduAI
               </p>
             </div>
