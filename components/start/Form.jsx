@@ -77,6 +77,7 @@ export default function Form() {
           type="text"
           id="name"
           name="name"
+          required
           placeholder="John"
           value={formData.name}
           onChange={handleChange}
@@ -95,6 +96,7 @@ export default function Form() {
           id="email"
           placeholder="johndoe@mail.xyz"
           name="email"
+          required
           value={formData.email}
           onChange={handleChange}
           className="w-full text-white  bg-transparent text-sm font-medium lg:font-semibold leading-5 focus-within:border-none focus-within:outline-none outline-none border-none placeholder:text-white placeholder:text-opacity-40"
