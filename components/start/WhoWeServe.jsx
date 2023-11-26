@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 export default function WhoWeServe() {
   return (
-    <section className="lg:px-[70px] xl:px-32 px-4 pt-12 pb-10 xl:py-24">
+    <section className="lg:px-[70px] xl:px-32 px-4 pt-4 lg:pt-12 pb-10 xl:py-24">
       <motion.div className="lg:px-[70px] flex flex-col items-start lg:items-center justify-center text-center gap-3 lg:gap-[34px]">
         <h1 className="visionParagraph text-start lg:text-center text-xl lg:text-5xl xl:text-6xl font-normal leading-normal text-white text-opacity-80">
           Who we{" "}

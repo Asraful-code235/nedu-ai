@@ -2,14 +2,14 @@ import Image from "next/image";
 import Button from "./Button";
 export default function Navbar() {
   return (
-    <header className="p-12 xl:px-32 xl:py-16 flex items-center justify-center lg:justify-between">
+    <header className="p-12 xl:px-32 xl:py-16 flex items-center justify-start lg:justify-between">
       <div className="flex items-center justify-center lg:justify-start gap-3.5">
         <Image
           src={"/images/logo.png"}
           width={49}
           height={49}
           alt="Logo"
-          className="w-7 h-7 lg:w-12 lg:h-12 object-center object-cover aspect-square"
+          className="w-9 h-9 lg:w-12 lg:h-12 object-center object-cover aspect-square"
         />
         <p className="text-white font-medium lg:font-semibold text-base lg:text-[28px] leading-normal tracking-[0.32px] lg:tracking-widest">
           NeduAI

@@ -22,9 +22,9 @@ export default function Home() {
         <Hero />
       </section>
       <Partners />
-      <YouthEmpowerment />
       <VisionAndGrindContainer />
       <GridItems />
+      <YouthEmpowerment />
       <WhoWeServe />
       <ForEducation />
       <ForIndividuals />

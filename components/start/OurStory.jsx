@@ -103,7 +103,7 @@ export default function OurStory() {
             </svg>
           </span>
         </h1>
-        <article className="grid grid-cols-1 xl:grid-cols-3 ">
+        <article className="grid grid-cols-1 xl:grid-cols-3 lg:gap-6">
           <section className="col-span-2">
             <div className=" flex flex-col gap-4 lg:gap-10 justify-between h-full">
               <div className=" flex flex-col gap-4 lg:gap-10 text-xs lg:text-xl font-medium leading-5 lg:leading-[40px] transition-all duration-[2s] delay-500 ">
@@ -123,7 +123,7 @@ export default function OurStory() {
                   of talent discovery, seamless communication, and rapid growth
                   unfolds seamlessly!
                 </p>
-                <div
+                {/* <div
                   className={`${
                     animateImage ? "" : "justify-start"
                   } w-full hidden xl:flex items-center gap-4 z-50 transition-all duration-[2s] delay-1000"`}
@@ -148,15 +148,15 @@ export default function OurStory() {
                       className="w-12 h-12 "
                     />
                   </div>
-                </div>
-                <div className="mt-[114px] md:mt-[65px] flex xl:hidden items-start gap-4 justify-start w-full">
+                </div> */}
+                <div className="mt-[69px] flex xl:hidden items-start gap-4 justify-start w-full">
                   <span className="text-2xl lg:px-10 w-full font-semibold leading-normal tracking-[0.72px] border-b border-[#C7C7C7]">
-                    Meet our team
+                    Team
                   </span>
                 </div>
               </div>
-              <section className=" xl:hidden overflow-x-scroll scrollbar-hidden">
-                <div className=" flex min-w-[800px] gap-4 lg:gap-14 py-6 items-start lg:items-center justify-start lg:justify-center">
+              <section className=" overflow-x-scroll scrollbar-hidden">
+                <div className=" grid grid-cols-2 sm:grid-cols-3 gap-6 py-6 items-start justify-start w-fit">
                   {founders.map((founder, key) => (
                     <a
                       href={`mailto:${founder.mail}`}
@@ -174,16 +174,16 @@ export default function OurStory() {
                         />
                       </div>
                       <div className="flex flex-col items-center justify-center gap-2">
-                        <h4 className="font-bold text-xl xl:text-2xl leading-4 ">
+                        <h4 className="font-bold text-xl xl:text-2xl leading-4 flex-shrink-0 text-center">
                           {founder.name}
                         </h4>
-                        <h3 className="font-medium text-xl lg:text-2xl leading-4 text-[#011B2E99]">
-                          {founder.position}
+                        <h3 className="font-medium text-center text-xl lg:text-2xl leading-4 text-[#011B2E99]">
+                          ({founder.position})
                         </h3>
-                        <p className="text-xs xl:text-sm font-medium leading-4 text-[#011B2E]">
+                        <p className="text-xs text-center xl:text-sm font-medium leading-4 text-[#011B2E]">
                           {founder.division}
                         </p>
-                        <div className="flex text-[#011B2E] items-center gap-2 text-xs xl:text-sm font-medium leading-5">
+                        <div className="flex text-center text-[#011B2E] items-center gap-2 text-xs xl:text-sm font-medium leading-5">
                           <img
                             src="/icons/mail.svg"
                             alt="mail"
@@ -196,42 +196,22 @@ export default function OurStory() {
                   ))}
                 </div>
               </section>
-              <section className="grid grid-cols-1  mt-6 md:mt-0 md:grid-cols-2 col-span-2 gap-6 lg:gap-10">
-                <div className="p-10 relative bg-[#E4EAF5] border-2 border-[#7D7D7D] rounded-xl flex flex-col items-start justify-start gap-16">
+              <section className="grid xl:hidden  grid-cols-1 mt-6 md:mt-0 md:grid-cols-2 col-span-2 gap-6 lg:gap-10">
+                <div className="p-10 after:absolute after:content-[url('/images/threestars.svg')] after:bottom-8 after:right-8 relative before:absolute before:content-[url('/images/stars.svg')] before:top-4 before:left-5  bg-[#E4EAF5] border-2 border-[#7D7D7D] rounded-xl flex flex-col items-start justify-start gap-16">
                   <h3 className="text-xl lg:text-[28px] font-bold leading-[32px]">
                     Strategic partnership
                   </h3>
                   <div className="w-44 text-sm font-bold flex flex-col items-center justify-center">
                     <Image
-                      src={"/images/XAMK 2.webp"}
+                      src={"/icons/Mask group.png"}
                       width={177}
                       height={109}
-                      className="w-full h-full"
+                      className="w-full h-full bg-transparent"
                     />
-                    <p>Kaakkois-Suomen</p>
-                    <p>ammattikorkeakoulu</p>
                   </div>
-                  <Image
-                    src={"/images/stars.svg"}
-                    width={177}
-                    height={109}
-                    className="w-full absolute top-[-50%] scale-[0.1] left-[-40%]"
-                  />
-                  <Image
-                    src={"/images/threestars.svg"}
-                    width={177}
-                    height={109}
-                    className="w-full absolute bottom-[-50%] scale-[0.1] right-[-40%]"
-                  />
-                  <Image
-                    src={"/images/foundermail.svg"}
-                    width={177}
-                    height={109}
-                    className="w-full absolute bottom-[10%] scale-[0.2] right-[-30%]"
-                  />
                 </div>
-                <div className="p-10 relative bg-[#F5FDFF] border-2 border-[#7D7D7D] rounded-xl flex flex-col items-start justify-start gap-2 lg:gap-5">
-                  <h3 className="text-xl lg:text-[28px] font-bold leading-[32px]">
+                <div className="p-10  after:absolute after:content-[url('/images/threestars.svg')] after:bottom-8 after:right-8 relative before:absolute before:content-[url('/images/stars.svg')] before:top-4 before:left-5 bg-[#F5FDFF] border-2 border-[#7D7D7D] rounded-xl flex flex-col items-start justify-start gap-2 lg:gap-5">
+                  <h3 className="text-xl  lg:text-[28px] font-bold leading-[32px]">
                     Advisory board
                   </h3>
                   <div className="text-sm lg:text-lg leading-5 lg:leading-6 flex flex-col items-start justify-center gap-[6px] lg:gap-2">
@@ -243,66 +223,56 @@ export default function OurStory() {
                       Tero Keski-Valkama - AI, ML , KAIKO
                     </p>
                   </div>
-                  <div className=" text-sm lg:text-lg leading-5 lg:leading-6 flex flex-col items-start justify-center gap-[6px] lg:gap-2">
+                  <div className="relative text-sm lg:text-lg leading-5 lg:leading-6 flex flex-col items-start justify-center gap-[6px] lg:gap-2">
                     <p className="font-extrabold">Business, Tech & Network</p>
                     <p className="underline font-medium">Henri Vass</p>
                   </div>
-                  <Image
+                  {/* <Image
                     src={"/images/stars.svg"}
                     width={177}
                     height={109}
                     className="w-full absolute top-[-60%] scale-[0.1] left-[-40%]"
-                  />
-                  <Image
-                    src={"/images/threestars.svg"}
-                    width={177}
-                    height={109}
-                    className="w-full absolute bottom-[-50%] scale-[0.1] right-[-40%]"
-                  />
+                  /> */}
                 </div>
               </section>
             </div>
           </section>
-          <section className=" hidden xl:flex flex-col gap-14 items-center justify-center">
-            {founders.map((founder, key) => (
-              <div
-                key={key}
-                className=" flex flex-col items-center justify-center gap-3"
-              >
-                <div
-                  className={`${
-                    key == 0
-                      ? "bg-[#27AE60]"
-                      : key == 1
-                      ? "bg-[#30b8e1]"
-                      : "bg-[#9c27b0]"
-                  } rounded-full w-44 h-44 p-4 relative overflow-hidden mb-2`}
-                >
-                  <Image
-                    src={founder.img}
-                    width={180}
-                    height={180}
-                    alt={founder.name}
-                    className="w-full aspect-square absolute inset-0"
-                  />
-                </div>
-                <h4 className="font-bold text-2xl leading-4 ">
-                  {founder.name}
-                </h4>
-                <h3 className="font-medium text-2xl leading-4">
-                  {founder.position}
-                </h3>
-                <p className="text-sm font-medium leading-4">
-                  {founder.division}
-                </p>
-                <div className="flex items-center gap-2 text-sm font-medium leading-5">
-                  <img src="/icons/mail.svg" alt="mail" className="w-5 h-5" />
-                  <a href={founder.mail} className="underline">
-                    {founder.mail}
-                  </a>
-                </div>
+          <section className="xl:grid hidden col-span-1flex flex-col items-center justify-center md:mt-0  h-fit gap-6 lg:gap-10">
+            <div className="p-10 after:absolute after:content-[url('/images/threestars.svg')] after:bottom-8 after:right-8 relative before:absolute before:content-[url('/images/stars.svg')] before:top-4 before:left-5  bg-[#E4EAF5] border-2 border-[#7D7D7D] rounded-xl flex flex-col items-start justify-start gap-16">
+              <h3 className="text-xl lg:text-[28px] font-bold leading-[32px]">
+                Strategic partnership
+              </h3>
+              <div className="w-44  text-sm font-bold flex flex-col items-center justify-center">
+                <Image
+                  src={"/icons/Mask group.png"}
+                  width={177}
+                  height={109}
+                  className="w-full h-full bg-transparent"
+                />
               </div>
-            ))}
+            </div>
+            <div className="p-10  after:absolute after:content-[url('/images/threestars.svg')] after:bottom-8 after:right-8 relative before:absolute before:content-[url('/images/stars.svg')] before:top-4 before:left-5 bg-[#F5FDFF] border-2 border-[#7D7D7D] rounded-xl flex flex-col items-start justify-start gap-2 lg:gap-5">
+              <h3 className="text-xl  lg:text-[28px] font-bold leading-[32px]">
+                Advisory board
+              </h3>
+              <div className="text-sm lg:text-lg leading-5 lg:leading-6 flex flex-col items-start justify-center gap-[6px] lg:gap-2">
+                <p className="font-extrabold">AI Specialists</p>
+                <p className="underline font-medium">Pasi Vuorio - LastBot</p>
+                <p className="underline font-medium">
+                  Tero Keski-Valkama - AI, ML , KAIKO
+                </p>
+              </div>
+              <div className="relative text-sm lg:text-lg leading-5 lg:leading-6 flex flex-col items-start justify-center gap-[6px] lg:gap-2">
+                <p className="font-extrabold">Business, Tech & Network</p>
+                <p className="underline font-medium">Henri Vass</p>
+              </div>
+              {/* <Image
+                    src={"/images/stars.svg"}
+                    width={177}
+                    height={109}
+                    className="w-full absolute top-[-60%] scale-[0.1] left-[-40%]"
+                  /> */}
+            </div>
           </section>
         </article>
         <section className="flex pt-24 flex-col xl:flex-row items-start lg:items-center xl:items-start justify-center xl:justify-between z-50 gap-10 lg:gap-28 ">

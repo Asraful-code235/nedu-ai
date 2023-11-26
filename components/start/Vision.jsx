@@ -82,7 +82,7 @@ export default function Vision() {
           careers through cutting-edge technology.
         </p>
       </div>
-      <div className="border-4 flex flex-col items-start justify-center text-white border-[#C87200] rounded-2xl lg:rounded-[64px] w-full h-full overflow-hidden">
+      <div className="border-4 max-w-[1664px] mx-auto flex flex-col items-start justify-center text-white border-[#C87200] rounded-2xl lg:rounded-[64px]  h-full overflow-hidden">
         <div className="">
           <video
             width="100%"

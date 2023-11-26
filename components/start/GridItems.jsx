@@ -35,7 +35,10 @@ const items = [
 
 export default function GridItems() {
   return (
-    <section className="p-6 pt-20 lg:p-10 xl:px-32 xl:py-40">
+    <section className="p-6  lg:p-10 xl:px-32 xl:py-40">
+      <h1 className="text-center w-full text-base lg:text-5xl xl:text-6xl font-bold text-white py-8 lg:py-14 xl:py-24 leading-normal tracking-[0.8px]">
+        Extra feature
+      </h1>
       <ul className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 lg:gap-12">
         {items.map((item, key) => (
           <li

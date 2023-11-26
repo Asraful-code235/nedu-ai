@@ -11,6 +11,7 @@ export default function Form() {
     message: "",
     tel: "",
     company: "",
+    name: "",
   });
 
   const countryCodes = {
@@ -35,9 +36,10 @@ export default function Form() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const { firstName, lastName, email, message, company, tel } = formData;
+    const { firstName, lastName, email, message, company, tel, name } =
+      formData;
 
-    const emailBody = `Name: ${firstName} ${lastName}%0D%0AEmail: ${email}%0D%0ACompany: ${company}%0D%0ATel: ${tel}%0D%0AMessage: ${message}`;
+    const emailBody = `Name: ${name} ${lastName}%0D%0AEmail: ${email}%0D%0ACompany: ${company}%0D%0ATel: ${tel}%0D%0AMessage: ${message}`;
 
     const mailtoLink = `mailto:info@nedu.ai?subject=Inquiry&body=${emailBody}`;
 
@@ -55,65 +57,19 @@ export default function Form() {
       <div className="border-b border-opacity-40 w-full flex-col flex items-start">
         <label
           className="text-sm lg:text-base font-medium lg:font-semibold text-white leading-5 tracking-[0.7px  ] lg:tracking-[0.8px]"
-          htmlFor="firstName"
+          htmlFor="name"
         >
-          First Name*
+          Name
         </label>
         <input
           type="text"
-          id="firstName"
-          name="firstName"
+          id="name"
+          name="name"
           placeholder="John"
-          value={formData.firstName}
+          value={formData.name}
           onChange={handleChange}
           className="w-full text-white bg-transparent text-sm font-medium lg:font-semibold leading-5 focus-within:border-none focus-within:outline-none outline-none border-none placeholder:text-white placeholder:text-opacity-40"
         />
-      </div>
-      <div className="border-b border-opacity-40 w-full flex-col flex items-start">
-        <label
-          className="text-base font-medium lg:font-semibold text-white leading-5 tracking-[0.8px]"
-          htmlFor="lastName"
-        >
-          Last Name*
-        </label>
-        <input
-          type="text"
-          name="lastName"
-          id="lastName"
-          placeholder="Doe"
-          value={formData.lastName}
-          onChange={handleChange}
-          className="w-full text-white  bg-transparent  text-sm font-medium lg:font-semibold leading-5 focus-within:border-none focus-within:outline-none outline-none border-none placeholder:text-white placeholder:text-opacity-40"
-        />
-      </div>
-      <div className="border-b border-opacity-40 w-full flex-col flex items-start">
-        <label
-          className="text-base font-medium lg:font-semibold text-white leading-5 tracking-[0.8px]"
-          htmlFor="tel"
-        >
-          Phone no.
-        </label>
-        <div className="flex items-center gap-4">
-          <select
-            id="country"
-            name="country"
-            onChange={handleCountryChange}
-            className="outline-none bg-transparent text-white"
-          >
-            {/* {Object.entries(CountryAndFlags).map(([country, iconPath]) => ( */}
-            <option value={"Spain"}>sp</option>
-            {/* ))} */}
-          </select>
-          <input
-            type="tel"
-            id="tel"
-            placeholder={formData.tel || "+358"}
-            name="tel"
-            value={formData.tel}
-            onChange={handleChange}
-            className="w-full text-white bg-transparent text-sm font-medium lg:font-semibold leading-5 focus-within:border-none focus-within:outline-none outline-none border-none placeholder:text-white placeholder:text-opacity-40"
-          />
-        </div>
       </div>
       <div className="border-b border-opacity-40 w-full flex-col flex items-start">
         <label
@@ -132,6 +88,27 @@ export default function Form() {
           className="w-full text-white  bg-transparent text-sm font-medium lg:font-semibold leading-5 focus-within:border-none focus-within:outline-none outline-none border-none placeholder:text-white placeholder:text-opacity-40"
         />
       </div>
+
+      <div className="border-b border-opacity-40 w-full flex-col flex items-start">
+        <label
+          className="text-base font-medium lg:font-semibold text-white leading-5 tracking-[0.8px]"
+          htmlFor="tel"
+        >
+          Phone no.
+        </label>
+        <div className="flex items-center gap-4">
+          <input
+            type="tel"
+            id="tel"
+            placeholder={formData.tel || "+358"}
+            name="tel"
+            value={formData.tel}
+            onChange={handleChange}
+            className="w-full text-white bg-transparent text-sm font-medium lg:font-semibold leading-5 focus-within:border-none focus-within:outline-none outline-none border-none placeholder:text-white placeholder:text-opacity-40"
+          />
+        </div>
+      </div>
+
       <div className="border-b border-opacity-40 w-full flex-col flex items-start">
         <label
           className="text-base font-medium lg:font-semibold text-white leading-5 tracking-[0.8px]"
