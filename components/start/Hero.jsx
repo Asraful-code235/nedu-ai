@@ -6,6 +6,18 @@ export default function Hero() {
   return (
     <section className="p-6 -mt-[38px] sm:-mt-0 md:px-12 xl:px-32 xl:py-16 h-[80vh] flex items-center lg:items-end xl:items-center justify-start lg:justify-center xl:justify-start text-start xl:text-center">
       <div className="text-xl lg:text-2xl xl:text-5xl flex flex-col items-center lg:items-center justify-center lg:justify-center xl:items-start xl:justify-start gap-3 lg:gap-1 xl:gap-4 font-semibold leading-[30px] lg:leading-[57px] tracking-[1.2px] lg:tracking-[2.4px]">
+        <div className="flex lg:hidden items-center justify-start w-full gap-3.5">
+          <Image
+            src={"/images/logo.png"}
+            width={49}
+            height={49}
+            alt="Logo"
+            className="w-9 h-9 lg:w-12 lg:h-12 object-center object-cover aspect-square"
+          />
+          <p className="text-white font-semibold text-lg lg:text-[28px] leading-normal tracking-[0.4px] lg:tracking-widest">
+            NeduAI
+          </p>
+        </div>
         <div className="flex text-white items-start lg:items-center gap-3 w-full">
           <h1 className="text-white text-xl lg:text-5xl xl:text-5xl text-opacity-80  whitespace-nowrap flex flex-col items-start lg:items-center lg:flex-row justify-start lg:justify-between lg:gap-4 tracking-[1.2px]">
             The AI-powered
@@ -41,7 +53,7 @@ export default function Hero() {
           </a>
         </Button>
         <div className="w-full items-center justify-start gap-3 flex lg:hidden">
-          <Button className="flex px-4 py-0 lg:px-[16px] lg:py-[5px] items-center gap-[10px] text-xs lg:text-xl leading-8 lg:leading-5 tracking-[0.48px] lg:tracking-wider hover:bg-[#FFA937]">
+          <Button className="flex px-4 py-0 md:px-[12px] md:py-[7px] lg:px-[16px] lg:py-[5px] items-center gap-[10px] text-xs md:text-sm lg:text-xl leading-8 lg:leading-5 tracking-[0.48px] lg:tracking-wider hover:bg-[#FFA937]">
             <Image
               src={"/icons/IcRoundPhone.png"}
               width={32}

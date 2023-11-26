@@ -3,7 +3,7 @@ import Button from "./Button";
 export default function Navbar() {
   return (
     <header className="p-6 md:p-12 xl:px-32 xl:py-16 flex items-center justify-start lg:justify-between">
-      <div className="flex items-center justify-center lg:justify-start gap-3.5">
+      <div className="hidden lg:flex items-center justify-center lg:justify-start gap-3.5">
         <Image
           src={"/images/logo.png"}
           width={49}
