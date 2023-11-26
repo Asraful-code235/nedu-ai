@@ -146,7 +146,7 @@ export default function Partners() {
         </h1>
       </div>
       <div className="overflow-x-auto scrollbar-hidden">
-        <div className="flex min-w-[1500px] md:min-w-[2000px] xl:min-w-full flex-col items-start xl:items-center justify-center gap-6 overflow-x-scroll scrollbar-hidden">
+        <div className="flex min-w-[400px] md:min-w-[800px] xl:min-w-full flex-col items-start xl:items-center justify-center gap-6 overflow-x-scroll scrollbar-hidden">
           <section className="flex items-center justify-center gap-5 lg:gap-16">
             {images.slice(0, 5).map((partners, key) => (
               <Image

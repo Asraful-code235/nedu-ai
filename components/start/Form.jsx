@@ -170,7 +170,7 @@ export default function Form() {
         <Button
           type="submit"
           variant="light"
-          className="px-8 py-2 md:py-[12px] lg:py-[18px] w-full sm:w-fit text-sm rounded font-semibold leading-6 tracking-[0.7px] bg-white border-none outline-none"
+          className="px-8 py-2  md:px-[27.5px] md:py-[8.571px] w-full sm:w-fit text-sm rounded-[5.714px] font-semibold leading-[24.297px] tracking-[0.7px] bg-white border-none outline-none"
         >
           Request Info
         </Button>

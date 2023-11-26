@@ -1,6 +1,8 @@
+"use client";
 import Image from "next/image";
 import Button from "../shared/Button";
 import Form from "./Form";
+import { useState } from "react";
 
 const founders = [
   {
@@ -27,8 +29,15 @@ const founders = [
 ];
 
 export default function OurStory() {
+  const [animateImage, setAnimateImage] = useState(false);
+
   return (
-    <section className="relative !overflow-hidden">
+    <section className="ourStoryBg relative !overflow-hidden">
+      <img
+        src="/icons/worldmap.png"
+        alt=""
+        className="absolute top-0 left-0 right-0 max-h-[400px] object-center object-cover bottom-0 z-10 object-fill"
+      />
       <Image
         src={"/icons/storysvg1st.svg"}
         width={1600}
@@ -41,7 +50,7 @@ export default function OurStory() {
         width={1600}
         height={1600}
         alt={"story_svg"}
-        className="w-[600px] absolute left-[-25%] md:left-[0%] top-[35%] z-50"
+        className="w-[600px] absolute left-[-25%] md:left-[0%] top-[35%] lg:top-[44%] z-50"
       />
       <Image
         src={"/icons/outteambot.svg"}
@@ -97,7 +106,7 @@ export default function OurStory() {
         <article className="grid grid-cols-1 xl:grid-cols-3 ">
           <section className="col-span-2">
             <div className=" flex flex-col gap-4 lg:gap-10 justify-between h-full">
-              <div className=" flex flex-col gap-4 lg:gap-10 text-xs lg:text-xl font-medium leading-5 lg:leading-[40px]">
+              <div className=" flex flex-col gap-4 lg:gap-10 text-xs lg:text-xl font-medium leading-5 lg:leading-[40px] transition-all duration-[2s] delay-500 ">
                 <p>
                   Picture Spring 2023: NeduAI bursts onto the scene, riding the
                   exhilarating AI wave to forge connections across knowledge
@@ -114,14 +123,23 @@ export default function OurStory() {
                   of talent discovery, seamless communication, and rapid growth
                   unfolds seamlessly!
                 </p>
-                <div className="hidden xl:flex items-center gap-4">
+                <div
+                  className={`${
+                    animateImage ? "" : "justify-start"
+                  } w-full hidden xl:flex items-center gap-4 z-50 transition-all duration-[2s] delay-1000"`}
+                >
                   <Button
                     variant="light"
-                    className="text-2xl px-10 w-fit font-semibold leading-normal tracking-[0.72px]"
+                    className="text-2xl px-10 w-fit font-semibold cursor-pointer leading-normal tracking-[0.72px]"
                   >
-                    Meet our team
+                    <p onClick={() => setAnimateImage(true)}>Meet our team</p>
                   </Button>
-                  <div className="p-2 bg-black rounded-full">
+                  <div
+                    id="imageContainer"
+                    className={`${
+                      animateImage ? " transition-all duration-500" : ""
+                    } p-2 bg-black rounded-full justify-end`}
+                  >
                     <Image
                       src={"/icons/arrowright.svg"}
                       width={56}

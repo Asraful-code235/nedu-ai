@@ -57,10 +57,10 @@ export default function WhoWeServe() {
           <h3 className=" text-white text-start lg:text-center w-full text-xs  xl:text-start text-opacity-60 lg:text-4xl font-medium leading-4 lg:leading-[30px]">
             For Recruitment
           </h3>
-          <h2 className="text-white w-full text-start text-[17px] lg:text-center xl:text-start font-medium lg:font-bold lg:leading-[60px] tracking-[1.4px] lg:text-[40px]">
+          <h2 className="text-white w-full text-start text-[17px] lg:text-center xl:text-start font-bold lg:font-bold leading-[23.8px] lg:leading-[60px] tracking-[0.34px]  lg:tracking-[1.4px] lg:text-[40px]">
             Identify the best candidates using our AI-talent hunt solution
           </h2>
-          <p className="text-xs lg:text-xl xl:max-w-full w-full text-start lg:text-center xl:text-start text-white font-normal lg:font-medium leading-4 tracking-[0.12px] lg:leading-[40px] mt-2 lg:-mt-2">
+          <p className="text-xs lg:text-xl xl:max-w-full w-full text-start lg:text-center xl:text-start text-white font-medium lg:font-medium leading-[17.4px] tracking-[0.12px] lg:leading-[40px] mt-2 lg:-mt-2">
             Level up your recruitment game with NeduAI! Unlock innovative
             methods to attract top talents globally. Better understanding,
             better results — our 2-way translation ensures profiles speak the

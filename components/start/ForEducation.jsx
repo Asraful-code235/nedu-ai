@@ -8,10 +8,10 @@ export default function ForEducation() {
           <h3 className=" text-white w-full text-start lg:text-center xl:text-start text-opacity-60 text-[10px] lg:text-[38px] xl:text-[1.8vw] font-medium leading-5 lg:leading-[30px]">
             For Education
           </h3>
-          <h2 className="text-white text-start lg:text-center xl:text-start font-medium lg:font-bold text-lg lg:text-4xl leading-7 lg:leading-10 xl:leading-normal xl:text-[2vw]">
+          <h2 className="text-white text-start lg:text-center xl:text-start font-bold lg:font-bold text-[19px] lg:text-4xl leading-[27.55px] lg:leading-10 xl:leading-normal tracking-[0.5px] xl:text-[2vw]">
             Unlock brilliance in education with expert guidance
           </h2>
-          <p className="lg:text-xl text-start lg:text-center tracking-[0.66px] lg:tracking-[0.24px] leading-4 lg:leading-10 xl:leading-normal text-xs xl:text-[1.3vw] xl:text-start text-white font-normal lg:font-medium mt-3 lg:-mt-2">
+          <p className="lg:text-xl text-start lg:text-center tracking-[0.24px] lg:tracking-[0.24px] leading-[17.4px] lg:leading-10 xl:leading-normal text-xs xl:text-[1.3vw] xl:text-start text-white font-medium lg:font-medium mt-3 lg:-mt-2">
             Slash dropouts, fast-track graduation, and explore data-driven
             courses. Our AI magic? Turbocharged profiling, an open-access
             treasure trove of trends, and an expanded course selection in our

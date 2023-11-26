@@ -28,7 +28,7 @@ export default function Home() {
       <WhoWeServe />
       <ForEducation />
       <ForIndividuals />
-      <section className="relative">
+      <section className="relative ">
         <OurStory />
       </section>
     </section>
