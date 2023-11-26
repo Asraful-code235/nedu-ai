@@ -1,5 +1,6 @@
 import "./globals.scss";
 import Head from "next/head";
+import Script from "next/script";
 
 export const metadata = {
   title: "Create Next App",
@@ -9,6 +10,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <Script src="https://smtpjs.com/v3/smtp.js"></Script>
       <body className="bg-[#010101] scrollbar-hidden">
         <main>{children}</main>
       </body>

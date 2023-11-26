@@ -8,23 +8,15 @@ export default async function handler(req, res) {
       host: "smtp.office365.com",
       port: 587,
       secure: false,
-      service: "Outlook365",
       auth: {
         user: process.env.GMAIL,
         pass: process.env.PASS,
-      },
-      tls: {
-        ciphers: "SSLv3",
-      },
-      requireTLS: true,
-      tls: {
-        rejectUnauthorized: false,
       },
     });
 
     const mailOptions = {
       from: fromEmail,
-      to: "no-reply@nedu.ai",
+      to: "info@nedu.ai",
       subject: "Inquiry",
       text: emailBody,
     };
@@ -34,7 +26,7 @@ export default async function handler(req, res) {
       res.status(200).json({ message: "Email sent successfully!" });
     } catch (error) {
       console.error("Error sending email:", error);
-      res.status(500).json({ message: "Error sending email" });
+      res.status(500).json({ message: "Error sending email", error });
     }
   } else {
     res.status(405).json({ message: "Method Not Allowed" });
