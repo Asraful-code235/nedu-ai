@@ -79,14 +79,7 @@ export default function MakesUsDifferent({ isVisible }) {
         <motion.div className="py-8 xl:px-60 xl:py-60 lg:p-[96px] p-6 border border-transparent rounded-lg">
           <div className="DashboardBefore relative flex items-center justify-center">
             <div className=" DashboardBefore1 relative">
-              <motion.div
-                whileInView={{
-                  opacity: [0, 1],
-                  scale: [0.5, 1.05, 1],
-                }}
-                transition={{ duration: 0.5, ease: "easeOut" }}
-                className=" DashboardBefore2 relative"
-              >
+              <motion.div className=" DashboardBefore2 relative">
                 <div className="w-[60vw] DashboardBefore3 relative">
                   <Image
                     src={"/icons/Dashboard.webp"}
@@ -103,7 +96,24 @@ export default function MakesUsDifferent({ isVisible }) {
                     // }}
                     // whileHover={{ scale: [null, 1.1, 1.14] }}
                     // transition={{ duration: 0.4 }}
-                    className="w-full absolute -bottom-[40%] -left-[24%]  object-cover ease-out object-center rounded-xl cursor-pointer"
+                    className="w-full block lg:hidden absolute -bottom-[40%] -left-[24%]  object-cover ease-out object-center rounded-xl cursor-pointer"
+                  >
+                    <Image
+                      src={"/icons/callender.webp"}
+                      width={600}
+                      height={600}
+                      className="w-full scale-[0.6]"
+                      alt="Dashboard"
+                    />
+                  </motion.div>
+                  <motion.div
+                    whileInView={{
+                      x: [-200, 0],
+                      scale: [0.5, 1.2, 1],
+                    }}
+                    // whileHover={{ scale: [null, 1.1, 1.14] }}
+                    transition={{ duration: 0.4, ease: "easeInOut" }}
+                    className="w-full hidden lg:block absolute -bottom-[40%] -left-[24%]  object-cover ease-out object-center rounded-xl cursor-pointer"
                   >
                     <Image
                       src={"/icons/callender.webp"}
@@ -120,7 +130,24 @@ export default function MakesUsDifferent({ isVisible }) {
                     // }}
                     // whileHover={{ scale: [null, 1.1, 1.14] }}
                     // transition={{ duration: 0.3 }}
-                    className="w-full absolute bottom-[62%] left-[35%]  object-cover object-center rounded-xl"
+                    className="w-full block lg:hidden absolute bottom-[62%] left-[35%]  object-cover object-center rounded-xl"
+                  >
+                    <Image
+                      src={"/icons/Realtimejobtraking.webp"}
+                      width={600}
+                      height={600}
+                      alt="Dashboard"
+                      className="scale-[0.56] w-full"
+                    />
+                  </motion.div>
+                  <motion.div
+                    whileInView={{
+                      x: [200, 0],
+                      scale: [0.5, 0.7, 1],
+                    }}
+                    // whileHover={{ scale: [null, 1.1, 1.14] }}
+                    transition={{ duration: 0.3, ease: "easeInOut" }}
+                    className="w-full hidden lg:block absolute bottom-[62%] left-[35%]  object-cover object-center rounded-xl"
                   >
                     <Image
                       src={"/icons/Realtimejobtraking.webp"}
@@ -138,7 +165,7 @@ export default function MakesUsDifferent({ isVisible }) {
                     // }}
                     // whileHover={{ scale: [null, 1.1, 1.14] }}
                     // transition={{ duration: 0.4 }}
-                    className="w-full absolute -top-[16%] right-[47%]  object-cover object-center rounded-xl"
+                    className="w-full block lg:hidden absolute -top-[16%] right-[47%]  object-cover object-center rounded-xl"
                   >
                     <Image
                       src={"/icons/FollowUp.webp"}
@@ -149,13 +176,47 @@ export default function MakesUsDifferent({ isVisible }) {
                     />
                   </motion.div>
                   <motion.div
+                    whileInView={{
+                      x: [-100, 0],
+                      scale: [0.5, 1.1, 1],
+                    }}
+                    // whileHover={{ scale: [null, 1.1, 1.14] }}
+                    transition={{ duration: 0.4, ease: "easeInOut" }}
+                    className="w-full hidden lg:block absolute -top-[16%] right-[47%]  object-cover object-center rounded-xl"
+                  >
+                    <Image
+                      src={"/icons/FollowUp.webp"}
+                      width={600}
+                      height={600}
+                      alt="Dashboard"
+                      className="w-full scale-[0.42]"
+                    />
+                  </motion.div>
+                  <div
                     // whileInView={{
                     //   x: [200, 0],
                     //   scale: [0.5, 0.7, 1],
                     // }}
                     // whileHover={{ scale: [null, 1.1, 1.14] }}
                     // transition={{ duration: 0.5 }}
-                    className="w-full absolute -bottom-[44%] left-[34%]  object-cover object-center rounded-xl"
+                    className="w-full block  lg:hidden absolute -bottom-[44%] left-[34%]  object-cover object-center rounded-xl"
+                  >
+                    <Image
+                      src={"/icons/talentAssessment.webp"}
+                      width={600}
+                      height={600}
+                      alt="Dashboard"
+                      className="w-full scale-[0.6]"
+                    />
+                  </div>
+                  <motion.div
+                    whileInView={{
+                      x: [200, 0],
+                      scale: [0.5, 1.2, 1],
+                    }}
+                    // whileHover={{ scale: [null, 1.1, 1.14] }}
+                    transition={{ duration: 0.5, ease: "easeInOut" }}
+                    className="w-full hidden lg:block absolute -bottom-[44%] left-[34%]  object-cover object-center rounded-xl"
                   >
                     <Image
                       src={"/icons/talentAssessment.webp"}

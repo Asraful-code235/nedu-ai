@@ -14,7 +14,7 @@ export default function Hero() {
             </span>
           </h1>
         </div>
-        <div className="visionParagraph flex items-start lg:items-center justify-start lg:justify-center text-start lg:text-center text-sm lg:text-[28px] leading-[20px] tracking-[1px] lg:leading-[45px] -mt-2 lg:mt-1">
+        <div className="visionParagraph flex items-start lg:items-center xl:items-start justify-start lg:justify-center xl:justify-start text-start lg:text-center xl:text-start text-sm lg:text-[28px] leading-[20px] tracking-[1px] lg:leading-[45px] -mt-2 lg:mt-1">
           <p className="text-white text-opacity-70 lg:text-opacity-40 font-normal">
             Enabling your path to{" "}
             <span className="text-white text-opacity-80 font-semibold lg:font-bold">
@@ -55,7 +55,7 @@ export default function Hero() {
           </Button>
           <span className=" ">
             <a
-              href="https://www.linkedin.com/company/neduai/?trk=similar-pages&originalSubdomain=fi"
+              href="https://www.linkedin.com/company/neduai"
               target="_blank"
               rel="noopener noreferrer"
             >
