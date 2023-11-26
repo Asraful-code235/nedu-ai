@@ -133,8 +133,8 @@ export default function JobGrind({ isNedu, setIsNedu, ...props }) {
                   className="w-full object-cover object-center"
                 />
               </section>
-              <section className="py-6 block md:hidden  scrollbar-hidden overflow-hidden ">
-                <div className="flex items-start justify-start gap-6 ">
+              <section className=" py-6 p-3 block md:hidden scrollbar-hidden overflow-x-scroll ">
+                <div className="flex items-start justify-start gap-8 min-w-[1150px] ">
                   {withoutNeduAi.map((item, key) => (
                     <div
                       key={key}
@@ -186,8 +186,8 @@ export default function JobGrind({ isNedu, setIsNedu, ...props }) {
                   className="w-full object-cover object-center"
                 />
               </section>
-              <section className="py-6 p-3 block md:hidden scrollbar-hidden">
-                <div className="flex items-start justify-start gap-8 ">
+              <section className="py-6 p-3 block md:hidden scrollbar-hidden overflow-x-scroll ">
+                <div className="flex items-start justify-start gap-8 min-w-[700px] ">
                   {withNeduAi.map((item, key) => (
                     <div
                       key={key}
