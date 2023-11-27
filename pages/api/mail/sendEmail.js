@@ -8,6 +8,7 @@ export default async function handler(req, res) {
       host: "smtp",
       service: "gmail",
       port: 587,
+      secure: false,
       auth: {
         user: process.env.GMAIL,
         pass: process.env.PASS,
