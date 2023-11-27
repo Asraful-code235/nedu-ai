@@ -5,9 +5,9 @@ export default async function handler(req, res) {
     const { emailBody, fromEmail } = req.body;
 
     const transporter = nodemailer.createTransport({
-      host: "smtp.office365.com",
+      host: "smtp",
+      service: "gmail",
       port: 587,
-      secure: false,
       auth: {
         user: process.env.GMAIL,
         pass: process.env.PASS,
