@@ -18,7 +18,7 @@ export default async function handler(req, res) {
     const mailOptions = {
       from: fromEmail,
       to: "info@nedu.ai",
-      subject: "Inquiry",
+      subject: "NeduAi - Website Investor Material Request",
       text: emailBody,
     };
 
