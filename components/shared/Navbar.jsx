@@ -15,7 +15,7 @@ export default function Navbar() {
           NeduAI
         </p>
       </div>
-      <nav className=" items-center gap-8 hidden lg:flex">
+      <nav className=" items-center gap-[30px] hidden lg:flex">
         <span className="bg-[#2121214D] py-4 px-6 rounded-[32px]">
           <a
             href="https://www.linkedin.com/company/neduai"
@@ -43,13 +43,13 @@ export default function Navbar() {
             </svg>
           </a>
         </span>
-        <Button className="flex items-center gap-3 text-lg lg:text-xl leading-5 tracking-wider hover:bg-[#FFA937]">
+        <Button className="flex px-8 py-4 tracking-[0.8px] items-center font-medium leading-[21.6px] gap-3 text-lg lg:text-xl hover:bg-[#FFA937]">
           <Image
             src={"/icons/IcRoundPhone.png"}
             width={32}
             height={32}
             alt="CellPhone_icon"
-            className="w-8 aspect-square"
+            className="w-8 h-8 aspect-square"
           />
 
           <a href="mailto:info@nedu.ai" target="_blank">

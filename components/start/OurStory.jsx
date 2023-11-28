@@ -32,11 +32,11 @@ export default function OurStory() {
   const [animateImage, setAnimateImage] = useState(false);
 
   return (
-    <section className="ourStoryBg relative !overflow-hidden before:absolute before:content-[url('/pattent.svg')] before:left-0 before:top-[57%] before:md:top-[45%] before:scale-[2.8] before:z-[5]">
+    <section className="ourStoryBg relative !overflow-hidden before:absolute before:lg:content-[url('/icons/outteambot.svg')] before:content-[url('/pattent.svg')] before:left-0 before:top-[57%] before:lg:top-[55%] before:scale-[2.8] before:lg:scale-[1] before:z-[5]">
       <img
         src="/icons/worldmap.png"
         alt=""
-        className="absolute top-0 left-0 right-0 max-h-[400px] object-center object-cover bottom-0 z-10 object-fill"
+        className="absolute hidden lg:block top-[20%] left-[5%] right-0 max-h-[400px] object-center object-cover bottom-0 z-10 object-fill"
       />
       <Image
         src={"/icons/storysvg1st.svg"}
@@ -191,7 +191,7 @@ export default function OurStory() {
                 </div>
               </section>
               <section className="grid xl:hidden  grid-cols-1 mt-6 md:mt-0 md:grid-cols-2 col-span-2 gap-6 lg:gap-10">
-                <div className="p-10 z-10 after:absolute after:content-[url('/images/threestars.svg')] after:bottom-8 after:right-8 relative before:absolute before:content-[url('/images/stars.svg')] before:top-4 before:left-5  bg-[#E4EAF5] border-2 border-[#7D7D7D] rounded-xl flex flex-col items-start justify-start gap-16">
+                <div className="p-[32px] lg:p-[40px] z-30 after:absolute after:content-[url('/images/threestars.svg')] after:bottom-8 after:right-8 relative before:absolute before:content-[url('/images/stars.svg')] before:top-4 before:left-5  bg-[#E4EAF5] border-2 border-[#7D7D7D] rounded-xl flex flex-col items-start justify-start gap-[36px]">
                   <h3 className="text-xl lg:text-[28px] font-bold leading-[32px]">
                     Strategic partnership
                   </h3>
@@ -204,11 +204,11 @@ export default function OurStory() {
                     />
                   </div>
                 </div>
-                <div className="p-10 z-10 after:absolute after:content-[url('/images/threestars.svg')] after:bottom-8 after:right-8 relative before:absolute before:content-[url('/images/stars.svg')] before:top-4 before:left-5 bg-[#F5FDFF] border-2 border-[#7D7D7D] rounded-xl flex flex-col items-start justify-start gap-2 lg:gap-5">
+                <div className="p-[32px] lg:p-[40px] z-30 after:absolute after:content-[url('/images/threestars.svg')] after:bottom-8 after:right-8 relative before:absolute before:content-[url('/images/stars.svg')] before:top-4 before:left-5 bg-[#F5FDFF] border-2 border-[#7D7D7D] rounded-xl flex flex-col items-start justify-start gap-2 lg:gap-5">
                   <h3 className="text-xl  lg:text-[28px] font-bold leading-[32px]">
                     Advisory board
                   </h3>
-                  <div className="text-sm lg:text-lg leading-5 lg:leading-6 flex flex-col items-start justify-center gap-[6px] lg:gap-2">
+                  <div className="text-sm lg:text-lg leading-5 lg:leading-6 flex flex-col items-start justify-center gap-[6px] lg:gap-2 xl:gap-[10px]">
                     <p className="font-extrabold">AI Specialists</p>
                     <p className="underline font-medium">
                       Pasi Vuorio - LastBot
@@ -217,9 +217,17 @@ export default function OurStory() {
                       Tero Keski-Valkama - AI, ML , KAIKO
                     </p>
                   </div>
-                  <div className="relative text-sm lg:text-lg leading-5 lg:leading-6 flex flex-col items-start justify-center gap-[6px] lg:gap-2">
+                  <div className="relative text-sm lg:text-lg leading-5 lg:leading-6 flex flex-col items-start justify-center gap-[6px] lg:gap-2 xl:gap-[10px]">
+                    <p className="font-extrabold">Marketing & Branding</p>
+                    <p className="underline font-medium">
+                      Karen Freese - Freese Consulting (ex. PepsiCo)
+                    </p>
+                  </div>
+                  <div className="relative text-sm lg:text-lg leading-5 lg:leading-6 flex flex-col items-start justify-center gap-[6px] lg:gap-2 xl:gap-[10px]">
                     <p className="font-extrabold">Business, Tech & Network</p>
-                    <p className="underline font-medium">Henri Vass</p>
+                    <p className="underline font-medium">
+                      Henri Vass - WeAre Solutions, Kolleket
+                    </p>
                   </div>
                   {/* <Image
                     src={"/images/stars.svg"}
@@ -232,7 +240,7 @@ export default function OurStory() {
             </div>
           </section>
           <section className="xl:grid hidden col-span-1flex flex-col items-center justify-center md:mt-0  h-fit gap-6 lg:gap-10">
-            <div className="p-10 after:absolute after:content-[url('/images/threestars.svg')] after:bottom-8 after:right-8 relative before:absolute before:content-[url('/images/stars.svg')] before:top-4 before:left-5  bg-[#E4EAF5] border-2 border-[#7D7D7D] rounded-xl flex flex-col items-start justify-start gap-16">
+            <div className="p-10 z-50 after:absolute after:content-[url('/images/threestars.svg')] after:bottom-8 after:right-8 relative before:absolute before:content-[url('/images/stars.svg')] before:top-4 before:left-5  bg-[#E4EAF5] border-2 border-[#7D7D7D] rounded-xl flex flex-col items-start justify-start gap-16">
               <h3 className="text-xl lg:text-[28px] font-bold leading-[32px]">
                 Strategic partnership
               </h3>
@@ -245,7 +253,7 @@ export default function OurStory() {
                 />
               </div>
             </div>
-            <div className="p-10  after:absolute after:content-[url('/images/threestars.svg')] after:bottom-8 after:right-8 relative before:absolute before:content-[url('/images/stars.svg')] before:top-4 before:left-5 bg-[#F5FDFF] border-2 border-[#7D7D7D] rounded-xl flex flex-col items-start justify-start gap-2 lg:gap-5">
+            <div className="p-10 z-50 after:absolute after:content-[url('/images/threestars.svg')] after:bottom-8 after:right-8 relative before:absolute before:content-[url('/images/stars.svg')] before:top-4 before:left-5 bg-[#F5FDFF] border-2 border-[#7D7D7D] rounded-xl flex flex-col items-start justify-start gap-2 lg:gap-5">
               <h3 className="text-xl  lg:text-[28px] font-bold leading-[32px]">
                 Advisory board
               </h3>
@@ -256,9 +264,17 @@ export default function OurStory() {
                   Tero Keski-Valkama - AI, ML , KAIKO
                 </p>
               </div>
-              <div className="relative text-sm lg:text-lg leading-5 lg:leading-6 flex flex-col items-start justify-center gap-[6px] lg:gap-2">
+              <div className="relative text-sm lg:text-lg leading-5 lg:leading-6 flex flex-col items-start justify-center gap-[6px] lg:gap-2 xl:gap-[10px]">
+                <p className="font-extrabold">Marketing & Branding</p>
+                <p className="underline font-medium">
+                  Karen Freese - Freese Consulting (ex. PepsiCo)
+                </p>
+              </div>
+              <div className="relative text-sm lg:text-lg leading-5 lg:leading-6 flex flex-col items-start justify-center gap-[6px] lg:gap-2 xl:gap-[10px]">
                 <p className="font-extrabold">Business, Tech & Network</p>
-                <p className="underline font-medium">Henri Vass</p>
+                <p className="underline font-medium">
+                  Henri Vass - WeAre Solutions, Kolleket
+                </p>
               </div>
               {/* <Image
                     src={"/images/stars.svg"}

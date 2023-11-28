@@ -71,14 +71,14 @@ export default function Form() {
           className="text-sm lg:text-base font-medium lg:font-semibold text-white leading-5 tracking-[0.7px  ] lg:tracking-[0.8px]"
           htmlFor="name"
         >
-          Name
+          Name*
         </label>
         <input
           type="text"
           id="name"
           name="name"
           required
-          placeholder="John"
+          placeholder="John Johnson"
           value={formData.name}
           onChange={handleChange}
           className="w-full text-white bg-transparent text-sm font-medium lg:font-semibold leading-5 focus-within:border-none focus-within:outline-none outline-none border-none placeholder:text-white placeholder:text-opacity-40"
@@ -94,7 +94,7 @@ export default function Form() {
         <input
           type="email"
           id="email"
-          placeholder="johndoe@mail.xyz"
+          placeholder="john.johnson@company.com"
           name="email"
           required
           value={formData.email}
@@ -114,7 +114,7 @@ export default function Form() {
           <input
             type="tel"
             id="tel"
-            placeholder={formData.tel || "+358"}
+            placeholder={"+358 40 123 4567"}
             name="tel"
             value={formData.tel}
             onChange={handleChange}
@@ -145,7 +145,7 @@ export default function Form() {
           className="text-base font-medium lg:font-semibold text-white leading-5 tracking-[0.8px]"
           htmlFor="message"
         >
-          Message*
+          Message
         </label>
         <input
           type="text"

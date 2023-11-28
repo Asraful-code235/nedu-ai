@@ -31,16 +31,15 @@ export default function Hero() {
             Enabling your path to{" "}
             <span className="text-white text-opacity-80 font-semibold lg:font-bold">
               learn, succeed,
-              <br />
             </span>{" "}
-            and{" "}
+            and{"  "}
             <span className="text-white text-opacity-80 font-semibold lg:font-bold">
               lead
             </span>{" "}
             globally!
           </p>
         </div>
-        <Button className="hidden lg:flex w-fit px-[72px] py-4 items-center gap-3 mt-[32px] hover:bg-[#FFA937]">
+        <Button className="hidden text-lg lg:text-xl lg:flex w-fit px-[72px] py-[16px] leading-[24.016px] tracking-[0.96px] items-center gap-[10px] hover:bg-[#FFA937]">
           <Image
             src={"/icons/IcRoundPhone.png"}
             width={40}
