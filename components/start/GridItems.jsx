@@ -4,40 +4,40 @@ const items = [
   {
     img: "/images/Gamification.png",
     title: "Gamification",
-    desc: "Level up your learning journey with rewards! Earn points for every step and turn them into premium access or extra learning goodies.",
+    desc: "Unlock your potential with our gamification feature - engage actively to access premium content and earn certificates. Stay current, and get rewarded by being highlighted as a top candidate.",
   },
   {
     img: "/images/LearningTracker.png",
-    title: "Learning Tracker",
-    desc: "Level up your learning journey with rewards! Earn points for every step and turn them into premium access or extra learning goodies.",
+    title: "Dream Tracker",
+    desc: "Chart your career, follow your aspirations and enhance your journey with tailored learning materials, taking strategic steps towards your future goals.",
   },
   {
     img: "/images/CareerCanvas.png",
-    title: "Career Canvas",
-    desc: "Elevate your career with an intricately tailored CV, meticulously shaped by our AI analysis. It's not just a resume; it's your key to unlocking the doors of your dream job.",
+    title: "Magic Profile",
+    desc: "Effortlessly create your CV in your preferred language. Our tool not only structures it professionally but also ensures it can be reviewed by recruiters in their language of choice, effectively conveying your expertise and boosting your chances of being hired.",
   },
   {
     img: "/images/Learning Hub.png",
-    title: "Learning Hub",
-    desc: "Tailor-made courses, seamless links to the best from Google, Coursera, and beyond. It's more than just learning; it's your path to brilliance!",
+    title: "One-Platform Solution ",
+    desc: "Discover the convenience of enhancing your skills and finding work all in one place. Our platform uniquely integrates formal and informal education with leading job market platforms, making it effortlessly simple to keep your profile updated. Sync with our partners to receive the best job offers, tailored just for you.",
   },
   {
     img: "/images/Multilingual Platform.png",
-    title: "Multilingual Platform",
-    desc: "Go global with our multilingual platform—unlock possibilities for seamless communication and international success!",
+    title: "NeduAI Advisor",
+    desc: "Engage in an intuitive conversation with our AI-driven system to receive personalized feedback on your profile. This guidance not only uncovers unexpected career opportunities but also helps you to articulate your unique strengths and strategically design your career path.",
   },
   {
     img: "/images/Personalized AI Chatbot.png",
-    title: "Personalized AI Chatbot",
-    desc: "Our AI chat transforms queries into tailored solutions. Elevate with personalized recommendations, course links, job opportunities, and more.",
+    title: "Market Trends",
+    desc: "Key insights for career-seekers and businesses. Discover in-demand skills & courses and align them with evolving market needs.",
   },
 ];
 
 export default function GridItems() {
   return (
-    <section className="p-6  lg:p-10 xl:px-32 xl:py-40">
+    <section className="p-6  lg:p-10 xl:px-32 xl:py-32">
       <h1 className="text-center w-full text-base lg:text-5xl xl:text-6xl font-bold text-white py-8 lg:py-14 xl:py-24 leading-normal tracking-[0.8px]">
-        Core feature
+        Core features
       </h1>
       <ul className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 lg:gap-12">
         {items.map((item, key) => (

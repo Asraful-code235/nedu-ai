@@ -100,22 +100,26 @@ export default function OurStory() {
         <article className="grid grid-cols-1 xl:grid-cols-3 lg:gap-6">
           <section className="col-span-2">
             <div className=" flex flex-col gap-4 lg:gap-10 justify-between h-full">
-              <div className=" flex flex-col gap-4 lg:gap-10 text-xs lg:text-xl font-medium leading-5 lg:leading-[40px] transition-all duration-[2s] delay-500 ">
+              <div className="z-50 flex flex-col gap-4 lg:gap-10 text-xs lg:text-xl font-medium leading-5 lg:leading-[40px] transition-all duration-[2s] delay-500 ">
                 <p>
-                  Picture Spring 2023: NeduAI bursts onto the scene, riding the
-                  exhilarating AI wave to forge connections across knowledge
-                  realms. With over a decade in tandem with educational
-                  institutions and global talents, we&apos;ve been in the
-                  trenches, understanding the grind of job seekers, especially
-                  those exploring new territories.
+                  NeduAI&apos;s journey began in Spring 2023, inspired by the
+                  emerging potential of AI chatbots in education and
+                  recruitment. Over the past decade, our collaboration with
+                  educational institutions and engagement with international
+                  talents highlighted an urgent need for adaptation in a rapidly
+                  evolving global landscape. We confronted head-on the
+                  challenges of widespread job losses necessitating rapid
+                  reskilling, the difficulties faced by job market newcomers,
+                  and the complex bureaucracy of international career pursuits.
                 </p>
                 <p>
-                  Now, with our AI magic in play, it&apos;s not just
-                  transformation; we&apos;re rewriting the script on skill
-                  recognition—fueled by unbridled curiosity and unwavering
-                  ambition. Venture into our tech sanctuary, where the alchemy
-                  of talent discovery, seamless communication, and rapid growth
-                  unfolds seamlessly!
+                  Our aim is to empower both individuals and organizations,
+                  utilizing technology to meet their diverse needs. Motivated by
+                  curiosity and ambition, we are developing a solution that not
+                  only assists companies and educational institutions in
+                  efficiently sourcing top talent but also encourages
+                  individuals to be self-driven, proactive, and make informed
+                  decisions about their futures.
                 </p>
                 {/* <div
                   className={`${
@@ -168,13 +172,13 @@ export default function OurStory() {
                         />
                       </div>
                       <div className="flex flex-col items-center justify-center max-[365px]:gap-1 gap-2">
-                        <h4 className="font-bold max-[365px]:text-lg text-xl xl:text-2xl leading-4 flex-shrink-0 text-center">
+                        <h4 className="font-bold flex flex-col items-center justify-center max-[365px]:text-lg text-xl xl:text-2xl leading-4 flex-shrink-0 text-center">
                           {founder.name}
+                          <span className="font-medium text-center max-[365px]:text-lg text-xl lg:text-2xl leading-4 text-[#011B2E99]">
+                            {founder.position}
+                          </span>
                         </h4>
 
-                        <h3 className="font-medium text-center max-[365px]:text-lg text-xl lg:text-2xl leading-4 text-[#011B2E99]">
-                          ({founder.position})
-                        </h3>
                         <p className="text-xs text-center xl:text-sm font-medium leading-4 text-[#011B2E]">
                           {founder.division}
                         </p>
@@ -192,7 +196,7 @@ export default function OurStory() {
                 </div>
               </section>
               <section className="grid xl:hidden  grid-cols-1 mt-6 md:mt-0 md:grid-cols-2 col-span-2 gap-6 lg:gap-10">
-                <div className="p-[32px] lg:p-[40px] z-30 after:absolute after:content-[url('/images/threestars.svg')] after:bottom-8 after:right-8 relative before:absolute before:content-[url('/images/stars.svg')] before:top-4 before:left-5  bg-[#E4EAF5] border-2 border-[#7D7D7D] rounded-xl flex flex-col items-start justify-start gap-[36px]">
+                <div className="p-[32px] lg:p-[40px] z-30 after:absolute after:content-[url('/images/threestars.svg')] after:bottom-8 after:right-8 relative before:absolute before:content-[url('/images/stars.svg')] before:top-4 before:left-5  bg-[#E4EAF5] border-2 border-[#7D7D7D] rounded-xl flex flex-col items-start justify-start gap-2">
                   <h3 className="text-xl lg:text-[28px] font-bold leading-[32px]">
                     Strategic partnership
                   </h3>
@@ -228,7 +232,7 @@ export default function OurStory() {
                   <div className="relative text-sm lg:text-lg leading-5 lg:leading-6 flex flex-col items-start justify-center gap-[6px] lg:gap-2 xl:gap-[10px]">
                     <p className="font-extrabold">Business, Tech & Network</p>
                     <p className="underline font-medium">
-                      Henri Vass - WeAre Solutions, Kolleket
+                      Henri Vass - WeAre Solutions
                     </p>
                   </div>
                   {/* <Image
@@ -242,7 +246,7 @@ export default function OurStory() {
             </div>
           </section>
           <section className="xl:grid hidden col-span-1flex flex-col items-center justify-center md:mt-0  h-fit gap-6 lg:gap-10">
-            <div className="p-10 z-50 after:absolute after:content-[url('/images/threestars.svg')] after:bottom-8 after:right-8 relative before:absolute before:content-[url('/images/stars.svg')] before:top-4 before:left-5  bg-[#E4EAF5] border-2 border-[#7D7D7D] rounded-xl flex flex-col items-start justify-start gap-16">
+            <div className="p-10 z-50 after:absolute after:content-[url('/images/threestars.svg')] after:bottom-8 after:right-8 relative before:absolute before:content-[url('/images/stars.svg')] before:top-4 before:left-5  bg-[#E4EAF5] border-2 border-[#7D7D7D] rounded-xl flex flex-col items-start justify-start gap-2">
               <h3 className="text-xl lg:text-[28px] font-bold leading-[32px]">
                 Strategic partnership
               </h3>
@@ -276,7 +280,7 @@ export default function OurStory() {
               <div className="relative text-sm lg:text-lg leading-5 lg:leading-6 flex flex-col items-start justify-center gap-[6px] lg:gap-2 xl:gap-[10px]">
                 <p className="font-extrabold">Business, Tech & Network</p>
                 <p className="underline font-medium">
-                  Henri Vass - WeAre Solutions, Kolleket
+                  Henri Vass - WeAre Solutions
                 </p>
               </div>
               {/* <Image
@@ -303,13 +307,14 @@ export default function OurStory() {
               </p>
             </div>
             <h3 className="text-lg lg:text-3xl text-center xl:text-start leading-5 lg:leading-3 xl:leading-10 font-semibold ">
-              So what are you waiting for?
+              Investor Relations
             </h3>
             <div className="visionParagraph max-w-[448px] text-start lg:text-center xl:text-start text-sm lg:text-xl font-normal leading-[19.6px] lg:leading-8 flex flex-col gap-4 xl:gap-4">
-              <p>Interested to join our story?</p>
+              <p>Interested in being a part of our story ?</p>
               <p>
-                Leave your details and we’ll send you the link to our investment
-                materials.
+                Connect with us by leaving your details via email, and
+                we&apos;ll promptly send you a link to our comprehensive
+                investment materials.
               </p>
             </div>
           </section>

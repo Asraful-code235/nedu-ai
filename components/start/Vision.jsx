@@ -4,7 +4,7 @@ export default function Vision() {
       <div className="flex flex-col gap-2 lg:gap-5 items-start lg:items-center justify-center text-center">
         <div className="relative w-full flex items-center justify-center text-start lg:text-center">
           <h1 className="flex items-start lg:items-center justify-start lg:justify-center text-start lg:text-center gap-1 md:gap-2  w-full text-xl lg:text-5xl xl:text-6xl font-normal leading-normal lg:leading-normal tracking-[1px] md:tracking-[2.4px] xl:tracking-[3.2px] text-white text-opacity-80">
-            A{" "}
+            NeduAi&apos;s{" "}
             <span className="text-darkYellow relative font-semibold text-opacity-100">
               Vision
               <svg
@@ -74,12 +74,14 @@ export default function Vision() {
                 />
               </svg>
             </span>{" "}
-            for NeduAI&apos;s future
+            of the future
           </h1>
         </div>
-        <p className="visionParagraph text-start lg:text-center text-white text-opacity-80 font-medium  leading-5 lg:leading-10 tracking-[0.48px] text-xs lg:text-xl xl:text-2xl">
-          NeduAI envisions a future where education meets innovation, shaping
-          careers through cutting-edge technology.
+        <p className="visionParagraph text-start max-w-[994px] mx-auto lg:text-center text-white text-opacity-80 font-medium  leading-5 lg:leading-[166.667%] tracking-[0.48px] text-xs lg:text-xl xl:text-2xl">
+          NeduAI envisions a future where talents seamlessly align with market
+          expectations. Through our advanced AI-driven guidance systems, we
+          empower individuals to navigate their educational and career journeys
+          with confidence.
         </p>
       </div>
       <div className="border-4 max-w-[1664px] mx-auto flex flex-col items-start justify-center text-white border-[#C87200] rounded-2xl lg:rounded-[64px]  h-full overflow-hidden">

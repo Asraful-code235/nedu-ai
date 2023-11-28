@@ -167,7 +167,7 @@ export default function Form() {
           {success ? (
             <p className="text-[#ffad00]">Thank you for requesting</p>
           ) : (
-            " Request Info"
+            "Request Investor Materials"
           )}
         </Button>
       </div>

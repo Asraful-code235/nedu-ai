@@ -4,9 +4,9 @@ import TextChange from "./TextChange";
 
 export default function Hero() {
   return (
-    <section className="p-6 -mt-[38px] sm:-mt-0 md:px-12 xl:px-32 xl:py-16 h-[80vh] flex items-center lg:items-end xl:items-center justify-start lg:justify-center xl:justify-start text-start xl:text-center">
+    <section className="p-6 -mt-[38px] md:px-12 xl:px-32 xl:py-16 h-[80vh] flex items-center lg:items-end xl:items-center justify-start lg:justify-center xl:justify-start text-start xl:text-center">
       <div className="text-xl lg:text-2xl xl:text-5xl flex flex-col items-center lg:items-center justify-center lg:justify-center xl:items-start xl:justify-start gap-3 lg:gap-1 xl:gap-4 font-semibold leading-[30px] lg:leading-[57px] tracking-[1.2px] lg:tracking-[2.4px]">
-        <div className="flex lg:hidden items-center justify-start w-full gap-3.5">
+        <div className="flex lg:hidden items-center justify-start w-full gap-[10px]">
           <Image
             src={"/images/logo.png"}
             width={49}
@@ -27,25 +27,17 @@ export default function Hero() {
           </h1>
         </div>
         <div className="visionParagraph flex items-start lg:items-center xl:items-start justify-start lg:justify-center xl:justify-start text-start lg:text-center xl:text-start text-sm lg:text-[28px] leading-[20px] tracking-[1px] lg:leading-[45px] -mt-2 lg:mt-1">
-          <p className="text-white text-opacity-70 lg:text-opacity-40 font-normal">
-            Enabling your path to{" "}
-            <span className="text-white text-opacity-80 font-semibold lg:font-bold">
-              learn, succeed,
-            </span>{" "}
-            and{"  "}
-            <span className="text-white text-opacity-80 font-semibold lg:font-bold">
-              lead
-            </span>{" "}
-            globally!
+          <p className="text-white text-opacity-70 lg:text-opacity-80 font-normal">
+            Enabling talents to offer their true potential and get discovered
           </p>
         </div>
-        <Button className="hidden text-lg lg:text-xl lg:flex w-fit px-[72px] py-[16px] leading-[24.016px] tracking-[0.96px] items-center gap-[10px] hover:bg-[#FFA937]">
+        <Button className="hidden text-lg lg:text-xl lg:flex w-fit px-[32px] py-[16px] leading-[108%] tracking-[0.8px] items-center gap-[10px] hover:bg-[#FFA937]">
           <Image
             src={"/icons/IcRoundPhone.png"}
             width={40}
             height={40}
             alt="CellPhone_icon"
-            className="w-10 aspect-square"
+            className=" w-8 aspect-square"
           />
           <a href="mailto:info@nedu.ai" target="_blank">
             Contact Us

@@ -46,29 +46,34 @@ export default function WhoWeServe() {
             </svg>
           </span>
         </h1>
-        <p className="text-white lg:px-14 text-start lg:text-center text-opacity-80 text-sm lg:text-xl xl:text-2xl font-medium lg:leading-[40px] lg:tracking-[0.4px] xl:tracking-[0.48px]">
-          Tailored for students, job seekers, and recruiters, our AI-powered
-          platform transforms learning, job searches, and talent recruitment
-          into an unforgettable experience!
+        <p className="text-white max-w-[1240px] mx-auto text-start lg:text-center text-opacity-80 text-sm lg:text-xl xl:text-2xl font-medium lg:leading-[166.667%] lg:tracking-[0.4px] xl:tracking-[0.48px]">
+          NeduAI is designed for students, job seekers, and recruiters. Our
+          platform uses AI to enhance learning experiences, streamline job
+          searches, and make talent recruitment more efficient and effective.
         </p>
       </motion.div>
-      <motion.div className=" mt-[64px] md:mt-[128px] lg:mt-[196px] flex flex-col-reverse xl:flex-row items-start justify-start gap-16 sm:gap-24 lg:gap-44 xl:gap-20">
+      <motion.div className=" mt-[64px] md:mt-[128px] lg:mt-[196px] flex flex-col-reverse xl:flex-row items-center justify-start gap-16 sm:gap-24 lg:gap-10">
         <article className="visionParagraph max-w-[733px] mx-auto xl:flex-[0.75] xl:max-w-[770px] flex flex-col items-start justify-center gap-1 lg:gap-6">
           <h3 className=" text-white text-start lg:text-center w-full text-xs  xl:text-start text-opacity-60 lg:text-4xl font-medium leading-4 lg:leading-[30px]">
             For Recruitment
           </h3>
           <h2 className="text-white w-full text-start text-[17px] lg:text-center xl:text-start font-bold lg:font-bold leading-[23.8px] lg:leading-[60px] tracking-[0.34px]  lg:tracking-[1.4px] lg:text-[40px]">
-            Identify the best candidates using our AI-talent hunt solution
+            Experience a smarter way to recruit with NeduAI
           </h2>
           <p className="text-xs lg:text-xl xl:max-w-full w-full text-start lg:text-center xl:text-start text-white font-medium lg:font-medium leading-[17.4px] tracking-[0.12px] lg:leading-[40px] mt-2 lg:-mt-2">
-            Level up your recruitment game with NeduAI! Unlock innovative
-            methods to attract top talents globally. Better understanding,
-            better results — our 2-way translation ensures profiles speak the
-            right language every time. Elevate your hiring experience
-            effortlessly!
+            Our platform enables you to efficiently search and identify top
+            candidates, offering tools to filter the most suitable and committed
+            applicants, saving you time from sifting through countless
+            applications. Gain insights with detailed candidate statistics,
+            compare their skill-upgrading activities, and utilize AI
+            conversational support for deeper understanding. Additionally, stay
+            informed about market trends including salaries, job roles, and
+            hiring rates. Our two-way translation feature ensures candidate
+            profiles are accessible in your language, streamlining recruitment
+            and connecting you with the best talent effortlessly.
           </p>
         </article>
-        <div className="w-full aspect-[16/10] flex-1">
+        <div className="w-full h-full flex items-center justify-center flex-1 xl:flex-[0.65] 2xl:flex-1 ">
           <div className="dashboard2Before relative">
             <div className="dashboard3Before relative">
               <motion.div

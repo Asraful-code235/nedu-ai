@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function ForIndividuals() {
   return (
     <motion.div className="px-4 py-12 lg:p-12 xl:px-32 xl:py-24 flex flex-col xl:flex-row gap-6 lg:gap-16 xl:gap-10">
-      <div className="w-full flex-1 aspect-square relative">
+      <div className="w-full 2xl:flex-1 xl:flex-[0.65] flex-1 aspect-square relative">
         <Image
           src={"/icons/Dashboard3.svg"}
           width={1600}
@@ -50,14 +50,19 @@ export default function ForIndividuals() {
           For Individuals
         </h3>
         <h2 className="text-white font-bold lg:font-bold leading-[23.8px] lg:leading-[60px] text-[17px] lg:text-[40px] tracking-[0.34px]">
-          Shine Bright, Stand Out!
+          Take Control, Shape Your Future!
         </h2>
         <p className="text-xs lg:text-xl text-start lg:text-center max-w-full lg:max-w-[704px] xl:max-w-full xl:text-start text-white font-medium lg:font-medium leading-[17.4px]  tracking-[0.12px] sm:tracking-[0.12px] lg:leading-[40px] mt-4 lg:-mt-2">
-          Your career&apos;s BFF! Chat your dream career into existence and
-          watch NeduAI turn it into reality! It&apos;s not just planning;
-          it&apos;s your GDPR-compliant magic wand. Pick, print, and power up
-          with AI-crafted CVs and applications. Reimagined, reinvented, and
-          ready for the future!
+          Embark on a transformative career journey with NeduAI. Through
+          interactive, AI-assisted conversations, we help you define and pursue
+          your dream career. NeduAI guides you in setting achievable goals,
+          selecting the right educational paths, and incorporating informal
+          learning to stay in sync with the ever-changing job market. Utilize
+          our GDPR-compliant platform to create AI-optimized, personalized CVs
+          and applications that truly stand out. With NeduAI, it’s not just
+          about planning your career; it’s about actively shaping it to turn
+          your aspirations into tangible opportunities, preparing you for the
+          future.
         </p>
       </article>
     </motion.div>
