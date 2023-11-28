@@ -220,7 +220,8 @@ export default function OurStory() {
                   <div className="relative text-sm lg:text-lg leading-5 lg:leading-6 flex flex-col items-start justify-center gap-[6px] lg:gap-2 xl:gap-[10px]">
                     <p className="font-extrabold">Marketing & Branding</p>
                     <p className="underline font-medium">
-                      Karen Freese - Freese Consulting (ex. PepsiCo)
+                      Karen Freese - Freese Consulting <br />
+                      (ex. PepsiCo)
                     </p>
                   </div>
                   <div className="relative text-sm lg:text-lg leading-5 lg:leading-6 flex flex-col items-start justify-center gap-[6px] lg:gap-2 xl:gap-[10px]">
@@ -267,7 +268,8 @@ export default function OurStory() {
               <div className="relative text-sm lg:text-lg leading-5 lg:leading-6 flex flex-col items-start justify-center gap-[6px] lg:gap-2 xl:gap-[10px]">
                 <p className="font-extrabold">Marketing & Branding</p>
                 <p className="underline font-medium">
-                  Karen Freese - Freese Consulting (ex. PepsiCo)
+                  Karen Freese - Freese Consulting <br />
+                  (ex. PepsiCo)
                 </p>
               </div>
               <div className="relative text-sm lg:text-lg leading-5 lg:leading-6 flex flex-col items-start justify-center gap-[6px] lg:gap-2 xl:gap-[10px]">

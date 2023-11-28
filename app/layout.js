@@ -11,7 +11,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <Script src="https://smtpjs.com/v3/smtp.js"></Script>
-      <body className="bg-[#010101] scrollbar-hidden">
+      <body className="bg-[#010101] ">
         <main>{children}</main>
       </body>
     </html>
