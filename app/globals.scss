@@ -28,6 +28,23 @@
   }
 }
 
+@media screen and (max-width: 398px) {
+  .Advisory {
+    &::after {
+      position: absolute;
+      bottom: 1% !important;
+      right: 2% !important;
+    }
+  }
+  .Advisory {
+    &::before {
+      position: absolute;
+      top: 3% !important;
+      left: 3% !important;
+    }
+  }
+}
+
 * > *,
 body,
 html {
