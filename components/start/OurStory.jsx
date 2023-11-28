@@ -156,7 +156,7 @@ export default function OurStory() {
                       href={`mailto:${founder.mail}`}
                       target="_blank"
                       key={key}
-                      className=" flex bg-white z-20  shadow-md rounded-lg flex-col p-4 items-center justify-center gap-3"
+                      className=" flex bg-white z-20 h-full shadow-md rounded-lg flex-col p-4 items-center justify-center gap-3"
                     >
                       <div className="border-[0.8px] border-black rounded-2xl max-[365px]:w-[64] max-[365px]:h-[64] w-[84px] h-[84px] max-[365px]:p-3 p-4 relative overflow-hidden mb-2">
                         <Image
@@ -171,6 +171,7 @@ export default function OurStory() {
                         <h4 className="font-bold max-[365px]:text-lg text-xl xl:text-2xl leading-4 flex-shrink-0 text-center">
                           {founder.name}
                         </h4>
+
                         <h3 className="font-medium text-center max-[365px]:text-lg text-xl lg:text-2xl leading-4 text-[#011B2E99]">
                           ({founder.position})
                         </h3>
