@@ -99,8 +99,8 @@ export default function OurStory() {
         </h1>
         <article className="grid grid-cols-1 xl:grid-cols-3 lg:gap-6">
           <section className="col-span-2">
-            <div className=" flex flex-col gap-4 lg:gap-10 justify-between h-full">
-              <div className="z-50 flex flex-col gap-4 lg:gap-10 text-xs lg:text-xl font-medium leading-5 lg:leading-[40px] transition-all duration-[2s] delay-500 ">
+            <div className=" flex flex-col gap-[14px] justify-between h-full">
+              <div className="z-50 flex flex-col gap-4 text-xs lg:text-xl font-medium leading-5 lg:leading-[40px] transition-all duration-[2s] delay-500 ">
                 <p>
                   NeduAI&apos;s journey began in Spring 2023, inspired by the
                   emerging potential of AI chatbots in education and
@@ -111,6 +111,14 @@ export default function OurStory() {
                   challenges of widespread job losses necessitating rapid
                   reskilling, the difficulties faced by job market newcomers,
                   and the complex bureaucracy of international career pursuits.
+                </p>
+                <p>
+                  In response, NeduAI leveraged the power of AI to bridge formal
+                  and informal education with the job market, creating a
+                  unified, holistic experience. Our platform redefines the skill
+                  recognition process, providing substantial relief and support
+                  by aligning education and recruitment to match individuals
+                  with the most suitable opportunities.
                 </p>
                 <p>
                   Our aim is to empower both individuals and organizations,
@@ -147,8 +155,8 @@ export default function OurStory() {
                     />
                   </div>
                 </div> */}
-                <div className="mt-[69px] flex xl:hidden items-start gap-4 justify-start w-full">
-                  <span className="text-2xl lg:px-10 w-full font-semibold leading-normal tracking-[0.72px] border-b border-[#C7C7C7]">
+                <div className=" flex  items-start gap-4 justify-start w-full">
+                  <span className="text-2xl w-full font-semibold leading-normal tracking-[0.72px] border-b border-[#C7C7C7]">
                     Team
                   </span>
                 </div>
