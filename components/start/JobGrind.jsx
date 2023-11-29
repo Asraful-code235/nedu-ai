@@ -124,7 +124,7 @@ export default function JobGrind({ isNedu, setIsNedu, ...props }) {
         <section className=" w-full">
           {!isNedu ? (
             <div className="neduAiGrind  ">
-              <section className="max-w-[1426px] mx-auto hidden md:flex items-center justify-center">
+              <section className="max-w-[1248px] mx-auto hidden md:flex items-center justify-center">
                 <Image
                   src={"/icons/withoutNedu.svg"}
                   width={160}
@@ -177,7 +177,7 @@ export default function JobGrind({ isNedu, setIsNedu, ...props }) {
             </div>
           ) : (
             <div className="neduAiGrind overflow-hidden ">
-              <section className="max-w-[1426px] mx-auto  hidden md:flex items-center justify-center">
+              <section className="max-w-[1248px] mx-auto  hidden md:flex items-center justify-center">
                 <Image
                   src={"/icons/With NudeAI.svg"}
                   width={160}

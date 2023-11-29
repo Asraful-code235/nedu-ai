@@ -35,7 +35,7 @@ export default function MakesUsDifferent({ isVisible }) {
           <div className="DashboardBefore relative flex items-center justify-center">
             <div className=" DashboardBefore1 relative">
               <motion.div className=" DashboardBefore2 relative">
-                <div className="w-[45vw] DashboardBefore3 relative">
+                <div className="w-[65vw] md:w-[45vw] DashboardBefore3 relative">
                   <Image
                     src={"/icons/Dashboard.webp"}
                     width={1600}

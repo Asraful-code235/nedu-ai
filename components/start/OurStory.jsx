@@ -309,7 +309,7 @@ export default function OurStory() {
             <h3 className="text-lg lg:text-3xl text-center xl:text-start leading-5 lg:leading-3 xl:leading-10 font-semibold ">
               Investor Relations
             </h3>
-            <div className="visionParagraph max-w-[448px] text-start lg:text-center xl:text-start text-sm lg:text-xl font-normal leading-[19.6px] lg:leading-8 flex flex-col gap-4 xl:gap-4">
+            <div className="visionParagraph max-w-[648px] text-start lg:text-center xl:text-start text-sm lg:text-xl font-normal leading-[19.6px] lg:leading-8 flex flex-col gap-4 xl:gap-4">
               <p>Interested in being a part of our story ?</p>
               <p>
                 Connect with us by leaving your details via email, and
