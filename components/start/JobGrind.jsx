@@ -79,20 +79,20 @@ export default function JobGrind({ isNedu, setIsNedu, ...props }) {
           <div className="relative w-full text-start lg:text-center">
             <h1 className="text-xl lg:text-5xl xl:text-6xl font-normal text-white text-opacity-80 lg:leading-normal tracking-[1px] lg:tracking-[2.4px] xl:tracking-[3.2px]">
               <span className="text-darkYellow text-opacity-100 font-bold">
-                The{" "}
-              </span>
-              job application{" "}
-              <span className="text-darkYellow relative text-opacity-100 font-bold">
-                grind{" "}
-                <Image
+                <span className="text-darkYellow relative text-opacity-100 font-bold">
+                  Recruitment{" "}
+                  {/* <Image
                   src={"/images/gearset.svg"}
                   width={100}
                   height={100}
                   alt="gearset"
                   className="absolute w-7 lg:w-14 top-[-120%] lg:top-[-80%] right-[-20%] lg:right-[-15%] xl:right-[-10%] xl:top-[-60%]"
-                />
+                /> */}
+                </span>
               </span>
-              is real
+              is a critical and evolving process
+              {/* job application{" "} */}
+              {/* is real */}
             </h1>
           </div>
           <p className="visionParagraph max-w-[1316px] mx-auto text-start lg:text-center text-xs lg:text-xl xl:text-2xl font-normal lg:font-medium text-white text-opacity-80 leading-5 lg:leading-[45px] tracking-tighter lg:tracking-[0.4px] ">

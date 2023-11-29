@@ -12,14 +12,14 @@ const items = [
     desc: "Chart your career, follow your aspirations and enhance your journey with tailored learning materials, taking strategic steps towards your future goals.",
   },
   {
+    img: "/images/Personalized AI Chatbot.png",
+    title: "Market Trends",
+    desc: "Key insights for career-seekers and businesses. Discover in-demand skills & courses and align them with evolving market needs.",
+  },
+  {
     img: "/images/CareerCanvas.png",
     title: "Magic Profile",
     desc: "Effortlessly create your CV in your preferred language. Our tool not only structures it professionally but also ensures it can be reviewed by recruiters in their language of choice, effectively conveying your expertise and boosting your chances of being hired.",
-  },
-  {
-    img: "/images/Learning Hub.png",
-    title: "One-Platform Solution ",
-    desc: "Discover the convenience of enhancing your skills and finding work all in one place. Our platform uniquely integrates formal and informal education with leading job market platforms, making it effortlessly simple to keep your profile updated. Sync with our partners to receive the best job offers, tailored just for you.",
   },
   {
     img: "/images/Multilingual Platform.png",
@@ -27,9 +27,9 @@ const items = [
     desc: "Engage in an intuitive conversation with our AI-driven system to receive personalized feedback on your profile. This guidance not only uncovers unexpected career opportunities but also helps you to articulate your unique strengths and strategically design your career path.",
   },
   {
-    img: "/images/Personalized AI Chatbot.png",
-    title: "Market Trends",
-    desc: "Key insights for career-seekers and businesses. Discover in-demand skills & courses and align them with evolving market needs.",
+    img: "/images/Learning Hub.png",
+    title: "One-Platform Solution ",
+    desc: "Discover the convenience of enhancing your skills and finding work all in one place. Our platform uniquely integrates formal and informal education with leading job market platforms, making it effortlessly simple to keep your profile updated. Sync with our partners to receive the best job offers, tailored just for you.",
   },
 ];
 
