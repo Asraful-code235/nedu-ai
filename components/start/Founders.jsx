@@ -23,7 +23,7 @@ export default function Founders({ founder }) {
             {founder.division}
           </p>
         </div>
-        <div className="flex items-center gap-3 justify-center sm:-mt-2">
+        <div className="flex items-center gap-3 justify-center mt-1 sm:-mt-2 lg:mt-0 2xl:-mt-2">
           <a href={`${founder.linkedIn}`} target="_blank">
             <img
               src="/icons/LinkedIn.svg"
