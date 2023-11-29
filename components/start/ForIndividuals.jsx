@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 export default function ForIndividuals() {
   return (
-    <motion.div className="px-4 py-12 lg:p-12 xl:px-32 xl:py-24 flex flex-col xl:flex-row gap-6 lg:gap-16 xl:gap-10">
+    <motion.div className="px-4 py-12 lg:px-16 lg:py-16 2xl:px-32 flex flex-col xl:flex-row gap-6 lg:gap-16 xl:gap-10">
       <div className="w-full 2xl:flex-1 xl:flex-[0.65] flex-1 aspect-square relative">
         <Image
           src={"/icons/Dashboard3.svg"}

@@ -3,6 +3,8 @@ import Image from "next/image";
 import Button from "../shared/Button";
 import Form from "./Form";
 import { useState } from "react";
+import Founders from "./Founders";
+import Advisory from "./Advisory";
 
 const founders = [
   {
@@ -11,6 +13,7 @@ const founders = [
     position: "CEO",
     division: "Strategy and Edu Vision",
     mail: "filip@nedu.ai",
+    linkedIn: "https://www.linkedin.com/in/fbov",
   },
   {
     img: "/founders/pasi_o_mc.png",
@@ -18,13 +21,24 @@ const founders = [
     position: "CTO",
     division: "Dev. Security Specialist",
     mail: "pasi@nedu.ai",
+    linkedIn: "https://www.linkedin.com/in/pasiorovuo",
   },
+  {
+    img: "/founders/Dave Brady.webp",
+    name: "Dave Brady",
+    position: "COO",
+    division: "Solution Architect, Data Analyst",
+    mail: "pasi@nedu.ai",
+    linkedIn: "https://www.linkedin.com/in/dave-brady-b9167044",
+  },
+
   {
     img: "/founders/kari_mc.png",
     name: "Kari Savolainen",
-    position: "COO, CMO",
+    position: "CMO",
     division: "Sales & Partnerships",
     mail: "kari@nedu.ai",
+    linkedIn: "https://www.linkedin.com/in/kari-savolainen-reactored",
   },
 ];
 
@@ -60,7 +74,7 @@ export default function OurStory() {
         alt={"story_svg"}
         className="w-[600px] absolute right-[-25%] md:right-[0%] bottom-[0%] z-10"
       />
-      <section className="visionParagraph relative py-12 px-4 lg:p-12 xl:px-32 xl:py-32 space-y-6 md:space-y-9 bg-white">
+      <section className="visionParagraph relative py-12 px-4 lg:px-16 lg:py-16 2xl:px-32  space-y-6 md:space-y-9 bg-white">
         <h1 className="text-3xl lg:text-5xl font-bold leading-10 lg:leading-[67px] tracking-[0.6] lg:tracking-[0.96px]">
           Our{" "}
           <span className="text-darkYellow relative">
@@ -100,7 +114,7 @@ export default function OurStory() {
         <article className="grid grid-cols-1 xl:grid-cols-3 lg:gap-6">
           <section className="col-span-2">
             <div className=" flex flex-col gap-[14px] justify-between h-full">
-              <div className="z-50 flex flex-col gap-4 text-xs lg:text-xl font-medium leading-5 lg:leading-[40px] transition-all duration-[2s] delay-500 ">
+              <div className="z-50 flex flex-col gap-4 text-xs lg:text-base font-medium leading-5 lg:leading-[160%] tracking-[0.32px] transition-all duration-[2s] delay-500 ">
                 <p>
                   NeduAI&apos;s journey began in Spring 2023, inspired by the
                   emerging potential of AI chatbots in education and
@@ -129,32 +143,7 @@ export default function OurStory() {
                   individuals to be self-driven, proactive, and make informed
                   decisions about their futures.
                 </p>
-                {/* <div
-                  className={`${
-                    animateImage ? "" : "justify-start"
-                  } w-full hidden xl:flex items-center gap-4 z-50 transition-all duration-[2s] delay-1000"`}
-                >
-                  <Button
-                    variant="light"
-                    className="text-2xl px-10 w-fit font-semibold cursor-pointer leading-normal tracking-[0.72px]"
-                  >
-                    <p onClick={() => setAnimateImage(true)}>Meet our team</p>
-                  </Button>
-                  <div
-                    id="imageContainer"
-                    className={`${
-                      animateImage ? " transition-all duration-500" : ""
-                    } p-2 bg-black rounded-full justify-end`}
-                  >
-                    <Image
-                      src={"/icons/arrowright.svg"}
-                      width={56}
-                      height={56}
-                      alt="arrow right"
-                      className="w-12 h-12 "
-                    />
-                  </div>
-                </div> */}
+
                 <div className=" flex  items-start gap-4 justify-start w-full">
                   <span className="text-2xl w-full font-semibold leading-normal tracking-[0.72px] border-b border-[#C7C7C7]">
                     Team
@@ -162,48 +151,13 @@ export default function OurStory() {
                 </div>
               </div>
               <section className=" overflow-x-scroll scrollbar-hidden">
-                <div className=" grid grid-cols-2 sm:grid-cols-3 gap-6 py-6 items-start justify-start w-fit">
+                <div className=" grid grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-6  place-items-center place-content-center w-fit">
                   {founders.map((founder, key) => (
-                    <a
-                      href={`mailto:${founder.mail}`}
-                      target="_blank"
-                      key={key}
-                      className=" flex bg-white z-20 h-full shadow-md rounded-lg flex-col p-4 items-center justify-center gap-3"
-                    >
-                      <div className="border-[0.8px] border-black rounded-2xl max-[365px]:w-[64] max-[365px]:h-[64] w-[84px] h-[84px] max-[365px]:p-3 p-4 relative overflow-hidden mb-2">
-                        <Image
-                          src={founder.img}
-                          width={180}
-                          height={180}
-                          alt={founder.name}
-                          className="w-full aspect-square absolute inset-0"
-                        />
-                      </div>
-                      <div className="flex flex-col items-center justify-center max-[365px]:gap-1 gap-2">
-                        <h4 className="font-bold flex flex-col items-center justify-center max-[365px]:text-lg text-xl xl:text-2xl leading-4 flex-shrink-0 text-center">
-                          {founder.name}
-                          <span className="font-medium text-center max-[365px]:text-lg text-xl lg:text-2xl leading-4 text-[#011B2E99]">
-                            {founder.position}
-                          </span>
-                        </h4>
-
-                        <p className="text-xs text-center xl:text-sm font-medium leading-4 text-[#011B2E]">
-                          {founder.division}
-                        </p>
-                        <div className="flex text-center text-[#011B2E] items-center gap-2 text-xs xl:text-sm font-medium leading-5">
-                          <img
-                            src="/icons/mail.svg"
-                            alt="mail"
-                            className="w-5 h-5"
-                          />
-                          <span className="underline">{founder.mail}</span>
-                        </div>
-                      </div>
-                    </a>
+                    <Founders key={key} founder={founder} />
                   ))}
                 </div>
               </section>
-              <section className="grid xl:hidden  grid-cols-1 mt-6 md:mt-0 md:grid-cols-2 col-span-2 gap-6 lg:gap-10">
+              <section className="grid xl:hidden grid-cols-1 mt-6 md:mt-0 md:grid-cols-2 col-span-2 gap-6 lg:gap-10">
                 <div className="p-[32px] lg:p-[40px] z-30 after:absolute after:content-[url('/images/threestars.svg')] after:bottom-8 after:right-8 relative before:absolute before:content-[url('/images/stars.svg')] before:top-4 before:left-5  bg-[#E4EAF5] border-2 border-[#7D7D7D] rounded-xl flex flex-col items-start justify-start gap-2">
                   <h3 className="text-xl lg:text-[28px] font-bold leading-[32px]">
                     Strategic partnership
@@ -217,44 +171,12 @@ export default function OurStory() {
                     />
                   </div>
                 </div>
-                <div className="Advisory p-[32px] lg:p-[40px] z-30 after:absolute after:content-[url('/images/threestars.svg')] after:bottom-8 after:right-8 relative before:absolute before:content-[url('/images/stars.svg')] before:top-4 before:left-5 bg-[#F5FDFF] border-2 border-[#7D7D7D] rounded-xl flex flex-col items-start justify-start gap-2 lg:gap-5">
-                  <h3 className="text-xl  lg:text-[28px] font-bold leading-[32px]">
-                    Advisory board
-                  </h3>
-                  <div className="text-sm lg:text-lg leading-5 lg:leading-6 flex flex-col items-start justify-center gap-[6px] lg:gap-2 xl:gap-[10px]">
-                    <p className="font-extrabold">AI Specialists</p>
-                    <p className="underline font-medium">
-                      Pasi Vuorio - LastBot
-                    </p>
-                    <p className="underline font-medium">
-                      Tero Keski-Valkama - AI, ML , KAIKO
-                    </p>
-                  </div>
-                  <div className="relative text-sm lg:text-lg leading-5 lg:leading-6 flex flex-col items-start justify-center gap-[6px] lg:gap-2 xl:gap-[10px]">
-                    <p className="font-extrabold">Marketing & Branding</p>
-                    <p className="underline font-medium">
-                      Karen Freese - Freese Consulting <br />
-                      (ex. PepsiCo)
-                    </p>
-                  </div>
-                  <div className="relative text-sm lg:text-lg leading-5 lg:leading-6 flex flex-col items-start justify-center gap-[6px] lg:gap-2 xl:gap-[10px]">
-                    <p className="font-extrabold">Business, Tech & Network</p>
-                    <p className="underline font-medium">
-                      Henri Vass - WeAre Solutions
-                    </p>
-                  </div>
-                  {/* <Image
-                    src={"/images/stars.svg"}
-                    width={177}
-                    height={109}
-                    className="w-full absolute top-[-60%] scale-[0.1] left-[-40%]"
-                  /> */}
-                </div>
+                <Advisory />
               </section>
             </div>
           </section>
           <section className="xl:grid hidden col-span-1flex flex-col items-center justify-center md:mt-0  h-fit gap-6 lg:gap-10">
-            <div className="p-10 z-50 after:absolute after:content-[url('/images/threestars.svg')] after:bottom-8 after:right-8 relative before:absolute before:content-[url('/images/stars.svg')] before:top-4 before:left-5  bg-[#E4EAF5] border-2 border-[#7D7D7D] rounded-xl flex flex-col items-start justify-start gap-2">
+            <div className="px-[82px] py-[67px] z-50 after:absolute after:content-[url('/images/threestars.svg')] after:bottom-8 after:right-8 relative before:absolute before:content-[url('/images/stars.svg')] before:top-4 before:left-5  bg-[#E4EAF5] border-2 border-[#7D7D7D] rounded-xl flex flex-col items-start justify-center gap-2">
               <h3 className="text-xl lg:text-[28px] font-bold leading-[32px]">
                 Strategic partnership
               </h3>
@@ -272,23 +194,68 @@ export default function OurStory() {
                 Advisory board
               </h3>
               <div className="text-sm lg:text-lg leading-5 lg:leading-6 flex flex-col items-start justify-center gap-[6px] lg:gap-2">
-                <p className="font-extrabold">AI Specialists</p>
-                <p className="underline font-medium">Pasi Vuorio - LastBot</p>
-                <p className="underline font-medium">
+                <p className="font-extrabold mt-2">AI Specialists</p>
+                <p className="underline font-medium flex flex-wrap gap-[10px]">
+                  Pasi Vuorio - LastBot
+                  <a
+                    href="https://www.linkedin.com/in/pasivuorio"
+                    target="_blank"
+                  >
+                    <img
+                      src="/founders/FoundersLinkedIn.svg"
+                      alt="Linked In"
+                      className="w-[23px] h-[23px]"
+                    />
+                  </a>
+                </p>
+                <p className="underline font-medium flex flex-wrap gap-[10px]">
                   Tero Keski-Valkama - AI, ML , KAIKO
+                  <a
+                    href="https://www.linkedin.com/in/terokeskivalkama"
+                    target="_blank"
+                  >
+                    <img
+                      src="/founders/FoundersLinkedIn.svg"
+                      alt="Linked In"
+                      className="w-[23px] h-[23px]"
+                    />
+                  </a>
                 </p>
               </div>
-              <div className="relative text-sm lg:text-lg leading-5 lg:leading-6 flex flex-col items-start justify-center gap-[6px] lg:gap-2 xl:gap-[10px]">
+              <div className="relative mt-2 text-sm lg:text-lg leading-5 lg:leading-6 flex flex-col items-start justify-center gap-[6px] lg:gap-2 xl:gap-[10px]">
                 <p className="font-extrabold">Marketing & Branding</p>
-                <p className="underline font-medium">
-                  Karen Freese - Freese Consulting <br />
-                  (ex. PepsiCo)
+                <p className="underline font-medium flex flex-wrap gap-1">
+                  Karen Freese - Freese Consulting
+                  <span className="flex gap-[10px]">
+                    {" "}
+                    (ex. PepsiCo)
+                    <a
+                      href="https://www.linkedin.com/in/karenfreese"
+                      target="_blank"
+                    >
+                      <img
+                        src="/founders/FoundersLinkedIn.svg"
+                        alt="Linked In"
+                        className="w-[23px] h-[23px]"
+                      />
+                    </a>
+                  </span>
                 </p>
               </div>
-              <div className="relative text-sm lg:text-lg leading-5 lg:leading-6 flex flex-col items-start justify-center gap-[6px] lg:gap-2 xl:gap-[10px]">
+              <div className="relative mt-2 text-sm lg:text-lg leading-5 lg:leading-6 flex flex-col items-start justify-center gap-[6px] lg:gap-2 xl:gap-[10px]">
                 <p className="font-extrabold">Business, Tech & Network</p>
-                <p className="underline font-medium">
+                <p className="underline font-medium flex flex-wrap gap-[10px]">
                   Henri Vass - WeAre Solutions
+                  <a
+                    href="https://www.linkedin.com/in/henrivass"
+                    target="_blank"
+                  >
+                    <img
+                      src="/founders/FoundersLinkedIn.svg"
+                      alt="Linked In"
+                      className="w-[23px] h-[23px]"
+                    />
+                  </a>
                 </p>
               </div>
               {/* <Image
@@ -302,7 +269,7 @@ export default function OurStory() {
         </article>
         <section className="flex pt-24 flex-col xl:flex-row items-start lg:items-center xl:items-start justify-center xl:justify-between z-50 gap-10 lg:gap-28 ">
           <section className="flex flex-col items-start lg:items-center xl:items-start justify-center gap-2 lg:gap-8 xl:gap-6">
-            <div className="flex mt-[66px] w-full items-start lg:items-center justify-start lg:justify-center xl:justify-start gap-3.5">
+            <div className="flex mt-[66px] w-full items-start lg:items-center justify-start lg:justify-center xl:justify-start gap-3.5 ">
               <Image
                 src={"/images/logo.png"}
                 width={49}
@@ -310,14 +277,14 @@ export default function OurStory() {
                 alt="Logo"
                 className="w-7 h-7 lg:w-12 lg:h-12 object-center object-cover aspect-square"
               />
-              <p className="text-black font-medium lg:font-semibold text-base lg:text-[28px] leading-normal tracking-[0.32px] lg:tracking-widest">
+              <p className="text-black font-medium lg:font-semibold text-base lg:text-[40px] leading-normal tracking-[0.32px] lg:tracking-[0.8px]">
                 NeduAI
               </p>
             </div>
             <h3 className="text-lg lg:text-3xl text-center xl:text-start leading-5 lg:leading-3 xl:leading-10 font-semibold ">
               Investor Relations
             </h3>
-            <div className="visionParagraph max-w-[648px] text-start lg:text-center xl:text-start text-sm lg:text-xl font-normal leading-[19.6px] lg:leading-8 flex flex-col gap-4 xl:gap-4">
+            <div className="visionParagraph max-w-[441px] text-start lg:text-center xl:text-start text-sm lg:text-base font-medium leading-[19.6px] lg:leading-[187.5%] lg:tracking-[0.32px] flex flex-col gap-4 xl:gap-6">
               <p>Interested in being a part of our story ?</p>
               <p>
                 Connect with us by leaving your details via email, and

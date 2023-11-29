@@ -64,7 +64,7 @@ export default function Form() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="py-10 z-50 w-full max-w-[827px] xl:max-w-[550px] px-6 lg:px-16 flex flex-col gap-7 bg-[#25252599] backdrop-blur rounded-2xl lg:rounded-[32px]"
+      className="py-10 z-50 w-full max-w-[827px] xl:max-w-[744px] px-6 lg:px-[60px] lg:py-[36px] flex flex-col gap-7 bg-[#25252599] backdrop-blur rounded-2xl lg:rounded-[32px]"
     >
       <div className="border-b border-opacity-40 w-full flex-col flex items-start">
         <label
@@ -157,12 +157,12 @@ export default function Form() {
           className="w-full text-white  bg-transparent  text-sm font-medium lg:font-semibold leading-5 focus-within:border-none focus-within:outline-none outline-none border-none placeholder:text-white placeholder:text-opacity-40"
         />
       </div>
-      <div className="w-full flex items-center justify-end">
+      <div className="w-full flex items-center justify-start">
         <Button
           type="submit"
           variant="light"
           disabled={success}
-          className="px-8 py-2  md:px-[27.5px] md:py-[8.571px] w-full sm:w-fit text-sm rounded-[5.714px] font-semibold leading-[24.297px] tracking-[0.7px] bg-white border-none outline-none"
+          className="px-8 py-2 lg:py-[7.5px] lg:px-[47.7px] w-full sm:w-fit text-sm rounded-[5.714px] font-semibold leading-[24.297px] tracking-[0.7px] bg-white border-none outline-none"
         >
           {success ? (
             <p className="text-[#ffad00]">Thank you for requesting</p>

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function ForEducation() {
   return (
-    <section className="visionParagraph p-4 lg:p-12 xl:px-32 xl:py-16">
+    <section className="visionParagraph p-4 lg:p-12 lg:px-16 lg:py-16 2xl:px-32 ">
       <div className="visionParagraph bg-[#2B44E7] rounded-xl lg:rounded-[64px] py-6 lg:py-[82px] xl:py-16 px-3 lg:px-[84px] 2xl:px-[150px] grid grid-cols-1 xl:grid-cols-2 place-content-center place-items-center gap-8 lg:gap-14 xl:gap-10">
         <article className="flex flex-col items-start lg:items-center xl:items-start justify-center gap-1 lg:gap-6">
           <h3 className=" text-white w-full text-start lg:text-center xl:text-start text-opacity-60 text-[10px] lg:text-[38px] xl:text-[1.8vw] font-medium leading-5 lg:leading-[30px]">

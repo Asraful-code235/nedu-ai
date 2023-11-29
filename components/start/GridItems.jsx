@@ -1,4 +1,7 @@
+"use client";
 import Image from "next/image";
+import { motion, useAnimation } from "framer-motion";
+import { useEffect, useRef, useState } from "react";
 
 const items = [
   {
@@ -33,16 +36,37 @@ const items = [
   },
 ];
 
+const container = {
+  hidden: {},
+  visible: {
+    transition: { staggerChildren: 0.2 },
+  },
+};
+
 export default function GridItems() {
+  const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
+
   return (
-    <section className="p-6  lg:p-10 xl:px-32 xl:py-32">
+    <motion.section className="p-6 lg:p-10 lg:px-16 lg:py-16 2xl:px-32 2xl:py-16">
       <h1 className="text-center w-full text-base lg:text-5xl xl:text-6xl font-bold text-white py-8 lg:py-14 xl:py-24 leading-normal tracking-[0.8px]">
         Core features
       </h1>
-      <ul className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-6 lg:gap-12">
+      <motion.ul
+        animate={animateCard}
+        transition={{ duration: 0.5, delayChildren: 0.5 }}
+        className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-6 lg:gap-12"
+      >
         {items.map((item, key) => (
-          <li
+          <motion.li
             key={key}
+            initial={{
+              opacity: 0,
+            }}
+            whileInView={{
+              opacity: 1,
+            }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.3, delay: 0.08 * key }}
             className="flex hover:bg-opacity-80 transition-colors duration-300 p-8 bg-[#111010] rounded-2xl items-center justify-start flex-col gap-3 lg:gap-6"
           >
             <div className="flex flex-col gap-2 items-center justify-center">
@@ -60,9 +84,9 @@ export default function GridItems() {
             <p className="visionParagraph text-xs lg:text-xl xl:text-[22px] leading-5 lg:leading-[40px] lg:tracking-[0.4px] xl:tracking-[0.44px] font-medium text-white text-opacity-80 text-center">
               {item.desc}
             </p>
-          </li>
+          </motion.li>
         ))}
-      </ul>
-    </section>
+      </motion.ul>
+    </motion.section>
   );
 }

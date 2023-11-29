@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-
+import { motion } from "framer-motion";
 const withoutNeduAi = [
   {
     img: "/icons/findingCareer.svg",
@@ -74,23 +74,26 @@ const withNeduAi = [
 export default function JobGrind({ isNedu, setIsNedu, ...props }) {
   return (
     <section className="w-full relative">
-      <section className="p-[23px] md:p-10 xl:p-32 flex flex-col gap-5 lg:gap-8 xl:gap-16 items-center justify-center overflow-hidden">
+      <section className="p-[23px] md:p-10 lg:px-16 lg:py-16 2xl:px-32 flex flex-col gap-5 lg:gap-8 xl:gap-16 items-center justify-center overflow-hidden">
         <div className="flex flex-col items-center justify-center text-center gap-2 lg:gap-6 xl:gap-8">
           <div className="relative w-full text-start lg:text-center">
             <h1 className="text-xl lg:text-5xl xl:text-6xl font-normal text-white text-opacity-80 lg:leading-normal tracking-[1px] lg:tracking-[2.4px] xl:tracking-[3.2px]">
+              Recruitment is a{" "}
               <span className="text-darkYellow text-opacity-100 font-bold">
-                <span className="text-darkYellow relative text-opacity-100 font-bold">
-                  Recruitment{" "}
-                  {/* <Image
-                  src={"/images/gearset.svg"}
+                critical{" "}
+              </span>
+              and{" "}
+              <span className="text-darkYellow relative text-opacity-100 font-bold">
+                evolving{" "}
+                <Image
+                  src={"/criticalThinking.svg"}
                   width={100}
                   height={100}
                   alt="gearset"
-                  className="absolute w-7 lg:w-14 top-[-120%] lg:top-[-80%] right-[-20%] lg:right-[-15%] xl:right-[-10%] xl:top-[-60%]"
-                /> */}
-                </span>
+                  className="absolute w-7 lg:w-14 top-[-120%] lg:top-[-80%] right-[-20%] lg:right-[-15%] xl:right-[-2%] xl:top-[-45%]"
+                />
               </span>
-              is a critical and evolving process
+              process
               {/* job application{" "} */}
               {/* is real */}
             </h1>
@@ -103,22 +106,28 @@ export default function JobGrind({ isNedu, setIsNedu, ...props }) {
           </p>
         </div>
         <div className="w-fit transition-colors duration-500 delay-500 flex justify-center items-center gap-6 xl:gap-10 p-1 lg:p-[10px] xl:p-4 rounded-full bg-[#2E2E2E] border  md:border-2 border-[#595959]">
-          <button
+          <motion.button
             onClick={() => setIsNedu(false)}
+            // whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}
             className={`${
               !isNedu ? "bg-[#ff980e] text-white" : "text-white"
             } px-[14px] py-1.5 lg:px-8 lg:py-4 xl:px-[52px] xl:py-7 rounded-full text-[10px] lg:text-xl xl:text-3xl font-medium leading-normal tracking-[0.5px] lg:tracking-[1px] xl:tracking-[1.6px] `}
           >
             Without NeduAI
-          </button>
-          <button
+          </motion.button>
+          <motion.button
             onClick={() => setIsNedu(true)}
+            // whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}
             className={`${
               isNedu ? "bg-[#ff980e] text-white" : " text-white"
             } px-[14px] py-1.5 lg:px-8 lg:py-4 xl:px-[52px] xl:py-7 rounded-full text-[10px] lg:text-xl xl:text-3xl font-medium leading-normal tracking-[0.5px] lg:tracking-[1px] xl:tracking-[1.6px]  `}
           >
             With NeduAI
-          </button>
+          </motion.button>
         </div>
 
         <section className=" w-full">

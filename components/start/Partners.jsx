@@ -61,7 +61,7 @@ const images = [
 
 export default function Partners() {
   return (
-    <section className="p-6 md:p-12 overflow-hidden xl:px-32 xl:py-16 md:mt-6 lg:mt-20 flex flex-col gap-6 lg:gap-32">
+    <section className="p-6 md:p-12 overflow-hidden lg:px-16 lg:py-16 2xl:px-32 md:mt-6 lg:mt-20 flex flex-col gap-6 lg:gap-32">
       <div className="flex items-center gap-3 justify-center relative">
         <h1 className="text-white flex items-center justify-center gap-1 flex-wrap text-sm lg:text-5xl text-opacity-80 leading-normal tracking-[0.7px] lg:tracking-[2.4px] text-center">
           <span className="relative flex items-center w-fit">

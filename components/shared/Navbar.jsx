@@ -2,7 +2,7 @@ import Image from "next/image";
 import Button from "./Button";
 export default function Navbar() {
   return (
-    <header className="p-6 md:p-12 xl:px-32 xl:py-16 flex items-center justify-start lg:justify-between">
+    <header className="p-6 md:p-12 lg:px-16 lg:py-16 2xl:px-32 flex items-center justify-start lg:justify-between">
       <div className="hidden lg:flex items-center justify-center lg:justify-start gap-3.5">
         <Image
           src={"/images/logo.png"}
@@ -43,13 +43,13 @@ export default function Navbar() {
             </svg>
           </a>
         </span>
-        <Button className="flex px-8 py-4 tracking-[0.8px] items-center font-medium leading-[21.6px] gap-3 text-lg lg:text-xl hover:bg-[#FFA937]">
+        <Button className="flex px-8 py-4 tracking-[0.64px] 2xl:tracking-[0.8px] items-center font-semibold leading-[21.6px] gap-3 text-lg lg:text-xl hover:bg-[#FFA937]">
           <Image
             src={"/icons/IcRoundPhone.png"}
             width={32}
             height={32}
             alt="CellPhone_icon"
-            className="w-8 h-8 aspect-square"
+            className="w-6 2xl:w-8  aspect-square"
           />
 
           <a href="mailto:info@nedu.ai" target="_blank">

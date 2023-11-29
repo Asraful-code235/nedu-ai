@@ -13,6 +13,7 @@ import VisionAndGrindContainer from "@/components/start/VisionAndGrindContainer"
 import WhoWeServe from "@/components/start/WhoWeServe";
 import YouthEmpower from "@/components/start/YouthEmpower";
 import YouthEmpowerment from "@/components/start/YouthEmpowerment";
+import Timeline from "@/components/start/Timeline";
 
 export default function Home() {
   return (
@@ -31,6 +32,7 @@ export default function Home() {
       <section className="relative ">
         <OurStory />
       </section>
+      <Timeline />
     </section>
   );
 }

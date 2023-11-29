@@ -4,7 +4,7 @@ import TextChange from "./TextChange";
 
 export default function Hero() {
   return (
-    <section className="p-6 -mt-[38px] md:px-12 xl:px-32 xl:py-16 h-[80vh] flex items-center lg:items-end xl:items-center justify-start lg:justify-center xl:justify-start text-start xl:text-center">
+    <section className="p-6 md:px-12 lg:px-16 lg:py-16 2xl:px-32 2xl:py-16 h-[80vh] flex items-center lg:items-end xl:items-center justify-start lg:justify-center xl:justify-start text-start xl:text-center">
       <div className="text-xl lg:text-2xl xl:text-5xl flex flex-col items-center lg:items-center justify-center lg:justify-center xl:items-start xl:justify-start gap-3 lg:gap-1 xl:gap-4 font-semibold leading-[30px] lg:leading-[57px] tracking-[1.2px] lg:tracking-[2.4px]">
         <div className="flex lg:hidden items-center justify-start w-full gap-[10px]">
           <Image
@@ -19,25 +19,25 @@ export default function Hero() {
           </p>
         </div>
         <div className="flex text-white items-start lg:items-center gap-3 w-full">
-          <h1 className="text-white text-xl lg:text-5xl xl:text-5xl text-opacity-80  whitespace-nowrap flex flex-col items-start lg:items-center lg:flex-row justify-start lg:justify-between lg:gap-4 tracking-[1.2px]">
+          <h1 className="text-white text-xl lg:text-[42px] 2xl:text-5xl text-opacity-80  whitespace-nowrap flex flex-col items-start lg:items-center lg:flex-row justify-start lg:justify-between lg:gap-4 tracking-[1.2px]">
             The AI-powered
             <span className="whitespace-nowrap flex items-center gap-1">
               future of <TextChange />
             </span>
           </h1>
         </div>
-        <div className="visionParagraph flex items-start lg:items-center xl:items-start justify-start lg:justify-center xl:justify-start text-start lg:text-center xl:text-start text-sm lg:text-[28px] leading-[20px] tracking-[1px] lg:leading-[45px] -mt-2 lg:mt-1">
-          <p className="text-white text-opacity-70 lg:text-opacity-80 font-normal">
+        <div className="visionParagraph flex items-start lg:items-center xl:items-start justify-start lg:justify-center xl:justify-start text-start lg:text-center xl:text-start text-sm lg:text-[24px] 2xl:text-[28px] leading-[187.5%] tracking-normal  2xl:leading-[160.714%] -mt-2 lg:mt-1">
+          <p className="text-white text-opacity-70 lg:text-opacity-80 font-normal lg:font-medium">
             Enabling talents to offer their true potential and get discovered
           </p>
         </div>
-        <Button className="hidden text-lg lg:text-xl lg:flex w-fit px-[32px] py-[16px] leading-[108%] tracking-[0.8px] items-center gap-[10px] hover:bg-[#FFA937]">
+        <Button className="hidden text-base 2xl:text-lg lg:flex w-fit px-[32px] py-[16px] lg:py-5 lg:px-8 leading-[135%] 2xl:leading-[108%] lg:tracking-[0.64px] 2xl:tracking-[0.8px] items-center gap-[10px] hover:bg-[#FFA937]">
           <Image
             src={"/icons/IcRoundPhone.png"}
             width={40}
             height={40}
             alt="CellPhone_icon"
-            className=" w-8 aspect-square"
+            className="w-6 2xl:w-8 aspect-square"
           />
           <a href="mailto:info@nedu.ai" target="_blank">
             Contact Us
