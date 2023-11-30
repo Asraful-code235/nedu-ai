@@ -47,7 +47,7 @@ export default function OurStory() {
   const [animateImage, setAnimateImage] = useState(false);
 
   return (
-    <section className="ourStoryBg ">
+    <section className="ourStoryBg">
       <img
         src="/icons/worldmap.png"
         alt=""
@@ -66,7 +66,7 @@ export default function OurStory() {
         width={1600}
         height={1600}
         alt={"story_svg"}
-        className="w-[600px] absolute opacity-40 left-[-25%] md:left-[-4%] bottom-[2%] z-10 rotate-90"
+        className="w-[600px] absolute opacity-30 left-[-25%] md:left-[-4%] bottom-[2%] z-10 rotate-90"
       />
       <section className="visionParagraph relative pb-12 pt-6 px-4 lg:px-16 2xl:px-32  space-y-6 md:space-y-9 bg-white">
         <h1 className="text-3xl lg:text-5xl font-bold leading-10 lg:leading-[67px] tracking-[0.6] lg:tracking-[0.96px]">

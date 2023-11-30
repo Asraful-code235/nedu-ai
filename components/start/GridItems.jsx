@@ -111,8 +111,8 @@ export default function GridItems() {
               transition={{ duration: 0.3, delay: 0.08 * key }}
               className={`${
                 key === 1
-                  ? "lg:px-[42px] lg:py-[48px] px-[32px] py-[38px] h-fit"
-                  : "lg:px-[42px] lg:py-[64px] px-[32px] py-[54px] h-full"
+                  ? "xl:px-[42px] xl:py-[48px] lg:px-6 lg:py-9 px-[32px] py-[38px] h-fit"
+                  : "xl:px-[42px] xl:py-[64px] lg:px-6 lg:py-11 px-[32px] py-[54px] h-full"
               } flex hover:bg-opacity-80 max-w-full p-4 lg:p-0 lg:max-w-[419px] transition-colors duration-300  bg-[#111010] rounded-2xl items-center justify-start flex-col gap-1`}
             >
               <div className="flex flex-col gap-2 items-center justify-center">
@@ -156,8 +156,8 @@ export default function GridItems() {
               transition={{ duration: 0.3, delay: 0.08 * key }}
               className={`${
                 key === 0
-                  ? "lg:px-[42px] lg:py-[48px] px-[22px] py-[28px] h-fit"
-                  : "lg:px-[42px] lg:py-[64px] px-[22px] py-[44px] h-full"
+                  ? "xl:px-[42px] xl:py-[48px] lg:px-6 lg:py-9 px-[32px] py-[38px] h-fit"
+                  : "xl:px-[42px] xl:py-[64px] lg:px-6 lg:py-11 px-[32px] py-[54px] h-full"
               } flex hover:bg-opacity-80 max-w-full p-4 lg:p-0 lg:max-w-[419px] transition-colors duration-300  bg-[#111010] rounded-2xl items-center justify-start flex-col gap-1`}
             >
               <div className="flex flex-col gap-2 items-center justify-center">
@@ -201,8 +201,8 @@ export default function GridItems() {
               transition={{ duration: 0.3, delay: 0.08 * key }}
               className={`${
                 key === 1
-                  ? "lg:px-[42px] lg:py-[48px] px-[32px] py-[38px] h-fit"
-                  : "lg:px-[42px] lg:py-[64px] px-[32px] py-[54px] h-full"
+                  ? "xl:px-[42px] xl:py-[48px] lg:px-6 lg:py-9 px-[32px] py-[38px] h-fit"
+                  : "xl:px-[42px] xl:py-[64px] lg:px-6 lg:py-11 px-[32px] py-[54px] h-full"
               } flex hover:bg-opacity-80 max-w-full p-4 lg:p-0 lg:max-w-[419px] transition-colors duration-300  bg-[#111010] rounded-2xl items-center justify-start flex-col gap-1`}
             >
               <div className="flex flex-col gap-2 items-center justify-center">
@@ -229,7 +229,7 @@ export default function GridItems() {
           ))}
         </motion.ul>
       </div>
-      <div className="  mx-auto h-full md:hidden flex flex-col items-center gap-5 justify-center">
+      <div className=" mx-auto h-full md:hidden flex flex-col items-center gap-5 justify-center">
         <motion.ul
           animate={animateCard}
           transition={{ duration: 0.5, delayChildren: 0.5 }}

@@ -39,6 +39,8 @@
   );
 }
 
+// timeline linearGradient
+
 @media screen and (max-width: 1024px) {
   ::-webkit-scrollbar {
     display: none;
@@ -84,25 +86,6 @@ html {
     transform: translateY(-200px);
   }
 }
-/* Add this to your CSS file */
-
-// .div {
-//   background: radial-gradient(
-//     50% 50% at 50% 50%,
-//     rgba(255, 255, 255, 0.5) 0%,
-//     rgba(255, 255, 255, 0) 100%
-//   );
-//   border-radius: 191.1px;
-//   box-shadow: 0px 0px 37.8px #ffffff99, 0px 0px 75.6px #ffffff99,
-//     0px 0px 264.61px #ffffff66, 0px 0px 529.23px #ffffff99,
-//     0px 0px 907.25px #ffffffcc, 0px 0px 1587.68px #ffffff;
-//   height: 382px;
-//   left: 1646px;
-//   position: absolute;
-//   top: 2357px;
-//   transform: rotate(99.09deg);
-//   width: 382px;
-// }
 
 .bgImage {
   background: linear-gradient(0deg, #000 6.08%, rgba(0, 0, 0, 0) 90.77%),
@@ -110,31 +93,7 @@ html {
     lightgray -2.954px -300.855px / 119.539% 136.153% no-repeat;
   background-position: center;
   background-size: cover;
-
-  // @media screen and (max-width: 768px) {
-  //   background: linear-gradient(0deg, #000 15.08%, rgba(0, 0, 0, 0) 90.77%),
-  //     url("/images/BillboardMain.webp"),
-  //     lightgray -2.954px -300.855px / 119.539% 136.153% no-repeat;
-  //   background-position: center;
-  //   background-size: cover;
-  // }
 }
-
-// .ourStoryBg {
-//   position: relative;
-//   &::before {
-//     content: url("/icons/ourstorybgimage.svg");
-//     background-image: url("");
-//     background-position: center;
-//     background-size: cover;
-//     width: 100%;
-//     height: 100%;
-//     top: 0;
-//     left: 0;
-//     right: 0;
-//     bottom: 0;
-//   }
-// }
 
 .container {
   display: flex;
@@ -167,20 +126,6 @@ html {
   box-shadow: 15px 15px 1px -3px #999999;
   position: relative;
   z-index: -10;
-  // &:nth-child(1) {
-  //   &::before {
-  //     content: "";
-  //     z-index: 999999;
-  //     background-image: url("/icons/line.svg");
-  //     background-repeat: no-repeat;
-  //     background-size: contain;
-  //     position: absolute;
-  //     top: 50%;
-  //     right: -24%;
-  //     width: 80px;
-  //     height: 60px;
-  //   }
-  // }
 }
 
 .grindItemBoxWithNedu {
@@ -226,4 +171,20 @@ html {
   }
 }
 
-// timeline
+//vision
+// .section-with-animated-border {
+//   position: relative;
+//   overflow: hidden;
+// }
+
+// .section-with-animated-border::before {
+//   content: "";
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 0;
+//   background-color: #c87200;
+//   z-index: -1;
+//   animation: borderAnimation 1s ease-in-out forwards;
+// }

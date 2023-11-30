@@ -1,7 +1,7 @@
 import Image from "next/image";
 export default function Timeline() {
   return (
-    <section className="visionParagraph min-h-[70vh] relative py-6 lg:py-20 px-6 lg:px-16 2xl:px-32 bg-white ">
+    <section className="visionParagraph bg-gradient-to-l from-[rgba(223,222,222,0.1)] to-transparent min-h-[70vh] relative py-6 lg:py-20 px-6 lg:px-16 2xl:px-32 bg-white ">
       <h1 className="visionParagraph z-50 text-3xl lg:text-5xl font-bold leading-10 lg:leading-[67px] tracking-[0.6] lg:tracking-[0.96px]">
         NeduAi{" "}
         <span className="text-[#FF980E] relative">
@@ -51,7 +51,7 @@ export default function Timeline() {
         width={1600}
         height={1600}
         alt={"story_svg"}
-        className="w-[600px] absolute right-[-25%] md:right-[0%] top-[0%] z-50"
+        className="w-[600px] absolute right-[-25%] md:right-[0%] top-[0%] z-50 opacity-60"
       />
       <div className="relative mt-40 min-h-[600px] max-w-[1440px] mx-auto hidden lg:flex items-center justify-center">
         <Image
