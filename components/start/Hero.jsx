@@ -21,7 +21,7 @@ export default function Hero() {
         <div className="flex text-white items-start lg:items-center gap-3 w-full">
           <h1 className="text-white text-xl lg:text-[42px] 2xl:text-5xl text-opacity-80  whitespace-nowrap flex flex-col items-start lg:items-center lg:flex-row justify-start lg:justify-between lg:gap-4 tracking-[1.2px]">
             The AI-powered
-            <span className="whitespace-nowrap flex items-center gap-1">
+            <span className="whitespace-nowrap flex items-center gap-[10px]">
               future of <TextChange />
             </span>
           </h1>

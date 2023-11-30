@@ -47,18 +47,11 @@ export default function OurStory() {
   const [animateImage, setAnimateImage] = useState(false);
 
   return (
-    <section className="ourStoryBg relative !overflow-hidden before:absolute before:lg:content-[url('/icons/outteambot.svg')] before:content-[url('/pattent.svg')] before:left-0 before:top-[57%] before:lg:top-[55%] before:scale-[2.8] before:lg:scale-[1] before:z-[5]">
+    <section className="ourStoryBg ">
       <img
         src="/icons/worldmap.png"
         alt=""
         className="absolute hidden lg:block top-[20%] left-[5%] right-0 max-h-[400px] object-center object-cover bottom-0 z-10 object-fill"
-      />
-      <Image
-        src={"/icons/storysvg1st.svg"}
-        width={1600}
-        height={1600}
-        alt={"story_svg"}
-        className="w-[600px] absolute right-[-25%] md:right-[0%] top-[0%] z-50"
       />
 
       {/* <Image
@@ -73,7 +66,7 @@ export default function OurStory() {
         width={1600}
         height={1600}
         alt={"story_svg"}
-        className="w-[600px] absolute right-[-25%] md:right-[0%] bottom-[0%] z-10"
+        className="w-[600px] absolute left-[-25%] md:left-[-4%] bottom-[0%] z-10 rotate-90"
       />
       <section className="visionParagraph relative pb-12 pt-6 px-4 lg:px-16 2xl:px-32  space-y-6 md:space-y-9 bg-white">
         <h1 className="text-3xl lg:text-5xl font-bold leading-10 lg:leading-[67px] tracking-[0.6] lg:tracking-[0.96px]">
@@ -271,7 +264,7 @@ export default function OurStory() {
             </div>
           </section>
         </article>
-        <section className="flex pt-24 flex-col xl:flex-row items-start lg:items-center xl:items-start justify-center xl:justify-between z-50 gap-10 lg:gap-28 ">
+        <section className="flex z-40 pt-24 flex-col xl:flex-row items-start lg:items-center xl:items-start justify-center xl:justify-between z-50 gap-10 lg:gap-28 ">
           <section className="flex flex-col items-start lg:items-center xl:items-start justify-center gap-2 lg:gap-8 xl:gap-6">
             <div className="flex mt-[66px] w-full items-start lg:items-center justify-start lg:justify-center xl:justify-start gap-3.5 ">
               <Image
@@ -299,7 +292,7 @@ export default function OurStory() {
           </section>
           <Form />
         </section>
-        <footer className="py-3 flex items-center justify-start border-t border-[#7E7E7E]">
+        <footer className="py-3 z-40 flex items-center justify-start border-t border-[#7E7E7E]">
           &copy; 2023 NeduAI Oy
         </footer>
       </section>
