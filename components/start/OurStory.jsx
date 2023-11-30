@@ -39,7 +39,7 @@ const founders = [
     position: "CMO",
     division: "Sales & Partnerships",
     mail: "kari@nedu.ai",
-    linkedIn: "https://www.linkedin.com/in/kari-savolainen-reactored",
+    linkedIn: "http://www.linkedin.com/in/kari-savolainen",
   },
 ];
 
