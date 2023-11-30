@@ -14,7 +14,7 @@ export default function Timeline() {
           className="w-full  mx-auto h-full object-center object-cover"
         />
         {/* july 2023 */}
-        <div className="absolute max-w-[226px] bottom-[10%] left-0 flex flex-col gap-2 items-start justify-start text-start">
+        <div className="absolute max-w-[226px] bottom-[9%]  xl:bottom-[6%] left-[-3%] xl:left-0 flex flex-col gap-2 items-start justify-start text-start">
           <h4 className="font-semibold text-[30px] w-full leading-normal text-[#FF980E]">
             July 2023
           </h4>
@@ -27,7 +27,7 @@ export default function Timeline() {
             </span>
           </p>
         </div>
-        <div className="absolute max-w-[238px] top-[5%] left-[17%] flex flex-col gap-2 items-start justify-start text-start">
+        <div className="absolute max-w-[238px] top-[3%] xl:top-[1%] left-[14%] xl:left-[17%] flex flex-col gap-2 items-start justify-start text-start">
           <h4 className="font-semibold text-[30px] w-full leading-normal text-[#FF980E]">
             August 2023
           </h4>
@@ -42,7 +42,7 @@ export default function Timeline() {
             </span>
           </p>
         </div>
-        <div className="absolute max-w-[238px] bottom-[10%] left-[35%] flex flex-col gap-2 items-start justify-start text-start">
+        <div className="absolute max-w-[238px] bottom-[9%] xl:bottom-[6%] left-[30%] xl:left-[35%] flex flex-col gap-2 items-start justify-start text-start">
           <h4 className="font-semibold text-[30px] w-full leading-normal text-[#FF980E]">
             Quarter 3-4 2023
           </h4>
@@ -53,7 +53,7 @@ export default function Timeline() {
             </span>
           </p>
         </div>
-        <div className="absolute max-w-[238px] top-[12%] left-[51%] flex flex-col gap-2 items-start justify-start text-start">
+        <div className="absolute max-w-[238px] top-[9%] xl:top-[8%] left-[49%] xl:left-[51%] flex flex-col gap-2 items-start justify-start text-start">
           <h4 className="font-semibold text-[30px] w-full leading-normal text-[#FF980E]">
             October 2023
           </h4>
@@ -65,7 +65,7 @@ export default function Timeline() {
             </span>
           </p>
         </div>
-        <div className="absolute max-w-[238px] bottom-[16%] right-[14%] flex flex-col gap-2 items-start justify-start text-start">
+        <div className="absolute max-w-[238px] bottom-[15%] xl:bottom-[12%] right-[12%] xl:right-[14%] flex flex-col gap-2 items-start justify-start text-start">
           <h4 className="font-semibold text-[30px] w-full leading-normal text-[#FF980E]">
             Quarter 4 2023
           </h4>
@@ -76,7 +76,7 @@ export default function Timeline() {
             </span>
           </p>
         </div>
-        <div className="absolute max-w-[238px] top-[11vh] right-[-3vw] flex flex-col gap-2 items-start justify-start text-start">
+        <div className="absolute max-w-[238px] top-[9vh] xl:top-[8vh] right-[-6vw] xl:right-[-3vw] flex flex-col gap-2 items-start justify-start text-start">
           <h4 className="font-semibold text-[30px] w-full leading-normal text-[#FF980E]">
             Quarter 1 2023
           </h4>

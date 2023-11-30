@@ -6,7 +6,7 @@ export default function YouthEmpowerment() {
     <div className="youthEmpowerment relative  overflow-hidden">
       <section className=" md:py-24 w-full relative bg-[#0979a7] bg-no-repeat bg-center bg-cover">
         <div className="youthBgTop absolute top-[0px] z-10 left-0 right-0  w-screen " />
-        <div className="youthBgBottom absolute bottom-[0%] z-10 left-0 right-0  w-screen h-64" />
+        <div className="youthBgBottom absolute bottom-[0%] z-10 left-0 right-0 w-screen h-64" />
         <div className="py-24 md:py-40 flex flex-col-reverse xl:flex-row items-center justify-center place-items-center w-screen">
           <section className="px-4 lg:px-16 lg:py-16 2xl:px-32 2xl:py-16 w-full flex-[1] flex flex-col items-start md:gap-5 z-20">
             <Image

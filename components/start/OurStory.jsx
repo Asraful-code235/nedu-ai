@@ -8,7 +8,7 @@ import Advisory from "./Advisory";
 
 const founders = [
   {
-    img: "/founders/filip.png",
+    img: "/founders/filip_mc.png",
     name: "Filip Bovin",
     position: "CEO",
     division: "Strategy and Edu Vision",
