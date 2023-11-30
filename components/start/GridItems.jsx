@@ -7,32 +7,32 @@ const items = [
   {
     img: "/images/Gamification.png",
     title: "Gamification",
-    desc: "Unlock your potential with our gamification feature - engage actively to access premium content and earn certificates. Stay current, and get rewarded by being highlighted as a top candidate.",
+    desc: "Engage and excel with our gamification feature – unlock premium content and earn certificates to be recognized as a top candidate.",
   },
   {
     img: "/images/LearningTracker.png",
     title: "Dream Tracker",
-    desc: "Chart your career, follow your aspirations and enhance your journey with tailored learning materials, taking strategic steps towards your future goals.",
+    desc: "Navigate your career path with Dream Tracker – tailored learning for your goals",
   },
   {
     img: "/images/Personalized AI Chatbot.png",
     title: "Market Trends",
-    desc: "Key insights for career-seekers and businesses. Discover in-demand skills & courses and align them with evolving market needs.",
+    desc: "Stay ahead with Market Trends – find key skills and courses aligned with market needs.",
   },
   {
     img: "/images/CareerCanvas.png",
     title: "Magic Profile",
-    desc: "Effortlessly create your CV in your preferred language. Our tool not only structures it professionally but also ensures it can be reviewed by recruiters in their language of choice, effectively conveying your expertise and boosting your chances of being hired.",
+    desc: "Create your CV in any language; Magic Profile ensures it resonates with recruiters worldwide.  ",
   },
   {
     img: "/images/Multilingual Platform.png",
     title: "NeduAI Advisor",
-    desc: "Engage in an intuitive conversation with our AI-driven system to receive personalized feedback on your profile. This guidance not only uncovers unexpected career opportunities but also helps you to articulate your unique strengths and strategically design your career path.",
+    desc: "Personalize your career path with AI-driven feedback from NeduAI Advisor. ",
   },
   {
     img: "/images/Learning Hub.png",
     title: "One-Platform Solution ",
-    desc: "Discover the convenience of enhancing your skills and finding work all in one place. Our platform uniquely integrates formal and informal education with leading job market platforms, making it effortlessly simple to keep your profile updated. Sync with our partners to receive the best job offers, tailored just for you.",
+    desc: "Skill enhancement and job search unified – One-Platform Solution connects education with job market opportunities.",
   },
 ];
 

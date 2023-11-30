@@ -1,15 +1,27 @@
+"use client";
+import { motion } from "framer-motion";
 import Image from "next/image";
-export default function Founders({ founder }) {
+export default function Founders({ founder, key }) {
   return (
-    <div className="flex bg-[#fafafa] z-20 w-full max-w-[191px] h-full p-0 shadow-md  flex-col items-center  gap-2">
+    <motion.div
+      initial={{
+        opacity: 0,
+      }}
+      whileInView={{
+        opacity: 1,
+      }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.3, delay: 0.3 * key }}
+      className="flex bg-[#fafafa] z-20 w-full max-w-[191px] h-full p-0 shadow-md  flex-col items-center  gap-2"
+    >
       <div className=" bg-[#edeae8] w-full min-h-[172px] relative overflow-hidden flex items-end justify-end">
-        <div className="w-[172px] relative">
+        <div className="w-[172px] relative overflow-hidden">
           <Image
             src={founder.img}
             width={400}
             height={400}
             alt={founder.name}
-            className="w-full h-full  "
+            className="w-full h-full hover:scale-[1.05] transition-all duration-300"
           />
         </div>
       </div>
@@ -25,23 +37,31 @@ export default function Founders({ founder }) {
             {founder.division}
           </p>
         </div>
-        <div className="flex items-center gap-3 justify-center mt-1 sm:-mt-2 lg:mt-0 2xl:-mt-2">
+        <motion.div className="flex items-center gap-3 justify-center mt-1 sm:mt-2 lg:mt-0 xl:mt-0">
           <a href={`${founder.linkedIn}`} target="_blank">
-            <img
+            <motion.img
+              whileHover={{
+                scale: [1, 1.1],
+              }}
+              transition={{ duration: 0.3, ease: "easeOut" }}
               src="/icons/LinkedIn.svg"
               alt="mail"
-              className="w-[26px] h-[26px]"
+              className="w-[26px] h-[26px] hover:shadow-sm"
             />
           </a>
           <a href={`mailto:${founder.mail}`} target="_blank">
-            <img
+            <motion.img
+              whileHover={{
+                scale: [1, 1.1],
+              }}
+              transition={{ duration: 0.3, ease: "easeOut" }}
               src="/icons/mailsmall.svg"
               alt="mail"
-              className="w-[26px] h-[26px]"
+              className="w-[26px] h-[26px] hover:shadow-sm"
             />
           </a>
-        </div>
+        </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 }

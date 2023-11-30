@@ -2,9 +2,9 @@ import Image from "next/image";
 export default function Timeline() {
   return (
     <section className=" py-20 px-16 2xl:px-32 bg-white">
-      <h1 className="visionParagraph text-[40px] font-bold leading-[67px] tracking-[0.8px]">
+      {/* <h1 className="visionParagraph text-[40px] font-bold leading-[67px] tracking-[0.8px]">
         NeduAi Timeline
-      </h1>
+      </h1> */}
 
       <div className="relative mt-10 min-h-[80vh] max-w-[1440px] mx-auto flex items-center justify-center">
         <Image
@@ -16,7 +16,7 @@ export default function Timeline() {
         {/* july 2023 */}
         <div className="absolute max-w-[226px] bottom-[9%]  xl:bottom-[6%] left-[-3%] xl:left-0 flex flex-col gap-2 items-start justify-start text-start">
           <h4 className="font-semibold text-[30px] w-full leading-normal text-[#FF980E]">
-            July 2023
+            July ‘23
           </h4>
           <p className="visionParagraph text-base leading-normal font-semibold">
             Filip Bovin, Pasi Orovuo, and Kari Savolainen founded NeduAI,
@@ -29,7 +29,7 @@ export default function Timeline() {
         </div>
         <div className="absolute max-w-[238px] top-[3%] xl:top-[1%] left-[14%] xl:left-[17%] flex flex-col gap-2 items-start justify-start text-start">
           <h4 className="font-semibold text-[30px] w-full leading-normal text-[#FF980E]">
-            August 2023
+            August ‘23
           </h4>
           <p className="visionParagraph text-base leading-normal font-semibold">
             Partnership formed with XAMK University{" "}
@@ -44,7 +44,7 @@ export default function Timeline() {
         </div>
         <div className="absolute max-w-[238px] bottom-[9%] xl:bottom-[6%] left-[30%] xl:left-[35%] flex flex-col gap-2 items-start justify-start text-start">
           <h4 className="font-semibold text-[30px] w-full leading-normal text-[#FF980E]">
-            Quarter 3-4 2023
+            Q3-4 ‘23
           </h4>
           <p className="visionParagraph text-base leading-normal font-semibold">
             Engaged in extensive networking and sales meetings,{" "}
@@ -55,7 +55,7 @@ export default function Timeline() {
         </div>
         <div className="absolute max-w-[238px] top-[9%] xl:top-[8%] left-[49%] xl:left-[51%] flex flex-col gap-2 items-start justify-start text-start">
           <h4 className="font-semibold text-[30px] w-full leading-normal text-[#FF980E]">
-            October 2023
+            October ‘23
           </h4>
           <p className="visionParagraph text-base leading-normal font-normal">
             Engaged in extensive networking and sales meetings,Began development
@@ -67,7 +67,7 @@ export default function Timeline() {
         </div>
         <div className="absolute max-w-[238px] bottom-[15%] xl:bottom-[12%] right-[12%] xl:right-[14%] flex flex-col gap-2 items-start justify-start text-start">
           <h4 className="font-semibold text-[30px] w-full leading-normal text-[#FF980E]">
-            Quarter 4 2023
+            Q4 ‘23
           </h4>
           <p className="visionParagraph text-base leading-normal font-semibold">
             Achieved our first sales and strategic partnership with XAMK,{" "}
@@ -78,7 +78,7 @@ export default function Timeline() {
         </div>
         <div className="absolute max-w-[238px] top-[9vh] xl:top-[8vh] right-[-6vw] xl:right-[-3vw] flex flex-col gap-2 items-start justify-start text-start">
           <h4 className="font-semibold text-[30px] w-full leading-normal text-[#FF980E]">
-            Quarter 1 2023
+            Q1 ‘24
           </h4>
           <p className="visionParagraph text-base leading-normal font-semibold">
             Launching our first investment round,{" "}

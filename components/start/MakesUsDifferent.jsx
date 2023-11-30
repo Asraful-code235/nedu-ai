@@ -19,15 +19,11 @@ export default function MakesUsDifferent({ isVisible }) {
             </span>
           </div>
           <p className="visionParagraph max-w-[1102px] mx-auto text-start lg:text-center px-4 text-[11px] lg:text-xl xl:text-2xl font-medium text-black text-opacity-90 leading-[166.667%] lg:tracking-[0.48px] ">
-            We encourage applicants to invest genuine effort, beyond a mere
-            click, to apply for positions they are truly passionate about. This
-            commitment ensures that recruiters receive applications from
-            individuals who are not just qualified, but also deeply interested
-            in the specific role. Consequently, recruiters can focus on a more
-            selected and engaged group of candidates, enhancing the efficiency
-            and effectiveness of the hiring process. This approach not only
-            raises the application-to-hire rate but also fosters a balanced and
-            fair encounter between talents and corporations.
+            Our platform ensures applicants apply thoughtfully for roles
+            they&apos;re passionate about, enabling recruiters to select from a
+            pool of genuinely interested and qualified candidates, thereby
+            improving the hiring process and fostering fair talent-corporation
+            interactions.
           </p>
         </div>
 

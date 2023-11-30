@@ -29,10 +29,10 @@ export default function Home() {
       <WhoWeServe />
       <ForEducation />
       <ForIndividuals />
+      <Timeline />
       <section className="relative ">
         <OurStory />
       </section>
-      <Timeline />
     </section>
   );
 }

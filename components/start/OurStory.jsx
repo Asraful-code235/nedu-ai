@@ -5,6 +5,7 @@ import Form from "./Form";
 import { useState } from "react";
 import Founders from "./Founders";
 import Advisory from "./Advisory";
+import { motion } from "framer-motion";
 
 const founders = [
   {
@@ -19,7 +20,7 @@ const founders = [
     img: "/founders/pasi_o_mc.png",
     name: "Pasi Orovuo",
     position: "CTO",
-    division: "Dev. Security Specialist",
+    division: "Development and Security",
     mail: "pasi@nedu.ai",
     linkedIn: "https://www.linkedin.com/in/pasiorovuo",
   },
@@ -27,8 +28,8 @@ const founders = [
     img: "/founders/Dave Brady.webp",
     name: "Dave Brady",
     position: "COO",
-    division: "Solution Architect, Data Analyst",
-    mail: "pasi@nedu.ai",
+    division: "Solution Architect, Data Analyst ",
+    mail: "dave@nedu.ai",
     linkedIn: "https://www.linkedin.com/in/dave-brady-b9167044",
   },
 
@@ -74,7 +75,7 @@ export default function OurStory() {
         alt={"story_svg"}
         className="w-[600px] absolute right-[-25%] md:right-[0%] bottom-[0%] z-10"
       />
-      <section className="visionParagraph relative py-12 px-4 lg:px-16 lg:py-16 2xl:px-32  space-y-6 md:space-y-9 bg-white">
+      <section className="visionParagraph relative pb-12 pt-6 px-4 lg:px-16 2xl:px-32  space-y-6 md:space-y-9 bg-white">
         <h1 className="text-3xl lg:text-5xl font-bold leading-10 lg:leading-[67px] tracking-[0.6] lg:tracking-[0.96px]">
           Our{" "}
           <span className="text-darkYellow relative">
@@ -151,11 +152,14 @@ export default function OurStory() {
                 </div>
               </div>
               <section className=" overflow-x-scroll scrollbar-hidden">
-                <div className=" grid grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-6  place-items-center place-content-center w-fit">
+                <motion.div
+                  transition={{ duration: 0.5, delayChildren: 0.5 }}
+                  className=" grid grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-6  place-items-center place-content-center w-fit"
+                >
                   {founders.map((founder, key) => (
                     <Founders key={key} founder={founder} />
                   ))}
-                </div>
+                </motion.div>
               </section>
               <section className="grid xl:hidden grid-cols-1 mt-6 md:mt-0 md:grid-cols-2 col-span-2 gap-6 lg:gap-10">
                 <div className="p-[32px] lg:p-[40px] z-30 after:absolute after:content-[url('/images/threestars.svg')] after:bottom-8 after:right-8 relative before:absolute before:content-[url('/images/stars.svg')] before:top-4 before:left-5  bg-[#E4EAF5] border-2 border-[#7D7D7D] rounded-xl flex flex-col items-start justify-center gap-2">
