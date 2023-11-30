@@ -31,7 +31,7 @@ export default function Hero() {
             Enabling talents to offer their true potential and get discovered
           </p>
         </div>
-        <Button className="hidden text-base 2xl:text-lg lg:flex w-fit px-[32px] py-[16px] lg:py-5 lg:px-8 leading-[135%] 2xl:leading-[108%] lg:tracking-[0.64px] 2xl:tracking-[0.8px] items-center gap-[10px] hover:bg-[#FFA937]">
+        <Button className="hidden text-base 2xl:text-lg lg:flex w-fit px-[32px] py-[16px] lg:px-8 leading-[135%] 2xl:leading-[135%] lg:tracking-[0.64px] 2xl:tracking-[0.8px] items-center gap-[10px] hover:bg-[#FFA937]">
           <Image
             src={"/icons/IcRoundPhone.png"}
             width={40}

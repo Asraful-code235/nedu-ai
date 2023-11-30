@@ -1,7 +1,7 @@
 import Image from "next/image";
 export default function Timeline() {
   return (
-    <section className="visionParagraph relative py-6 lg:py-20 px-6 lg:px-16 2xl:px-32 bg-white ">
+    <section className="visionParagraph min-h-[70vh] relative py-6 lg:py-20 px-6 lg:px-16 2xl:px-32 bg-white ">
       <h1 className="visionParagraph z-50 text-3xl lg:text-5xl font-bold leading-10 lg:leading-[67px] tracking-[0.6] lg:tracking-[0.96px]">
         NeduAi{" "}
         <span className="text-[#FF980E] relative">
@@ -53,15 +53,15 @@ export default function Timeline() {
         alt={"story_svg"}
         className="w-[600px] absolute right-[-25%] md:right-[0%] top-[0%] z-50"
       />
-      <div className="relative mt-10 min-h-[80vh] max-w-[1440px] mx-auto hidden lg:flex items-center justify-center">
+      <div className="relative mt-40 min-h-[600px] max-w-[1440px] mx-auto hidden lg:flex items-center justify-center">
         <Image
           src={"/timeline/timeline.svg"}
           width={1000}
           height={1000}
-          className="w-full  mx-auto h-full object-center object-cover"
+          className="w-full mx-auto h-full object-center object-cover"
         />
         {/* july 2023 */}
-        <div className="absolute max-w-[226px] bottom-[9%] xl:bottom-[5%] left-[-3%] xl:left-0 flex flex-col gap-2 items-start justify-start text-start">
+        <div className="absolute bottom-2 xl:-bottom-4 2xl:-bottom-6 left-0 max-w-[226px] flex flex-col gap-2 items-start justify-start text-start">
           <h4 className="font-semibold text-[30px] w-full leading-normal text-[#FF980E]">
             July ‘23
           </h4>
@@ -74,7 +74,7 @@ export default function Timeline() {
             </span>
           </p>
         </div>
-        <div className="absolute max-w-[238px] top-[3%] xl:top-[1%] left-[14%] xl:left-[17%] flex flex-col gap-2 items-start justify-start text-start">
+        <div className="absolute -top-10 2xl:-top-16 left-[15%] 2xl:left-64 max-w-[238px] flex flex-col gap-2 items-start justify-start text-start">
           <h4 className="font-semibold text-[30px] w-full leading-normal text-[#FF980E]">
             August ‘23
           </h4>
@@ -89,7 +89,7 @@ export default function Timeline() {
             </span>
           </p>
         </div>
-        <div className="absolute max-w-[238px] bottom-[12%] xl:bottom-[11%] left-[32%] xl:left-[35%] flex flex-col gap-2 items-start justify-start text-start">
+        <div className="absolute bottom-14 xl:bottom-8 left-[35%] max-w-[238px]  flex flex-col gap-2 items-start justify-start text-start">
           <h4 className="font-semibold text-[30px] w-full leading-normal text-[#FF980E]">
             Q3-4 ‘23
           </h4>
@@ -100,7 +100,7 @@ export default function Timeline() {
             </span>
           </p>
         </div>
-        <div className="absolute max-w-[238px] top-[9%] xl:top-[16%] left-[49%] xl:left-[51%] flex flex-col gap-2 items-start justify-start text-start">
+        <div className="absolute top-[14%] right-[25%] xl:right-[30%] 2xl:top-[10%] max-w-[238px] flex flex-col gap-2 items-start justify-start text-start">
           <h4 className="font-semibold text-[30px] w-full leadig-normal text-[#FF980E]">
             October ‘23
           </h4>
@@ -111,7 +111,7 @@ export default function Timeline() {
             </span>
           </p>
         </div>
-        <div className="absolute max-w-[238px] bottom-[15%] xl:bottom-[12%] right-[12%] xl:right-[14%] flex flex-col gap-2 items-start justify-start text-start">
+        <div className="absolute bottom-16 xl:bottom-8 right-[7%] 2xl:right-[14%] max-w-[238px] flex flex-col gap-2 items-start justify-start text-start">
           <h4 className="font-semibold text-[30px] w-full leading-normal text-[#FF980E]">
             Q4 ‘23
           </h4>
@@ -122,7 +122,7 @@ export default function Timeline() {
             </span>
           </p>
         </div>
-        <div className="absolute max-w-[238px] top-[9vh] xl:top-[8vh] right-[-6vw] xl:right-[-3vw] flex flex-col gap-2 items-start justify-start text-start">
+        <div className="absolute top-[6%] xl:top-[3%] -right-[6%] max-w-[238px] flex flex-col gap-2 items-start justify-start text-start">
           <h4 className="font-semibold text-[30px] w-full leading-normal text-[#FF980E]">
             Q1 ‘24
           </h4>
@@ -141,10 +141,11 @@ export default function Timeline() {
           src={"/timeline/mobiletimeline.svg"}
           width={1000}
           height={1000}
+          alt="nedu_timeline"
           className="w-fit max-[372px]:h-[664px] max-[388px]:h-[70%] h-[698px] max-w-[393px]"
         />
         {/* july 2023 */}
-        <div className="flex flex-col max-[387px]:gap-5 gap-7 h-fit -my-2">
+        <div className="flex flex-col max-[390px]:gap-4 gap-7 h-fit -my-6">
           <div className="px-[7px] py-[11px] bg-[#FF980E] max-w-[258px] bg-opacity-10 border border-[#FF980E] rounded-[10px]  flex flex-col gap-1 items-start justify-start text-start">
             <h4 className="font-semibold text-[12px] w-full leading-normal text-[#FF980E]">
               July ‘23

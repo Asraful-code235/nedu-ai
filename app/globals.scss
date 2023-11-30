@@ -214,67 +214,6 @@ html {
     }
   }
 }
-// .dottedBackground {
-//   background-image: url("/icons/dottedVector.svg");
-//   background-position: center;
-//   background-repeat: repeat;
-//   background-size: cover;
-// }
-
-// .grindGradient {
-//   background: linear-gradient(0deg, #000 6.08%, rgba(255, 255, 255, 0.8) 90.77%),
-//     url("/icons/ellipse.svg"), no-repeat;
-
-//   background-position: left;
-//   background-size: 10vw;
-// }
-
-// .DashboardBefore {
-//   background-image: url("/icons/Frame.png");
-//   background-repeat: repeat;
-//   width: 100%;
-//   height: 100%;
-
-//   // background-position: ;
-//   &::before {
-//     content: url("/icons/Realtimejobtraking.webp");
-//     position: absolute;
-//     bottom: 20%;
-//     left: -30%;
-//     transform: scale(0.25);
-//   }
-// }
-// .DashboardBefore1 {
-//   &::before {
-//     content: url("/icons/FollowUp.webp");
-//     position: absolute;
-//     bottom: -37%;
-//     right: 12%;
-//     transform: scale(0.25);
-//   }
-// }
-// .DashboardBefore2 {
-//   &::before {
-//     content: url("/icons/talentAssessment.webp");
-//     position: absolute;
-//     top: -20%;
-//     left: -32%;
-//     transform: scale(0.25);
-//   }
-// }
-// .DashboardBefore3 {
-//   position: relative;
-//   &::before {
-//     content: url("/icons/callender.webp");
-//     position: absolute;
-//     top: -8%;
-//     right: -48%;
-//     transform: scale(0.25);
-//   }
-// }
-
-// youth empowerment
-
 .youthEmpowerment {
   position: relative;
   overflow: hidden;
@@ -286,3 +225,5 @@ html {
     top: 20%;
   }
 }
+
+// timeline
