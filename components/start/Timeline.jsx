@@ -5,8 +5,8 @@ export default function Timeline() {
       {/* <h1 className="visionParagraph text-[40px] font-bold leading-[67px] tracking-[0.8px]">
         NeduAi Timeline
       </h1> */}
-
-      <div className="relative mt-10 min-h-[80vh] max-w-[1440px] mx-auto flex items-center justify-center">
+      {/* laptop */}
+      <div className="relative mt-10 min-h-[80vh] max-w-[1440px] mx-auto hidden lg:flex items-center justify-center">
         <Image
           src={"/timeline/timeline.svg"}
           width={1000}
@@ -14,7 +14,7 @@ export default function Timeline() {
           className="w-full  mx-auto h-full object-center object-cover"
         />
         {/* july 2023 */}
-        <div className="absolute max-w-[226px] bottom-[9%]  xl:bottom-[6%] left-[-3%] xl:left-0 flex flex-col gap-2 items-start justify-start text-start">
+        <div className="absolute max-w-[226px] bottom-[9%]  xl:bottom-[4%] left-[-3%] xl:left-0 flex flex-col gap-2 items-start justify-start text-start">
           <h4 className="font-semibold text-[30px] w-full leading-normal text-[#FF980E]">
             July ‘23
           </h4>
@@ -42,7 +42,7 @@ export default function Timeline() {
             </span>
           </p>
         </div>
-        <div className="absolute max-w-[238px] bottom-[9%] xl:bottom-[6%] left-[30%] xl:left-[35%] flex flex-col gap-2 items-start justify-start text-start">
+        <div className="absolute max-w-[238px] bottom-[10%] xl:bottom-[11%] left-[34%] xl:left-[35%] flex flex-col gap-2 items-start justify-start text-start">
           <h4 className="font-semibold text-[30px] w-full leading-normal text-[#FF980E]">
             Q3-4 ‘23
           </h4>
@@ -89,6 +89,7 @@ export default function Timeline() {
           </p>
         </div>
       </div>
+      {/* mobile */}
     </section>
   );
 }
