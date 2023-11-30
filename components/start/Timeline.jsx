@@ -89,9 +89,9 @@ export default function Timeline() {
             </span>
           </p>
         </div>
-        <div className="absolute max-w-[238px] bottom-[10%] xl:bottom-[11%] left-[34%] xl:left-[35%] flex flex-col gap-2 items-start justify-start text-start">
+        <div className="absolute max-w-[238px] bottom-[12%] xl:bottom-[11%] left-[32%] xl:left-[35%] flex flex-col gap-2 items-start justify-start text-start">
           <h4 className="font-semibold text-[30px] w-full leading-normal text-[#FF980E]">
-            Q3-4/‘23
+            Q3-4 ‘23
           </h4>
           <p className="visionParagraph text-base leading-normal font-semibold">
             Engaged in extensive networking and sales meetings,{" "}
@@ -100,13 +100,12 @@ export default function Timeline() {
             </span>
           </p>
         </div>
-        <div className="absolute max-w-[238px] top-[9%] xl:top-[8%] left-[49%] xl:left-[51%] flex flex-col gap-2 items-start justify-start text-start">
-          <h4 className="font-semibold text-[30px] w-full leading-normal text-[#FF980E]">
+        <div className="absolute max-w-[238px] top-[9%] xl:top-[16%] left-[49%] xl:left-[51%] flex flex-col gap-2 items-start justify-start text-start">
+          <h4 className="font-semibold text-[30px] w-full leadig-normal text-[#FF980E]">
             October ‘23
           </h4>
           <p className="visionParagraph text-base leading-normal font-normal">
-            Engaged in extensive networking and sales meetings,Began development
-            of the{" "}
+            Began development of the{" "}
             <span className="font-semibold">
               Alpha version of the NeduAI platform.
             </span>
@@ -114,7 +113,7 @@ export default function Timeline() {
         </div>
         <div className="absolute max-w-[238px] bottom-[15%] xl:bottom-[12%] right-[12%] xl:right-[14%] flex flex-col gap-2 items-start justify-start text-start">
           <h4 className="font-semibold text-[30px] w-full leading-normal text-[#FF980E]">
-            Q4/‘23
+            Q4 ‘23
           </h4>
           <p className="visionParagraph text-base leading-normal font-semibold">
             Achieved our first sales and strategic partnership with XAMK,{" "}
@@ -125,7 +124,7 @@ export default function Timeline() {
         </div>
         <div className="absolute max-w-[238px] top-[9vh] xl:top-[8vh] right-[-6vw] xl:right-[-3vw] flex flex-col gap-2 items-start justify-start text-start">
           <h4 className="font-semibold text-[30px] w-full leading-normal text-[#FF980E]">
-            Q1/‘24
+            Q1 ‘24
           </h4>
           <p className="visionParagraph text-base leading-normal font-semibold">
             Launching our first investment round,{" "}
@@ -190,8 +189,7 @@ export default function Timeline() {
               October ‘23
             </h4>
             <p className="visionParagraph text-[10px] leading-normal font-normal">
-              Engaged in extensive networking and sales meetings,Began
-              development of the{" "}
+              Began development of the{" "}
               <span className="font-semibold">
                 Alpha version of the NeduAI platform.
               </span>
