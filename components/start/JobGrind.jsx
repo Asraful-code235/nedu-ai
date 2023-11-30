@@ -179,13 +179,13 @@ export default function JobGrind({ isNedu, setIsNedu, ...props }) {
             </div>
           ) : (
             <div className="neduAiGrind overflow-hidden ">
-              <section className="max-w-[1248px] mx-auto  hidden md:flex items-center justify-center">
+              <section className="max-w-[964px] mx-auto  hidden md:flex items-center justify-center">
                 <Image
                   src={"/icons/With NudeAI.svg"}
-                  width={160}
-                  height={160}
+                  width={400}
+                  height={400}
                   alt={"withoutNedu"}
-                  className="w-full object-cover object-center"
+                  className="w-full aspect-auto object-cover object-center"
                 />
               </section>
               <section className="py-6 p-3 block md:hidden scrollbar-hidden overflow-x-scroll ">
