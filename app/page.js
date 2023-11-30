@@ -8,10 +8,8 @@ import Hero from "@/components/start/Hero";
 import JobGrind from "@/components/start/JobGrind";
 import OurStory from "@/components/start/OurStory";
 import Partners from "@/components/start/Partners";
-import Vision from "@/components/start/Vision";
 import VisionAndGrindContainer from "@/components/start/VisionAndGrindContainer";
 import WhoWeServe from "@/components/start/WhoWeServe";
-import YouthEmpower from "@/components/start/YouthEmpower";
 import YouthEmpowerment from "@/components/start/YouthEmpowerment";
 import Timeline from "@/components/start/Timeline";
 

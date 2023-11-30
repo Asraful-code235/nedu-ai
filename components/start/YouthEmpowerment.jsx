@@ -80,7 +80,7 @@ export default function YouthEmpowerment() {
               width={750}
               height={500}
               alt="conversation Panel"
-              className="w-full scale-[0.5] sm:scale-[1] sm:grow z-[5]"
+              className="w-full scale-[0.8] lg:scale-[1]  z-[5]"
             />
             <Image
               src={"/images/unmilogo.svg"}

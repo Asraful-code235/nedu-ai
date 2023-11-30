@@ -77,25 +77,18 @@ export default function JobGrind({ isNedu, setIsNedu, ...props }) {
       <section className="p-[23px] md:p-10 lg:px-16 lg:py-16 2xl:px-32 flex flex-col gap-5 lg:gap-8 xl:gap-16 items-center justify-center overflow-hidden">
         <div className="flex flex-col items-center justify-center text-center gap-2 lg:gap-6 xl:gap-8">
           <div className="relative w-full text-start lg:text-center">
-            <h1 className="text-xl lg:text-5xl xl:text-6xl font-normal text-white text-opacity-80 lg:leading-normal tracking-[1px] lg:tracking-[2.4px] xl:tracking-[3.2px]">
-              Recruitment is a{" "}
-              <span className="text-darkYellow text-opacity-100 font-bold">
-                critical{" "}
-              </span>
-              and{" "}
+            <h1 className="text-xl lg:text-5xl xl:text-6xl font-normal text-white text-opacity-80 leading-normal tracking-[1px] lg:tracking-[2.4px] xl:tracking-[3.2px]">
               <span className="text-darkYellow relative text-opacity-100 font-bold">
-                evolving{" "}
+                Recruitment{" "}
                 <Image
                   src={"/criticalThinking.svg"}
                   width={100}
                   height={100}
                   alt="gearset"
-                  className="absolute w-7 lg:w-14 top-[-120%] lg:top-[-80%] right-[-20%] lg:right-[-15%] xl:right-[-2%] xl:top-[-45%]"
+                  className="absolute w-7 lg:w-14 top-[-100%] lg:top-[-68%] right-[-6%] lg:right-[-2%] xl:right-[-1%] xl:top-[-53%]"
                 />
               </span>
-              process
-              {/* job application{" "} */}
-              {/* is real */}
+              is a critical and evolving process
             </h1>
           </div>
           <p className="visionParagraph max-w-[1316px] mx-auto text-start lg:text-center text-xs lg:text-xl xl:text-2xl font-normal lg:font-medium text-white text-opacity-80 leading-5 lg:leading-[45px] tracking-tighter lg:tracking-[0.4px] ">
