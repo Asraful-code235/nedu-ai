@@ -2,7 +2,7 @@ import Image from "next/image";
 export default function Timeline() {
   return (
     <section className="visionParagraph bg-gradient-to-l from-[rgba(223,222,222,0.1)] to-transparent min-h-[70vh] relative py-6 lg:py-20 px-6 lg:px-16 2xl:px-32 bg-white ">
-      <h1 className="visionParagraph z-50 text-3xl lg:text-5xl font-bold leading-10 lg:leading-[67px] tracking-[0.6] lg:tracking-[0.96px]">
+      <h1 className="visionParagraph z-50 backdrop-blur-sm text-3xl lg:text-5xl font-bold leading-10 lg:leading-[67px] tracking-[0.6] lg:tracking-[0.96px]">
         NeduAi{" "}
         <span className="text-[#FF980E] relative">
           Timeline
@@ -12,7 +12,7 @@ export default function Timeline() {
             height="56"
             viewBox="0 0 56 56"
             fill="none"
-            className="absolute w-[48px] h-[48px] -top-6 -right-6"
+            className="absolute w-7 h-7 lg:w-[48px] lg:h-[48px] -top-3 -right-3 lg:-top-6 lg:-right-6"
           >
             <path
               d="M11.5788 38.1523C13.838 38.5667 16.0246 37.0061 16.4524 34.6733C16.6298 33.7064 16.4736 32.7584 16.0736 31.9478L21.9008 27.3344C22.454 27.8516 23.1473 28.2231 23.9383 28.3681C24.8023 28.5266 25.6547 28.3945 26.4031 28.0428L27.9374 30.3438C27.3539 30.9427 26.932 31.7202 26.7684 32.6121C26.3405 34.9449 27.831 37.1799 30.0909 37.5944C32.3508 38.0089 34.5373 36.4483 34.9652 34.1155C35.1425 33.1484 34.9864 32.2003 34.5863 31.3896L40.4138 26.7764C40.967 27.2934 41.6603 27.6649 42.4511 27.8099C44.7103 28.2243 46.8968 26.6637 47.3246 24.3312C47.7525 21.9984 46.2621 19.7635 44.0029 19.3491C41.743 18.9346 39.5564 20.4952 39.1286 22.828C38.9512 23.7951 39.1075 24.7432 39.5077 25.554L33.6803 30.167C33.1272 29.6498 32.4337 29.2783 31.6427 29.1332C30.7788 28.9747 29.9264 29.1067 29.1781 29.4584L27.6438 27.1573C28.2272 26.5584 28.649 25.781 28.8126 24.8892C29.2404 22.5564 27.75 20.3214 25.4901 19.9069C23.2302 19.4924 21.0437 21.053 20.6158 23.3858C20.4384 24.353 20.5947 25.3011 20.9949 26.1119L15.168 30.7251C14.6148 30.2077 13.9215 29.8362 13.1307 29.6911C10.8708 29.2767 8.68422 30.8373 8.25636 33.1701C7.82851 35.5029 9.31891 37.7378 11.5788 38.1523ZM43.7235 20.8721C45.1694 21.1373 46.123 22.5678 45.8492 24.0606C45.5754 25.5535 44.1763 26.5521 42.7304 26.2869C41.2838 26.0216 40.3301 24.5915 40.604 23.0986C40.8778 21.6057 42.277 20.6068 43.7235 20.8721ZM33.4898 33.8449C33.2159 35.3381 31.8168 36.3367 30.3702 36.0714C28.9236 35.8061 27.9699 34.3759 28.2438 32.8827C28.5177 31.3895 29.9168 30.3909 31.3634 30.6562C32.81 30.9215 33.7637 32.3516 33.4898 33.8449ZM25.2108 21.4299C26.6574 21.6952 27.611 23.1257 27.3372 24.6186C27.0634 26.1115 25.6642 27.1104 24.2176 26.8451C22.771 26.5798 21.8174 25.1493 22.0912 23.6564C22.365 22.1636 23.7642 21.1646 25.2108 21.4299ZM12.8513 31.2141C14.2972 31.4793 15.2509 32.9094 14.977 34.4027C14.7032 35.8959 13.304 36.8945 11.8582 36.6294C10.4116 36.364 9.45788 34.9339 9.73175 33.4407C10.0056 31.9474 11.4048 30.9488 12.8513 31.2141Z"
@@ -51,7 +51,7 @@ export default function Timeline() {
         width={1600}
         height={1600}
         alt={"story_svg"}
-        className="w-[600px] absolute right-[-25%] md:right-[0%] top-[0%] z-50 opacity-60"
+        className="w-[600px] absolute right-[-25%] md:right-[0%] top-[0%] z-50 opacity-40"
       />
       <div className="relative mt-40 min-h-[600px] max-w-[1440px] mx-auto hidden lg:flex items-center justify-center">
         <Image
@@ -142,78 +142,78 @@ export default function Timeline() {
           width={1000}
           height={1000}
           alt="nedu_timeline"
-          className="w-fit max-[372px]:h-[664px] max-[388px]:h-[70%] h-[698px] max-w-[393px]"
+          className="w-fit max-[372px]:h-[664px] max-[388px]:h-[70%] h-[698px] max-w-[393px] max-[373px]:-mt-1 -mt-3"
         />
         {/* july 2023 */}
-        <div className="flex flex-col max-[390px]:gap-4 gap-7 h-fit -my-6">
-          <div className="px-[7px] py-[11px] bg-[#FF980E] max-w-[258px] bg-opacity-10 border border-[#FF980E] rounded-[10px]  flex flex-col gap-1 items-start justify-start text-start">
+        <div className="flex flex-col gap-4 h-fit ">
+          <div className="px-[7px] -mt-6 py-[11px] bg-[#FF980E] max-w-[258px] bg-opacity-10 border border-[#FF980E] rounded-[10px]  flex flex-col gap-1 items-start justify-start text-start">
             <h4 className="font-semibold text-[12px] w-full leading-normal text-[#FF980E]">
               July ‘23
             </h4>
             <p className="visionParagraph text-[10px] leading-normal font-semibold">
               Filip Bovin, Pasi Orovuo, and Kari Savolainen founded NeduAI,
-              <span className="font-normal">
+              <span className="visionParagraph font-normal">
                 {" "}
                 marking the start of a new era in AI-assisted education and
                 recruitment.
               </span>
             </p>
           </div>
-          <div className="px-[7px] py-[11px] bg-[#FF980E] max-w-[258px] bg-opacity-10 border border-[#FF980E] rounded-[10px]  flex flex-col gap-1 items-start justify-start text-start">
+          <div className="px-[7px] mt-1 py-[11px] bg-[#FF980E] max-w-[258px] bg-opacity-10 border border-[#FF980E] rounded-[10px]  flex flex-col gap-1 items-start justify-start text-start">
             <h4 className="font-semibold text-[12px] w-full leading-normal text-[#FF980E]">
               August ‘23
             </h4>
             <p className="visionParagraph text-[10px] leading-normal font-semibold">
               Partnership formed with XAMK University{" "}
-              <span className="font-normal">
+              <span className="visionParagraph font-normal">
                 of Applied Sciences to enhance our service foundation and value
                 proposition. Welcomed new members to our advisory board,{" "}
               </span>
-              <span className="font-semibold">
+              <span className="visionParagraph font-semibold">
                 bringing diverse expertise and insights.
               </span>
             </p>
           </div>
-          <div className="px-[7px] py-[11px] bg-[#FF980E] max-w-[258px] bg-opacity-10 border border-[#FF980E] rounded-[10px]  flex flex-col gap-1 items-start justify-start text-start">
+          <div className="px-[7px] max-[373px]:mt-0 mt-3 py-[11px] bg-[#FF980E] max-w-[258px] bg-opacity-10 border border-[#FF980E] rounded-[10px]  flex flex-col gap-1 items-start justify-start text-start">
             <h4 className="font-semibold text-[12px] w-full leading-normal text-[#FF980E]">
               Q3-4/‘23
             </h4>
             <p className="visionParagraph text-[10px] leading-normal font-semibold">
               Engaged in extensive networking and sales meetings,{" "}
-              <span className="font-normal leading-normal">
+              <span className="visionParagraph font-normal leading-normal">
                 exploring potential partnerships.
               </span>
             </p>
           </div>
-          <div className="px-[7px] py-[11px] bg-[#FF980E] max-w-[258px] bg-opacity-10 border border-[#FF980E] rounded-[10px]  flex flex-col gap-1 items-start justify-start text-start">
+          <div className="px-[7px] max-[373px]:mt-8 mt-8 py-[11px] bg-[#FF980E] max-w-[258px] bg-opacity-10 border border-[#FF980E] rounded-[10px]  flex flex-col gap-1 items-start justify-start text-start">
             <h4 className="font-semibold text-[12px] w-full leading-normal text-[#FF980E]">
               October ‘23
             </h4>
             <p className="visionParagraph text-[10px] leading-normal font-normal">
               Began development of the{" "}
-              <span className="font-semibold">
+              <span className="visionParagraph font-semibold">
                 Alpha version of the NeduAI platform.
               </span>
             </p>
           </div>
-          <div className="px-[7px] py-[11px] bg-[#FF980E] max-w-[258px] bg-opacity-10 border border-[#FF980E] rounded-[10px]  flex flex-col gap-1 items-start justify-start text-start">
+          <div className="px-[7px]  mt-6 py-[11px] bg-[#FF980E] max-w-[258px] bg-opacity-10 border border-[#FF980E] rounded-[10px]  flex flex-col gap-1 items-start justify-start text-start">
             <h4 className="font-semibold text-[12px] w-full leading-normal text-[#FF980E]">
               Q4/‘23
             </h4>
             <p className="visionParagraph text-[10px] leading-normal font-semibold">
               Achieved our first sales and strategic partnership with XAMK,{" "}
-              <span className="font-normal leading-normal">
+              <span className="visionParagraph font-normal leading-normal">
                 a significant milestone in bringing our vision to life.
               </span>
             </p>
           </div>
-          <div className="px-[7px] py-[11px] bg-[#FF980E] max-w-[258px] bg-opacity-10 border border-[#FF980E] rounded-[10px]  flex flex-col gap-1 items-start justify-start text-start">
+          <div className="px-[7px] mt-3 py-[11px] bg-[#FF980E] max-w-[258px] bg-opacity-10 border border-[#FF980E] rounded-[10px]  flex flex-col gap-1 items-start justify-start text-start">
             <h4 className="font-semibold text-[12px] w-full leading-normal text-[#FF980E]">
               Q1/‘24
             </h4>
             <p className="visionParagraph text-[10px] leading-normal font-semibold">
               Launching our first investment round,{" "}
-              <span className="font-normal leading-normal">
+              <span className="visionParagraph font-normal leading-normal">
                 inviting investors to join us in our mission to redefine
                 education and recruitment.
               </span>

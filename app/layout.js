@@ -1,5 +1,4 @@
 import "./globals.scss";
-import Head from "next/head";
 import Script from "next/script";
 
 export const metadata = {

@@ -27,13 +27,13 @@ export default function Founders({ founder, key }) {
       </div>
       <div className="flex p-[6px] flex-col w-full h-full items-center justify-between">
         <div className="flex flex-col w-full items-center justify-center gap-1 2xl:gap-2">
-          <h4 className="font-bold flex flex-col items-center justify-center text-base 2xl:text-xl leading-normal flex-shrink-0 text-center">
+          <h4 className="visionParagraph font-bold flex flex-col items-center justify-center text-base 2xl:text-xl leading-normal flex-shrink-0 text-center">
             {founder.name}
-            <span className="font-medium text-center text-base 2xl:text-xl leading-normal text-[#011B2E99]">
+            <span className="visionParagraph font-medium text-center text-base 2xl:text-xl leading-normal text-[#011B2E99]">
               {founder.position}
             </span>
           </h4>
-          <p className="text-[11px] text-center 2xl:text-sm font-medium leading-[140%] text-[#011B2E]">
+          <p className="visionParagraph text-[11px] text-center 2xl:text-sm font-medium leading-[140%] text-[#011B2E]">
             {founder.division}
           </p>
         </div>

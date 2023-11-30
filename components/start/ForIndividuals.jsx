@@ -46,13 +46,13 @@ export default function ForIndividuals() {
         </motion.div>
       </div>
       <article className="visionParagraph flex-[0.75] flex flex-col items-start lg:items-center xl:items-start justify-center gap-1 lg:gap-6 py-8 lg:py-0">
-        <h3 className=" text-white text-opacity-60 text-xs lg:text-4xl font-normal lg:font-medium leading-4 lg:leading-[30px]">
+        <h3 className="visionParagraph text-white text-opacity-60 text-xs lg:text-4xl font-normal lg:font-medium leading-4 lg:leading-[30px]">
           For Individuals
         </h3>
-        <h2 className="text-white font-bold lg:font-bold leading-[23.8px] lg:leading-[60px] text-[17px] lg:text-[40px] tracking-[0.34px]">
+        <h2 className="visionParagraph text-white font-bold lg:font-bold leading-[23.8px] lg:leading-[60px] text-[17px] lg:text-[40px] tracking-[0.34px]">
           Take Control, Shape Your Future!
         </h2>
-        <p className="text-xs lg:text-xl text-start lg:text-center max-w-full lg:max-w-[704px] xl:max-w-full xl:text-start text-white font-medium lg:font-medium leading-[17.4px]  tracking-[0.12px] sm:tracking-[0.12px] lg:leading-[40px] mt-4 lg:-mt-2">
+        <p className="visionParagraph text-xs lg:text-xl text-start lg:text-center max-w-full lg:max-w-[704px] xl:max-w-full xl:text-start text-white font-medium lg:font-medium leading-[17.4px]  tracking-[0.12px] sm:tracking-[0.12px] lg:leading-[40px] mt-4 lg:-mt-2">
           Embark on a transformative career journey with NeduAI. Through
           interactive, AI-assisted conversations, we help you define and pursue
           your dream career. NeduAI guides you in setting achievable goals,

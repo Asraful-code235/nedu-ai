@@ -69,9 +69,9 @@ export default function OurStory() {
         className="w-[600px] absolute opacity-30 left-[-25%] md:left-[-4%] bottom-[2%] z-10 rotate-90"
       />
       <section className="visionParagraph relative pb-12 pt-6 px-4 lg:px-16 2xl:px-32  space-y-6 md:space-y-9 bg-white">
-        <h1 className="text-3xl lg:text-5xl font-bold leading-10 lg:leading-[67px] tracking-[0.6] lg:tracking-[0.96px]">
+        <h1 className="visionParagraph text-3xl lg:text-5xl font-bold leading-10 lg:leading-[67px] tracking-[0.6] lg:tracking-[0.96px]">
           Our{" "}
-          <span className="text-darkYellow relative">
+          <span className="visionParagraph text-darkYellow relative">
             Story
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -109,7 +109,7 @@ export default function OurStory() {
           <section className="col-span-2">
             <div className=" flex flex-col gap-[14px] justify-between h-full">
               <div className="z-50 flex flex-col gap-4 text-xs lg:text-base font-medium leading-5 lg:leading-[160%] tracking-[0.32px] transition-all duration-[2s] delay-500 ">
-                <p>
+                <p className="visionParagraph">
                   NeduAI&apos;s journey began in Spring 2023, inspired by the
                   emerging potential of AI chatbots in education and
                   recruitment. Over the past decade, our collaboration with
@@ -120,7 +120,7 @@ export default function OurStory() {
                   reskilling, the difficulties faced by job market newcomers,
                   and the complex bureaucracy of international career pursuits.
                 </p>
-                <p>
+                <p className="visionParagraph">
                   In response, NeduAI leveraged the power of AI to bridge formal
                   and informal education with the job market, creating a
                   unified, holistic experience. Our platform redefines the skill
@@ -128,7 +128,7 @@ export default function OurStory() {
                   by aligning education and recruitment to match individuals
                   with the most suitable opportunities.
                 </p>
-                <p>
+                <p className="visionParagraph">
                   Our aim is to empower both individuals and organizations,
                   utilizing technology to meet their diverse needs. Motivated by
                   curiosity and ambition, we are developing a solution that not
@@ -138,8 +138,8 @@ export default function OurStory() {
                   decisions about their futures.
                 </p>
 
-                <div className=" flex  items-start gap-4 justify-start w-full">
-                  <span className="text-2xl w-full font-semibold leading-normal tracking-[0.72px] border-b border-[#C7C7C7]">
+                <div className="flex items-start gap-4 justify-start w-full">
+                  <span className="visionParagraph text-2xl w-full font-semibold leading-normal tracking-[0.72px] border-b border-[#C7C7C7]">
                     Team
                   </span>
                 </div>
@@ -156,7 +156,7 @@ export default function OurStory() {
               </section>
               <section className="grid xl:hidden grid-cols-1 mt-6 md:mt-0 md:grid-cols-2 col-span-2 gap-6 lg:gap-10">
                 <div className="p-[32px] lg:p-[40px] z-30 after:absolute after:content-[url('/images/threestars.svg')] after:bottom-8 after:right-8 relative before:absolute before:content-[url('/images/stars.svg')] before:top-4 before:left-5  bg-[#E4EAF5] border-2 border-[#7D7D7D] rounded-xl flex flex-col items-start justify-center gap-2">
-                  <h3 className="text-xl lg:text-[28px] font-bold leading-[32px]">
+                  <h3 className="visionParagraph text-xl lg:text-[28px] font-bold leading-[32px]">
                     Strategic partnership
                   </h3>
                   <div className="w-44 text-sm font-bold flex flex-col items-center justify-center">
@@ -174,7 +174,7 @@ export default function OurStory() {
           </section>
           <section className="xl:grid hidden col-span-1flex flex-col items-center justify-center md:mt-0  h-fit gap-6 lg:gap-10">
             <div className="px-[82px] py-[67px] z-50 after:absolute after:content-[url('/images/threestars.svg')] after:bottom-8 after:right-8 relative before:absolute before:content-[url('/images/stars.svg')] before:top-4 before:left-5  bg-[#E4EAF5] border-2 border-[#7D7D7D] rounded-xl flex flex-col items-start justify-center gap-2">
-              <h3 className="text-xl lg:text-[28px] font-bold leading-[32px]">
+              <h3 className="visionParagraph text-xl lg:text-[28px] font-bold leading-[32px]">
                 Strategic partnership
               </h3>
               <div className="w-44  text-sm font-bold flex flex-col items-center justify-center">
@@ -187,12 +187,14 @@ export default function OurStory() {
               </div>
             </div>
             <div className="p-10 z-50 after:absolute after:content-[url('/images/threestars.svg')] after:bottom-8 after:right-8 relative before:absolute before:content-[url('/images/stars.svg')] before:top-4 before:left-5 bg-[#F5FDFF] border-2 border-[#7D7D7D] rounded-xl flex flex-col items-start justify-start gap-2 lg:gap-5">
-              <h3 className="text-xl  lg:text-[28px] font-bold leading-[32px]">
+              <h3 className="visionParagraph text-xl lg:text-[28px] font-bold leading-[32px]">
                 Advisory board
               </h3>
               <div className="text-sm lg:text-lg leading-5 lg:leading-6 flex flex-col items-start justify-center gap-[6px] lg:gap-2">
-                <p className="font-extrabold mt-2">AI Specialists</p>
-                <p className="underline font-medium flex flex-wrap gap-[10px]">
+                <p className="visionParagraph font-extrabold mt-2">
+                  AI Specialists
+                </p>
+                <p className="visionParagraph underline font-medium flex flex-wrap gap-[10px]">
                   Pasi Vuorio - LastBot
                   <a
                     href="https://www.linkedin.com/in/pasivuorio"
@@ -205,7 +207,7 @@ export default function OurStory() {
                     />
                   </a>
                 </p>
-                <p className="underline font-medium flex flex-wrap gap-[10px]">
+                <p className="visionParagraph underline font-medium flex flex-wrap gap-[10px]">
                   Tero Keski-Valkama - AI, ML , KAIKO
                   <a
                     href="https://www.linkedin.com/in/terokeskivalkama"
@@ -220,8 +222,10 @@ export default function OurStory() {
                 </p>
               </div>
               <div className="relative mt-2 text-sm lg:text-lg leading-5 lg:leading-6 flex flex-col items-start justify-center gap-[6px] lg:gap-2 xl:gap-[10px]">
-                <p className="font-extrabold">Marketing & Branding</p>
-                <p className="underline font-medium flex flex-wrap gap-1">
+                <p className="visionParagraph font-extrabold">
+                  Marketing & Branding
+                </p>
+                <p className="visionParagraph underline font-medium flex flex-wrap gap-1">
                   Karen Freese - Freese Consulting
                   <span className="flex gap-[10px]">
                     {" "}
@@ -240,8 +244,10 @@ export default function OurStory() {
                 </p>
               </div>
               <div className="relative mt-2 text-sm lg:text-lg leading-5 lg:leading-6 flex flex-col items-start justify-center gap-[6px] lg:gap-2 xl:gap-[10px]">
-                <p className="font-extrabold">Business, Tech & Network</p>
-                <p className="underline font-medium flex flex-wrap gap-[10px]">
+                <p className="visionParagraph font-extrabold">
+                  Business, Tech & Network
+                </p>
+                <p className="visionParagraph underline font-medium flex flex-wrap gap-[10px]">
                   Henri Vass - WeAre Solutions
                   <a
                     href="https://www.linkedin.com/in/henrivass"
@@ -274,16 +280,18 @@ export default function OurStory() {
                 alt="Logo"
                 className="w-7 h-7 lg:w-12 lg:h-12 object-center object-cover aspect-square"
               />
-              <p className="text-black  font-medium lg:font-semibold text-base lg:text-[40px] leading-normal tracking-[0.32px] lg:tracking-[0.8px]">
+              <p className="visionParagraph text-black font-medium lg:font-semibold text-base lg:text-[40px] leading-normal tracking-[0.32px] lg:tracking-[0.8px]">
                 NeduAI
               </p>
             </div>
-            <h3 className="text-lg lg:text-3xl text-center xl:text-start leading-5 lg:leading-3 xl:leading-10 font-semibold ">
+            <h3 className="visionParagraph text-lg lg:text-3xl text-center xl:text-start leading-5 lg:leading-3 xl:leading-10 font-semibold ">
               Investor Relations
             </h3>
             <div className="visionParagraph max-w-[441px] text-start lg:text-center xl:text-start text-sm lg:text-base font-medium leading-[19.6px] lg:leading-[187.5%] lg:tracking-[0.32px] flex flex-col gap-4 xl:gap-6">
-              <p>Interested in being a part of our story ?</p>
-              <p>
+              <p className="visionParagraph">
+                Interested in being a part of our story ?
+              </p>
+              <p className="visionParagraph">
                 Connect with us by leaving your details via email, and
                 we&apos;ll promptly send you a link to our comprehensive
                 investment materials.
@@ -292,7 +300,7 @@ export default function OurStory() {
           </section>
           <Form />
         </section>
-        <footer className="py-3 z-40 flex items-center justify-start border-t border-[#7E7E7E]">
+        <footer className="visionParagraph py-3 z-40 flex items-center justify-start border-t border-[#7E7E7E]">
           &copy; 2023 NeduAI Oy
         </footer>
       </section>

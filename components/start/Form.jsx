@@ -68,7 +68,7 @@ export default function Form() {
     >
       <div className="border-b border-opacity-40 w-full flex-col flex items-start">
         <label
-          className="text-sm lg:text-base font-medium lg:font-semibold text-white leading-5 tracking-[0.7px  ] lg:tracking-[0.8px]"
+          className="visionParagraph text-sm lg:text-base font-medium lg:font-semibold text-white leading-5 tracking-[0.7px  ] lg:tracking-[0.8px]"
           htmlFor="name"
         >
           Name*
@@ -86,7 +86,7 @@ export default function Form() {
       </div>
       <div className="border-b border-opacity-40 w-full flex-col flex items-start">
         <label
-          className="text-base font-medium lg:font-semibold text-white leading-5 tracking-[0.8px]"
+          className="visionParagraph text-base font-medium lg:font-semibold text-white leading-5 tracking-[0.8px]"
           htmlFor="email"
         >
           Email*
@@ -105,7 +105,7 @@ export default function Form() {
 
       <div className="border-b border-opacity-40 w-full flex-col flex items-start">
         <label
-          className="text-base font-medium lg:font-semibold text-white leading-5 tracking-[0.8px]"
+          className="visionParagraph text-base font-medium lg:font-semibold text-white leading-5 tracking-[0.8px]"
           htmlFor="tel"
         >
           Phone no.
@@ -125,7 +125,7 @@ export default function Form() {
 
       <div className="border-b border-opacity-40 w-full flex-col flex items-start">
         <label
-          className="text-base font-medium lg:font-semibold text-white leading-5 tracking-[0.8px]"
+          className="visionParagraph text-base font-medium lg:font-semibold text-white leading-5 tracking-[0.8px]"
           htmlFor="company"
         >
           Company / Organization
@@ -142,7 +142,7 @@ export default function Form() {
       </div>
       <div className="border-b border-opacity-40 w-full flex-col flex items-start">
         <label
-          className="text-base font-medium lg:font-semibold text-white leading-5 tracking-[0.8px]"
+          className="visionParagraph text-base font-medium lg:font-semibold text-white leading-5 tracking-[0.8px]"
           htmlFor="message"
         >
           Message
@@ -162,7 +162,7 @@ export default function Form() {
           type="submit"
           variant="light"
           disabled={success}
-          className="px-8 py-2 lg:py-[7.5px] lg:px-[47.7px] w-full sm:w-fit text-sm rounded-[5.714px] font-semibold leading-[24.297px] tracking-[0.7px] bg-white border-none outline-none"
+          className="visionParagraph px-8 py-2 lg:py-[7.5px] lg:px-[47.7px] w-full sm:w-fit text-sm rounded-[5.714px] font-semibold leading-[24.297px] tracking-[0.7px] bg-white border-none outline-none"
         >
           {success ? (
             <p className="text-[#ffad00]">Thank you for requesting</p>

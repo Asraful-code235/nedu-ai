@@ -16,18 +16,18 @@ export default function YouthEmpowerment() {
               alt="conversation Panel"
               className="w-[72px] h-[60px] hidden xl:block z-[5] opacity-80"
             />
-            <p className="text-white w-full text-start md:text-center xl:text-start text-opacity-50 font-medium leading-8 text-sm md:text-4xl">
+            <p className="visionParagraph text-white w-full text-start md:text-center xl:text-start text-opacity-50 font-medium leading-8 text-sm md:text-4xl">
               #unms2023
             </p>
             <h1 className="text-white w-full text-xl md:text-5xl text-start md:text-center xl:text-start font-bold leading-8 md:leading-normal tracking-[1px] md:tracking-[2.4px] capitalize">
               United Nationalities Of Marbella Summit, 2023
             </h1>
             <article className="visionParagraph mx-auto max-w-[697px] flex flex-col gap-3 text-start md:text-center xl:text-start xl:max-w-full text-white font-normal md:font-medium text-xs md:text-xl leading-5 md:leading-[28px]">
-              <p>
+              <p className="visionParagraph">
                 NeduAI is committed to empowering the future, supporting
                 non-profits in their mission.
               </p>
-              <p>
+              <p className="visionParagraph">
                 Through our Happy Helpline solution, designed for youth in need,
                 this app not only facilitates access to educational and career
                 opportunities but also encourages connection with like-minded
@@ -37,7 +37,7 @@ export default function YouthEmpowerment() {
                 friendly AI-powered app aiding youth to navigate their
                 challenges, promoting self-understanding and wellbeing.
               </p>
-              <p>
+              <p className="visionParagraph">
                 Together, we&apos;re dedicated to ensuring Marbella&apos;s youth
                 have the support they need to realize their brightest future.
               </p>

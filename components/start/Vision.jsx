@@ -15,7 +15,7 @@ export default function Vision() {
     }
   }, [borderControls, borderInView]);
   return (
-    <motion.section className=" p-6 hidden lg:flex px-6 md:pb-24 md:pt-6 lg:px-16 2xl:px-32 flex-col gap-5 md:gap-12 xl:gap-32">
+    <motion.section className="p-6 hidden lg:flex px-6 md:pb-24 md:pt-6 lg:px-16 2xl:px-32 flex-col gap-5 md:gap-12 xl:gap-32">
       <div className="flex flex-col gap-2 lg:gap-5 items-start lg:items-center justify-center text-center">
         <div className="relative w-full flex items-center justify-center text-start lg:text-center">
           <h1 className="flex items-start lg:items-center justify-start lg:justify-center text-start lg:text-center gap-1 md:gap-2  w-full text-xl lg:text-5xl xl:text-6xl font-normal leading-normal lg:leading-normal tracking-[1px] md:tracking-[2.4px] xl:tracking-[3.2px] text-white text-opacity-80">
@@ -99,7 +99,7 @@ export default function Vision() {
           with confidence.
         </p>
       </div>
-      <div className="wrap border-4 max-w-[1664px] mx-auto flex flex-col items-start justify-center text-white border-[#C87200] rounded-2xl lg:rounded-[64px]  h-full overflow-hidden">
+      <div className="wrap border-4 max-w-[1664px] mx-auto flex flex-col items-start justify-center text-white  rounded-2xl lg:rounded-[64px]  h-full overflow-hidden">
         <section className="">
           <video
             width="100%"
