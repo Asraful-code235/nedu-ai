@@ -28,7 +28,7 @@ export default function Home() {
       <ForEducation />
       <ForIndividuals />
       <Timeline />
-      <section className="relative ">
+      <section className="relative from-[#232323] via-slate-200 to-transparent ">
         <OurStory />
       </section>
     </section>

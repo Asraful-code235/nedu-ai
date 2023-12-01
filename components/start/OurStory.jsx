@@ -47,7 +47,7 @@ export default function OurStory() {
   const [animateImage, setAnimateImage] = useState(false);
 
   return (
-    <section className="ourStoryBg">
+    <section className="storybg ourStoryBg">
       <img
         src="/icons/worldmap.png"
         alt=""
@@ -66,7 +66,7 @@ export default function OurStory() {
         width={1600}
         height={1600}
         alt={"story_svg"}
-        className="w-[600px] absolute opacity-30 left-[-25%] md:left-[-4%] bottom-[2%] z-10 rotate-90"
+        className="w-[600px] absolute opacity-30 left-[-25%] md:left-[-4%] bottom-[2%] z-[1] rotate-90"
       />
       <section className="visionParagraph relative pb-12 pt-6 px-4 lg:px-16 2xl:px-32  space-y-6 md:space-y-9 bg-white">
         <h1 className="visionParagraph text-3xl lg:text-5xl font-bold leading-10 lg:leading-[67px] tracking-[0.6] lg:tracking-[0.96px]">
@@ -273,7 +273,7 @@ export default function OurStory() {
             </div>
           </section>
         </article>
-        <section className="flex pt-24 flex-col xl:flex-row items-start lg:items-center xl:items-start justify-center xl:justify-between z-50 gap-10 lg:gap-28 ">
+        <section className="flex pt-24 flex-col xl:flex-row items-start lg:items-center xl:items-start justify-center xl:justify-between z-[999px] gap-10 lg:gap-28 ">
           <section className="flex flex-col items-start lg:items-center xl:items-start justify-center gap-2 lg:gap-8 xl:gap-6">
             <div className="flex mt-[66px] w-full items-start lg:items-center justify-start lg:justify-center xl:justify-start gap-3.5 ">
               <Image

@@ -170,3 +170,17 @@ html {
     top: 20%;
   }
 }
+
+.storybg {
+  width: 100%;
+  height: 100%;
+  border: 2px solid red;
+  z-index: 20;
+  background: linear-gradient(
+    163deg,
+    #fff 1.22%,
+    rgba(255, 255, 255, 0.75) 50.06%,
+    rgba(255, 255, 255, 0.25) 69.38%,
+    rgba(255, 255, 255, 0) 97.3%
+  );
+}
