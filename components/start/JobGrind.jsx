@@ -92,7 +92,7 @@ export default function JobGrind({ isNedu, setIsNedu, ...props }) {
                 is a critical and evolving process
               </h1>
             </div>
-            <p className="visionParagraph max-w-[1316px] mx-auto text-start lg:text-center text-xs lg:text-xl xl:text-2xl font-normal lg:font-medium text-white text-opacity-80 leading-5 lg:leading-[45px] tracking-tighter lg:tracking-[0.4px] ">
+            <p className="visionParagraph max-w-[1316px] mx-auto text-start lg:text-center text-xs lg:text-xl xl:text-2xl font-normal lg:font-medium text-white text-opacity-80 leading-5 lg:leading-[32px] 2xl:leading-[45px] tracking-[0px] lg:tracking-[0.4px] ">
               At NeduAI, we recognize the challenges faced by both applicants
               and recruiters – the inundation of applications, the struggle for
               recruiters to thoroughly review each one, and the often impersonal
@@ -103,7 +103,7 @@ export default function JobGrind({ isNedu, setIsNedu, ...props }) {
           <div className="flex flex-col items-center justify-center text-center gap-2 lg:gap-6 xl:gap-8">
             <div className="relative w-full text-start lg:text-center">
               <h1 className="text-xl lg:text-5xl xl:text-6xl font-normal text-white text-opacity-80 leading-normal tracking-[1px] lg:tracking-[2.4px] xl:tracking-[3.2px]">
-                The
+                The{" "}
                 <span className="text-darkYellow relative text-opacity-100 font-bold">
                   NeduAI’s way
                   <Image
@@ -116,7 +116,7 @@ export default function JobGrind({ isNedu, setIsNedu, ...props }) {
                 </span>
               </h1>
             </div>
-            <p className="visionParagraph max-w-[1316px] mx-auto text-start lg:text-center text-xs lg:text-xl xl:text-2xl font-normal lg:font-medium text-white text-opacity-80 leading-5 lg:leading-[45px] tracking-tighter lg:tracking-[0.4px] ">
+            <p className="visionParagraph max-w-[1316px] mx-auto text-start lg:text-center text-xs lg:text-xl xl:text-2xl font-normal lg:font-medium text-white text-opacity-80 leading-5 lg:leading-[32px] 2xl:leading-[45px] tracking-[0px] lg:tracking-[0.4px] ">
               NeduAI gets it – chasing that dream job is like navigating a
               puzzle. So, we&apos;re flipping the script, sparking an education
               and career revolution with our AI magic. Because your journey

@@ -294,7 +294,7 @@ export default function OurStory() {
               <p className="visionParagraph">
                 Interested in being a part of our story ?
               </p>
-              <p className="visionParagraph">
+              <p className="visionParagraph lg:leading-[160%] tracking-[0.32px]">
                 Connect with us by leaving your details via email, and
                 we&apos;ll promptly send you a link to our comprehensive
                 investment materials.

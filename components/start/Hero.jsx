@@ -27,7 +27,7 @@ export default function Hero() {
           </h1>
         </div>
         <div className="visionParagraph flex items-start lg:items-center xl:items-start justify-start lg:justify-center xl:justify-start text-start lg:text-center xl:text-start text-sm lg:text-[24px] 2xl:text-[28px] leading-[187.5%] tracking-normal  2xl:leading-[160.714%] -mt-2 lg:mt-1">
-          <p className="visionParagraph text-white text-opacity-70 lg:text-opacity-80 font-normal lg:font-medium">
+          <p className="visionParagraph text-white text-opacity-70 lg:text-opacity-80 font-normal">
             Enabling talents to offer their true potential and get discovered
           </p>
         </div>

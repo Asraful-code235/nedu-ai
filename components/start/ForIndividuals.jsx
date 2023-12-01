@@ -49,10 +49,10 @@ export default function ForIndividuals() {
         <h3 className="visionParagraph text-white text-opacity-60 text-xs lg:text-4xl font-normal lg:font-medium leading-4 lg:leading-[30px]">
           For Individuals
         </h3>
-        <h2 className="visionParagraph text-white font-bold lg:font-bold leading-[23.8px] lg:leading-[60px] text-[17px] lg:text-[40px] tracking-[0.34px]">
+        <h2 className="visionParagraph text-white font-bold lg:font-bold leading-[23.8px] lg:leading-[44px] lg:tracking-[-1.32px]  text-[17px] lg:text-[40px] tracking-[0.34px]">
           Take Control, Shape Your Future!
         </h2>
-        <p className="visionParagraph text-xs lg:text-xl text-start lg:text-center max-w-full lg:max-w-[704px] xl:max-w-full xl:text-start text-white font-medium lg:font-medium leading-[17.4px] tracking-tight  lg:leading-[200%] mt-4 lg:-mt-2">
+        <p className="visionParagraph text-xs lg:text-xl text-start lg:text-center max-w-full lg:max-w-[704px] xl:max-w-full xl:text-start text-white font-medium lg:font-medium leading-[17.4px] tracking-tight lg:leading-[32px] mt-4 lg:-mt-2">
           Embark on a transformative career journey with NeduAI. Through
           interactive, AI-assisted conversations, we help you define and pursue
           your dream career. NeduAI guides you in setting achievable goals,
