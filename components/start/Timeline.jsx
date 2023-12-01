@@ -136,17 +136,17 @@ export default function Timeline() {
         </div>
       </div>
       {/* mobile */}
-      <div className="relative my-10 h-fit mx-auto flex lg:hidden items-center justify-center gap-3 sm:gap-5">
+      <div className="relative max-[370px]:my-16 my-10 h-fit mx-auto flex lg:hidden items-center justify-center gap-3 sm:gap-5">
         <Image
           src={"/timeline/mobiletimeline.svg"}
           width={1000}
           height={1000}
           alt="nedu_timeline"
-          className="w-fit max-[370px]:h-[746px] max-[372px]:h-[664px] max-[388px]:h-[70%] h-[698px] max-w-[393px] max-[373px]:-mt-4 -mt-3"
+          className="w-fit max-[370px]:h-[735px] max-[372px]:h-[664px] max-[388px]:h-[70%] h-[698px] max-w-[393px] max-[370px]:-mt-2 -mt-3"
         />
         {/* july 2023 */}
-        <div className="flex flex-col gap-4 h-fit ">
-          <div className="px-[7px] max-[370px]:-mt-7 -mt-6 py-[11px] bg-[#FF980E] max-w-[258px] bg-opacity-10 border border-[#FF980E] rounded-[10px]  flex flex-col gap-1 items-start justify-start text-start">
+        <div className="flex flex-col gap-4 h-fit max-[370px]:mt-8 ">
+          <div className="px-[7px] max-[370px]:-mt-14 -mt-6 py-[11px] bg-[#FF980E] max-w-[258px] bg-opacity-10 border border-[#FF980E] rounded-[10px]  flex flex-col gap-1 items-start justify-start text-start">
             <h4 className="font-semibold text-[12px] w-full leading-normal text-[#FF980E]">
               July ‘23
             </h4>
@@ -159,7 +159,7 @@ export default function Timeline() {
               </span>
             </p>
           </div>
-          <div className="px-[7px] max-[370px]:mt-0 mt-1 py-[11px] bg-[#FF980E] max-w-[258px] bg-opacity-10 border border-[#FF980E] rounded-[10px]  flex flex-col gap-1 items-start justify-start text-start">
+          <div className="px-[7px] max-[370px]:my-2 mt-1 py-[11px] bg-[#FF980E] max-w-[258px] bg-opacity-10 border border-[#FF980E] rounded-[10px]  flex flex-col gap-1 items-start justify-start text-start">
             <h4 className="font-semibold text-[12px] w-full leading-normal text-[#FF980E]">
               August ‘23
             </h4>
@@ -196,7 +196,7 @@ export default function Timeline() {
               </span>
             </p>
           </div>
-          <div className="px-[7px]  mt-6 py-[11px] bg-[#FF980E] max-w-[258px] bg-opacity-10 border border-[#FF980E] rounded-[10px]  flex flex-col gap-1 items-start justify-start text-start">
+          <div className="px-[7px] max-[370px]:mt-7 mt-6 py-[11px] bg-[#FF980E] max-w-[258px] bg-opacity-10 border border-[#FF980E] rounded-[10px]  flex flex-col gap-1 items-start justify-start text-start">
             <h4 className="font-semibold text-[12px] w-full leading-normal text-[#FF980E]">
               Q4/‘23
             </h4>
@@ -207,7 +207,7 @@ export default function Timeline() {
               </span>
             </p>
           </div>
-          <div className="px-[7px] mt-3 py-[11px] bg-[#FF980E] max-w-[258px] bg-opacity-10 border border-[#FF980E] rounded-[10px]  flex flex-col gap-1 items-start justify-start text-start">
+          <div className="px-[7px] max-[370px]:my-4 mt-3 py-[11px] bg-[#FF980E] max-w-[258px] bg-opacity-10 border border-[#FF980E] rounded-[10px]  flex flex-col gap-1 items-start justify-start text-start">
             <h4 className="font-semibold text-[12px] w-full leading-normal text-[#FF980E]">
               Q1/‘24
             </h4>
