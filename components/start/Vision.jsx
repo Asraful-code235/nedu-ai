@@ -99,7 +99,7 @@ export default function Vision() {
           with confidence.
         </p>
       </div>
-      <div className="wrap border-4 max-w-[1664px] mx-auto flex flex-col items-start justify-center text-white  rounded-2xl lg:rounded-[64px]  h-full overflow-hidden">
+      <div className="wrap border-4 max-w-[1664px] mx-auto flex flex-col items-start justify-center text-white rounded-2xl lg:rounded-[64px] border-[#FF980E]  h-full overflow-hidden">
         <section className="">
           <video
             width="100%"
