@@ -86,7 +86,7 @@ export default function GridItems() {
 
   return (
     <motion.section className="p-6 lg:px-16 lg:py-[50px]">
-      <h1 className=" text-start md:text-center w-full text-2xl md:text-5xl text-opacity-80 xl:text-6xl font-normal text-white py-8 lg:py-[50px] leading-[160%] tracking-[0.72px] lg:tracking-[0.8px]">
+      <h1 className=" text-start md:text-center w-full text-2xl md:text-5xl text-opacity-80 xl:text-6xl font-normal text-white py-8 lg:py-[50px] leading-[160%] tracking-[0.72px]">
         Core{" "}
         <span className="text-[#FFA937] font-semibold text-opacity-100">
           features
@@ -128,7 +128,7 @@ export default function GridItems() {
                 </h3>
               </div>
               <div className="max-w-[342px] mx-auto flex flex-col gap-[10px] items-center justify-center">
-                <p className="visionParagraph text-sm text-opacity-80 lg:text-xl leading-5 lg:leading-[145%] lg:tracking-[0.4px] font-medium text-white  text-center">
+                <p className="visionParagraph text-sm text-opacity-80 lg:text-xl leading-5 lg:leading-[145%] lg:tracking-[0.4px] font-semibold text-white  text-center">
                   {item.excerpt}
                 </p>
                 <p className="visionParagraph text-xs lg:text-base leading-5 lg:leading-[145%] lg:tracking-[0.32px] font-normal text-white text-opacity-80 text-center">

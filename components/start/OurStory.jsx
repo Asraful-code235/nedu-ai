@@ -207,18 +207,21 @@ export default function OurStory() {
                     />
                   </a>
                 </p>
-                <p className="visionParagraph underline font-medium flex flex-wrap gap-[10px]">
-                  Tero Keski-Valkama - AI, ML , KAIKO
-                  <a
-                    href="https://www.linkedin.com/in/terokeskivalkama"
-                    target="_blank"
-                  >
-                    <img
-                      src="/founders/FoundersLinkedIn.svg"
-                      alt="Linked In"
-                      className="w-[23px] h-[23px]"
-                    />
-                  </a>
+                <p className="visionParagraph underline font-medium flex flex-wrap gap-[4px]">
+                  Tero Keski-Valkama - AI, ML ,
+                  <span className="flex flex-wrap items-center gap-[10px]">
+                    KAIKO
+                    <a
+                      href="https://www.linkedin.com/in/terokeskivalkama"
+                      target="_blank"
+                    >
+                      <img
+                        src="/founders/FoundersLinkedIn.svg"
+                        alt="Linked In"
+                        className="w-[23px] h-[23px]"
+                      />
+                    </a>
+                  </span>
                 </p>
               </div>
               <div className="relative mt-2 text-sm lg:text-lg leading-5 lg:leading-6 flex flex-col items-start justify-center gap-[6px] lg:gap-2 xl:gap-[10px]">

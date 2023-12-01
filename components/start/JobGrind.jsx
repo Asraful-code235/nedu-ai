@@ -75,29 +75,55 @@ export default function JobGrind({ isNedu, setIsNedu, ...props }) {
   return (
     <section className="w-full relative">
       <section className="p-[23px] md:p-10 lg:px-16 lg:py-16 2xl:px-32 flex flex-col gap-5 lg:gap-8 xl:gap-16 items-center justify-center overflow-hidden">
-        <div className="flex flex-col items-center justify-center text-center gap-2 lg:gap-6 xl:gap-8">
-          <div className="relative w-full text-start lg:text-center">
-            <h1 className="text-xl lg:text-5xl xl:text-6xl font-normal text-white text-opacity-80 leading-normal tracking-[1px] lg:tracking-[2.4px] xl:tracking-[3.2px]">
-              <span className="text-darkYellow relative text-opacity-100 font-bold">
-                Recruitment{" "}
-                <Image
-                  src={"/criticalThinking.svg"}
-                  width={100}
-                  height={100}
-                  alt="gearset"
-                  className="absolute w-7 lg:w-14 top-[-100%] lg:top-[-68%] right-[-6%] lg:right-[-2%] xl:right-[-1%] xl:top-[-53%]"
-                />
-              </span>
-              is a critical and evolving process
-            </h1>
+        {!isNedu ? (
+          <div className="flex flex-col items-center justify-center text-center gap-2 lg:gap-6 xl:gap-8">
+            <div className="relative w-full text-start lg:text-center">
+              <h1 className="text-xl lg:text-5xl xl:text-6xl font-normal text-white text-opacity-80 leading-normal tracking-[1px] lg:tracking-[2.4px] xl:tracking-[3.2px]">
+                <span className="text-darkYellow relative text-opacity-100 font-bold">
+                  Recruitment{" "}
+                  <Image
+                    src={"/criticalThinking.svg"}
+                    width={100}
+                    height={100}
+                    alt="gearset"
+                    className="absolute w-7 lg:w-14 top-[-100%] lg:top-[-68%] right-[-6%] lg:right-[-2%] xl:right-[-1%] xl:top-[-53%]"
+                  />
+                </span>
+                is a critical and evolving process
+              </h1>
+            </div>
+            <p className="visionParagraph max-w-[1316px] mx-auto text-start lg:text-center text-xs lg:text-xl xl:text-2xl font-normal lg:font-medium text-white text-opacity-80 leading-5 lg:leading-[45px] tracking-tighter lg:tracking-[0.4px] ">
+              At NeduAI, we recognize the challenges faced by both applicants
+              and recruiters – the inundation of applications, the struggle for
+              recruiters to thoroughly review each one, and the often impersonal
+              nature of the process.
+            </p>
           </div>
-          <p className="visionParagraph max-w-[1316px] mx-auto text-start lg:text-center text-xs lg:text-xl xl:text-2xl font-normal lg:font-medium text-white text-opacity-80 leading-5 lg:leading-[45px] tracking-tighter lg:tracking-[0.4px] ">
-            At NeduAI, we recognize the challenges faced by both applicants and
-            recruiters – the inundation of applications, the struggle for
-            recruiters to thoroughly review each one, and the often impersonal
-            nature of the process.
-          </p>
-        </div>
+        ) : (
+          <div className="flex flex-col items-center justify-center text-center gap-2 lg:gap-6 xl:gap-8">
+            <div className="relative w-full text-start lg:text-center">
+              <h1 className="text-xl lg:text-5xl xl:text-6xl font-normal text-white text-opacity-80 leading-normal tracking-[1px] lg:tracking-[2.4px] xl:tracking-[3.2px]">
+                The
+                <span className="text-darkYellow relative text-opacity-100 font-bold">
+                  NeduAI’s way
+                  <Image
+                    src={"/criticalThinking.svg"}
+                    width={100}
+                    height={100}
+                    alt="gearset"
+                    className="absolute w-7 lg:w-14 top-[-100%] lg:top-[-68%] right-[-6%] lg:right-[-2%] xl:right-[-1%] xl:top-[-53%]"
+                  />
+                </span>
+              </h1>
+            </div>
+            <p className="visionParagraph max-w-[1316px] mx-auto text-start lg:text-center text-xs lg:text-xl xl:text-2xl font-normal lg:font-medium text-white text-opacity-80 leading-5 lg:leading-[45px] tracking-tighter lg:tracking-[0.4px] ">
+              NeduAI gets it – chasing that dream job is like navigating a
+              puzzle. So, we&apos;re flipping the script, sparking an education
+              and career revolution with our AI magic. Because your journey
+              deserves the extraordinary!
+            </p>
+          </div>
+        )}
         <div className="w-fit transition-colors duration-500 delay-500 flex justify-center items-center gap-6 xl:gap-10 p-1 lg:p-[10px] xl:p-4 rounded-full bg-[#2E2E2E] border  md:border-2 border-[#595959]">
           <motion.button
             onClick={() => setIsNedu(false)}

@@ -3,8 +3,8 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 export default function WhoWeServe() {
   return (
-    <section className=" px-4 pt-4 pb-10 lg:px-16 lg:py-16 2xl:px-32">
-      <motion.div className="lg:px-[70px] flex flex-col items-start lg:items-center justify-center text-center gap-3 lg:gap-[34px]">
+    <section className=" px-4 pt-4 pb-10 lg:px-16 lg:py-16 2xl:px-32  ">
+      <motion.div className="lg:px-[70px] flex flex-col items-start lg:items-center justify-center text-center gap-3 lg:gap-[25px]">
         <h1 className="visionParagraph text-start lg:text-center text-xl lg:text-5xl xl:text-6xl font-normal leading-normal text-white text-opacity-80">
           Who we{" "}
           <span className="text-darkYellow font-extrabold relative">
@@ -46,21 +46,21 @@ export default function WhoWeServe() {
             </svg>
           </span>
         </h1>
-        <p className="visionParagraph text-white max-w-[1240px] mx-auto text-start lg:text-center text-opacity-80 text-sm lg:text-xl xl:text-2xl font-medium lg:leading-[166.667%] lg:tracking-[0.4px] xl:tracking-[0.48px]">
+        <p className="visionParagraph text-white max-w-[1180px] mx-auto text-start lg:text-center text-opacity-80 text-sm lg:text-xl xl:text-2xl font-medium lg:leading-[166.667%] lg:tracking-[0.4px] xl:tracking-[0.48px]">
           NeduAI is designed for students, job seekers, and recruiters. Our
           platform uses AI to enhance learning experiences, streamline job
           searches, and make talent recruitment more efficient and effective.
         </p>
       </motion.div>
-      <motion.div className=" mt-[64px] md:mt-[128px] lg:mt-[196px] flex flex-col-reverse xl:flex-row items-center justify-start gap-16 sm:gap-24 lg:gap-10">
-        <article className="visionParagraph max-w-[733px] mx-auto xl:flex-[0.75] xl:max-w-[770px] flex flex-col items-start justify-center gap-1 lg:gap-6">
+      <motion.div className=" mt-[64px] md:mt-[128px] lg:mt-[196px] flex flex-col-reverse xl:flex-row items-center justify-start gap-16 sm:gap-24 lg:gap-24">
+        <article className="visionParagraph max-w-[733px] mx-auto xl:flex-[0.75] xl:max-w-[770px] flex flex-col items-start justify-center gap-1 md:gap-5">
           <h3 className="visionParagraph text-white text-start lg:text-center w-full text-xs  xl:text-start text-opacity-60 lg:text-4xl font-medium leading-4 lg:leading-[30px]">
             For Recruitment
           </h3>
-          <h2 className="visionParagraph text-white w-full text-start text-[17px] lg:text-center xl:text-start font-bold lg:font-bold leading-[23.8px] lg:leading-[60px] tracking-[0.34px]  lg:tracking-[1.4px] lg:text-[40px]">
+          <h2 className="visionParagraph text-white w-full text-start text-[17px] lg:text-center xl:text-start font-bold lg:font-bold leading-[23.8px] lg:leading-[150%] lg:text-[40px] mt-1">
             Experience a smarter way to recruit with NeduAI
           </h2>
-          <p className="visionParagraph text-xs lg:text-xl xl:max-w-full w-full text-start lg:text-center xl:text-start text-white font-medium lg:font-medium leading-[17.4px] tracking-[0.12px] lg:leading-[40px] mt-2 lg:-mt-2">
+          <p className="visionParagraph text-xs lg:text-xl xl:max-w-full w-full text-start lg:text-center xl:text-start text-white font-medium lg:font-medium leading-[17.4px] tracking-[0.12px] lg:leading-[200%] mt-2 lg:-mt-2">
             Our platform enables you to efficiently search and identify top
             candidates, offering tools to filter the most suitable and committed
             applicants, saving you time from sifting through countless
