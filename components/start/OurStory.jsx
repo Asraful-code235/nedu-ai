@@ -30,7 +30,7 @@ const founders = [
     position: "COO",
     division: "Solution Architect, Data Analyst ",
     mail: "dave@nedu.ai",
-    linkedIn: "https://www.linkedin.com/in/dave-brady-b9167044",
+    linkedIn: "https://www.linkedin.com/in/dave-brady1",
   },
 
   {
