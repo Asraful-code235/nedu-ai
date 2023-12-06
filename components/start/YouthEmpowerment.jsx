@@ -48,7 +48,7 @@ export default function YouthEmpowerment() {
                 className="bg-white hover:bg-[#dddddd] transition-colors duration-300 w-fit text-[#0081B5] px-8 py-[8px] md:px-8 md:py-[8px] lg:px-[64px] lg:py-[18px] rounded-md md:rounded-xl text-xs md:text-2xl tracking-[0.058px] leading-[140.18%] font-semibold border-none"
               >
                 <a
-                  href="https://happy-helpline-ai.vercel.app/"
+                  href="https://happy-helpline-v2.vercel.app/"
                   target="_blank"
                   className=""
                 >

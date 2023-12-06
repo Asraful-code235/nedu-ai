@@ -187,7 +187,7 @@ export default function Form() {
           </div>
         </form>
       ) : (
-        <div className="w-full flex items-center justify-start">
+        <div className="w-full flex xl:mt-36 items-center justify-center">
           <Button
             type="button"
             variant="light"
