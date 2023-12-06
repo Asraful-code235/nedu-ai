@@ -96,9 +96,9 @@ export default function GridItems() {
         <motion.ul
           animate={animateCard}
           transition={{ duration: 0.5, delayChildren: 0.5 }}
-          className="flex flex-col gap-4 lg:gap-7"
+          className="grid grid-cols-3 gap-4 lg:gap-7"
         >
-          {firstContainer.slice(0, 2).map((item, key) => (
+          {firstContainer.map((item, key) => (
             <motion.li
               key={key}
               initial={{
@@ -109,11 +109,7 @@ export default function GridItems() {
               }}
               viewport={{ once: true }}
               transition={{ duration: 0.3, delay: 0.08 * key }}
-              className={`${
-                key === 1
-                  ? "xl:px-[42px] xl:py-[48px] lg:px-6 lg:py-9 px-[32px] py-[38px] h-fit"
-                  : "xl:px-[42px] xl:py-[64px] lg:px-6 lg:py-11 px-[32px] py-[54px] h-full"
-              } flex hover:bg-opacity-80 max-w-full p-4 lg:p-0 lg:max-w-[419px] transition-colors duration-300  bg-[#111010] rounded-2xl items-center justify-start flex-col gap-1`}
+              className={` flex xl:px-[42px] xl:py-[64px] lg:px-6 lg:py-11 px-[32px] py-[54px] h-full hover:bg-opacity-80 max-w-full p-4 lg:p-0 lg:max-w-[419px] transition-colors duration-300  bg-[#111010] rounded-2xl items-center justify-start flex-col gap-1`}
             >
               <div className="flex flex-col gap-2 items-center justify-center">
                 <Image
@@ -138,7 +134,7 @@ export default function GridItems() {
             </motion.li>
           ))}
         </motion.ul>
-        <motion.ul
+        {/* <motion.ul
           animate={animateCard}
           transition={{ duration: 0.5, delayChildren: 0.5 }}
           className="flex flex-col gap-4 lg:gap-7"
@@ -227,7 +223,7 @@ export default function GridItems() {
               </div>
             </motion.li>
           ))}
-        </motion.ul>
+        </motion.ul> */}
       </div>
       <div className=" mx-auto h-full md:hidden flex flex-col items-center gap-5 justify-center">
         <motion.ul
