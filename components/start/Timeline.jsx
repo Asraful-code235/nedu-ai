@@ -91,7 +91,7 @@ export default function Timeline() {
         </div>
         <div className="absolute bottom-14 xl:bottom-8 left-[35%] max-w-[238px]  flex flex-col gap-2 items-start justify-start text-start">
           <h4 className="font-semibold text-[30px] w-full leading-normal text-[#FF980E]">
-            Q3-4 ‘23
+            Q3-Q4 ’23
           </h4>
           <p className="visionParagraph text-base leading-normal font-semibold">
             Engaged in extensive networking and sales meetings,{" "}
@@ -176,7 +176,7 @@ export default function Timeline() {
           </div>
           <div className="px-[7px] max-[370px]:-mt-2 mt-3 py-[11px] bg-[#FF980E] max-w-[258px] bg-opacity-10 border border-[#FF980E] rounded-[10px]  flex flex-col gap-1 items-start justify-start text-start">
             <h4 className="font-semibold text-[12px] w-full leading-normal text-[#FF980E]">
-              Q3-4/‘23
+              Q3-Q4 ’23
             </h4>
             <p className="visionParagraph text-[10px] leading-normal font-semibold">
               Engaged in extensive networking and sales meetings,{" "}
@@ -198,7 +198,7 @@ export default function Timeline() {
           </div>
           <div className="px-[7px] max-[370px]:mt-7 mt-6 py-[11px] bg-[#FF980E] max-w-[258px] bg-opacity-10 border border-[#FF980E] rounded-[10px]  flex flex-col gap-1 items-start justify-start text-start">
             <h4 className="font-semibold text-[12px] w-full leading-normal text-[#FF980E]">
-              Q4/‘23
+              Q4 ‘23
             </h4>
             <p className="visionParagraph text-[10px] leading-normal font-semibold">
               Achieved our first sales and strategic partnership with XAMK,{" "}
@@ -209,7 +209,7 @@ export default function Timeline() {
           </div>
           <div className="px-[7px] max-[370px]:my-4 mt-3 py-[11px] bg-[#FF980E] max-w-[258px] bg-opacity-10 border border-[#FF980E] rounded-[10px]  flex flex-col gap-1 items-start justify-start text-start">
             <h4 className="font-semibold text-[12px] w-full leading-normal text-[#FF980E]">
-              Q1/‘24
+              Q1 ‘24
             </h4>
             <p className="visionParagraph text-[10px] leading-normal font-semibold">
               Launching our first investment round,{" "}

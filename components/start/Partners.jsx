@@ -140,7 +140,8 @@ export default function Partners() {
             Joining
           </span>{" "}
           forces for a{" "}
-          <span className="font-semibold text-darkYellow text-opacity-100">
+          <span className="font-semibold text-darkYellow text-opacity-100 ml-1.5">
+            {" "}
             better future
           </span>
         </h1>
