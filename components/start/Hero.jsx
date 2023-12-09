@@ -39,7 +39,10 @@ export default function Hero() {
             alt="CellPhone_icon"
             className="w-6 2xl:w-8 aspect-square"
           />
-          <a href="mailto:info@nedu.ai" target="_blank">
+          <a
+            href="mailto:info@nedu.ai?subject=NeduAI%20-%20Contact%20us%20button%20Lead"
+            target="_blank"
+          >
             Contact Us
           </a>
         </Button>
@@ -52,7 +55,10 @@ export default function Hero() {
               alt="CellPhone_icon"
               className="w-[10px] lg:w-8 h-4 lg:h-8 aspect-square"
             />
-            <a href="mailto:info@nedu.ai" target="_blank">
+            <a
+              href="mailto:info@nedu.ai?subject=NeduAI%20-%20Contact%20us%20button%20Lead"
+              target="_blank"
+            >
               Contact Us
             </a>
           </Button>
