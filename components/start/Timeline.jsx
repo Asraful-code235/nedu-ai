@@ -3,7 +3,7 @@ export default function Timeline() {
   return (
     <section className="visionParagraph bg-gradient-to-l from-[rgba(223,222,222,0.1)] to-transparent min-h-[70vh] relative py-6 lg:py-20 px-6 lg:px-16 2xl:px-32 bg-white ">
       <h1 className="visionParagraph z-50 backdrop-blur-sm text-3xl lg:text-5xl font-bold leading-10 lg:leading-[67px] tracking-[0.6] lg:tracking-[0.96px]">
-        NeduAi{" "}
+        NeduAI{" "}
         <span className="text-[#FF980E] relative">
           Timeline
           <svg
